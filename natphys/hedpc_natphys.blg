@@ -1,0 +1,81 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: hedpc_natphys.aux
+The style file: apsrev4-1.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: hedpc_natphysNotes.bib
+Database file #2: library.bib
+Repeated entry---line 5605 of file library.bib
+ : @article{Thuering2013c
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 5704 of file library.bib
+ : @article{David2007
+ :                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 5897 of file library.bib
+ : @article{Pfeiffer2007a
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 6199 of file library.bib
+ : @article{Qi2010
+ :                ,
+I'm skipping whatever remains of this entry
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
+Control: key (0) 
+Control: author (72) initials jnrlst
+Control: editor formatted (1) identically to author
+Control: production of article title (-1) disabled
+Control: page (0) single
+Control: year (1) truncated
+Control: production of eprint (0) enabled
+Warning--missing publisher in Als-Nielsen2011
+You've used 24 entries,
+            5847 wiz_defined-function locations,
+            1832 strings with 21515 characters,
+and the built_in function-call counts, 31124 in all, are:
+= -- 1626
+> -- 1145
+< -- 225
++ -- 342
+- -- 292
+* -- 5352
+:= -- 2794
+add.period$ -- 24
+call.type$ -- 24
+change.case$ -- 98
+chr.to.int$ -- 24
+cite$ -- 25
+duplicate$ -- 2824
+empty$ -- 2215
+format.name$ -- 662
+if$ -- 6247
+int.to.chr$ -- 1
+int.to.str$ -- 32
+missing$ -- 362
+newline$ -- 124
+num.names$ -- 72
+pop$ -- 1081
+preamble$ -- 1
+purify$ -- 120
+quote$ -- 0
+skip$ -- 1007
+stack$ -- 0
+substring$ -- 601
+swap$ -- 2924
+text.length$ -- 148
+text.prefix$ -- 0
+top$ -- 8
+type$ -- 409
+warning$ -- 1
+while$ -- 71
+width$ -- 0
+write$ -- 243
+(There were 4 error messages)

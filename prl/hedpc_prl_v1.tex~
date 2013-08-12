@@ -1,0 +1,109 @@
+%\documentclass[aps,prl,twocolumn,showpacs,superscriptaddress,groupedaddress]{revtex4}  % for review and submission
+%\documentclass[aps,preprint,showpacs,superscriptaddress,groupedaddress]{revtex4}  % for double-spaced preprint
+\documentclass[aps,prl,twocolumn,10pt]{revtex4-1}  % for review and submission
+%\documentclass[aps,prl,preprint]{revtex4-1}  % for double-spaced preprint
+\usepackage{graphicx}  % needed for figures
+\usepackage{subfigure} % for subfigures
+%\usepackage{dcolumn}   % needed for some tables
+%\usepackage{bm}        % for math
+\usepackage{amssymb}   % for math
+
+% avoids incorrect hyphenation, added Nov/08 by SSR
+\hyphenation{ALPGEN}
+\hyphenation{EVTGEN}
+\hyphenation{PYTHIA}
+
+%% New commands
+\newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}
+\newcommand{\mathsub}[1]{\ensuremath{\textnormal{\begin{tiny}#1\end{tiny}}}}
+
+
+\begin{document}
+
+\title{High energy compact X-ray grating interferometry}
+
+\author{T.~Thuering}
+  \affiliation{Swiss Light Source, Paul Scherrer Institut, Villigen PSI, Switzerland}
+  \affiliation{Institute for Biomedical Engineering, Swiss Federal Institute of Technology, Zurich, Switzerland}
+
+\author{M.~Stampanoni}
+  \affiliation{Swiss Light Source, Paul Scherrer Institut, Villigen PSI, Switzerland}
+  \affiliation{Institute for Biomedical Engineering, Swiss Federal Institute of Technology, Zurich, Switzerland}
+
+\date{\today}
+
+
+\begin{abstract}
+My abstract
+\end{abstract}
+
+%\pacs{}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Body of paper
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%Story line
+
+%Introduction
+X-ray computed tomography (CT) is nowadays a standard 3D imaging technique for medical diagnosis in daily routine. The physical contrast mechanism of this technique relies on the attenuation of X-rays in an object through the photo-electric effect or Compton scattering, whereas two materials can be distinguished due to their different attenuation properties. Due to the wave and particle nature of X-rays, there are mainly two further interaction mechanisms that occur in an object exposed to X-rays.
+
+Regarding the wave properties, an interface of two different materials in an object causes a change in the wave's phase velocity and thus in a net change of the output phase (a phase shift) downstream of the object.
+
+Apart from attenuation, there are mainly two further interaction mechanisms that occur in an object exposed to X-rays, which have so far been undetected in standard X-ray imaging. Due to the wave nature of X-rays, a change in the phase velocity caused by the material results in a net change of the output phase (a phase shift) downstream of the object. Since no detector is able to measure this shift directly, it remained undetected with the standard imaging method.
+
+On the other hand, regarding the particle properties of X-rays, photons can be scattered on small structures in the material. Since this type of scattering occurs exclusively in forward direction and under ultra small angles (order of micro radiants), the particles usually remain within the area of a detector pixel and thus this effect cannot be detected as well.
+
+The main interest in the detectability of those additional interaction mechanisms is the fact that attenuation, phase shift and scattering are phyiscally speaking complementary interaction mechanisms, in the sense that their occurence is mutually independent. In the context of information content in an image, this gives rise to hypothesize that the complementary interaction mechanisms may eventually yield complementary image information, which is manifested by the image contrast.
+
+Newly developed techniques enable the measurement of the phase and/or scattering signals. Since most of those techniques rely on secondary physical effects, such as interference, and thus typically on optical hardware (e.g. crystals, gratings), they vary a lot in terms of sensitivity, practical applicability or achievable resolution. Practical applicability is the most challenging issue, since the majority of the reported techniques require highly coherent X-rays, which are usually not provided by conventional X-ray sources. Grating interferometry is currently the most promising technique to become a widespread phase contrast method. It exploits the Talbot effect of a periodic phase grating to generate an interference pattern, which can then be sensed for any changes in intensity (absorption signal), lateral shift \cite{David2002,Momose2003a} (refraction signal) and amplitude \cite{Pfeiffer2008} (scattering signal) by using an absorption grating. The compatibility to standard low-brilliance X-ray sources, being the most valuable property, is achieved with a third grating in front of the source \cite{Pfeiffer2006}.
+
+
+
+%If the spatial coherence of the beam is too low to form interference, another absorption grating, splitting the beam into an array of smaller sources, can be added.Adding another absorption grating in front of a
+
+
+
+%In wave optics, the two interaction mechanisms of X-ray with matter are described by the complex index of refraction, $n=1-\dleta  + i\beta$, where $\beta$ takes into account the absorption and $\delta$ the phase shift properties of the material.
+ 
+
+
+
+- Grating interferometry can yield additional information. bla bla
+
+- Signal decay of the attenuation coefficient $\mu$ is proportional to $1/E^3$, for phase it is only $1/E$. -> Higher benefit of PC at higher energies. optimum energy (according to raupach paper) of PC compared to ABS is .... (figure out from raupach paper or so).
+
+- high energies are important for thick samples and medical CT applications
+
+- grating interferometry is the most promising technique for PC on conventional X-ray tubes. It further allows to retrieve a dark field image. So far, grating interferometry was limited in field of view and energy. High aspect ratios are essential for grating interferometry at high energies. Glancing angle has been reported and increased the aspect ratio and thus visibility \cite{Stutman2012}. However, the problem of a reduced field of view (reported as vignetting in Stutman) becomes severe for low glancing angles. So, higher aspect ratios always reduce the field of view.
+
+- Here, a new method by using curved gratings in edge illumination mode, is presented. Description of edge illumination principle: tilting the grating in 90 degrees, the limiting dimension is now the vertical axis, radiography is possible only in scanning mode, single slice tomography is possible. High field of view by curved gratings, curved gratings represent an elegant solution to the limited FOV, which has already been demonstrated for compact grating interferometery \cite{Thuering2011}.
+
+%Methods
+- Setup basic hardware: The X-ray source is a COMET MXR-160HP/11 X-ray tube with a maximum output voltage of $160 \unit{kV}$. The detector consists of a cesium idodide (CsI) scintillator of $600 \unit{\mu m}$ thickness, an optical lens and a CCD camera from Finger Lakes Instruments. The effective pixel size is $80 \unit{\mu m}$. 
+
+- Grating manufacturing: Gratings were manufactured from Micro Works GmbH, Germany. Fabrication is non standard in the sense of conventional grating interferometry. A complex mask design is involved (maybe: show sketch of mask design). Gratings were fabricated using a LIGA process \cite{Kenntner2010}
+
+- setup design: Due to the large focal spot size of the source of approx. $1 \unit{mm}$, the grating interferometer is a Talbot-Lau type interferometer with a source grating \cite{Pfeiffer2006}. Symmetric design, $p_0 = p_1 = p_2 = 2.8 \unit{\mu m}$. Design energy at ... keV, Talbot order .... Gold was used for the absorption grating. The effective thickness of the gold structure in beam direction is $800 \unit{\mu m}$, resulting in an aspect ratio of $2h/p \approx 570$. For the phase shifting grating, Nickel/Gold with a thickness of $... \unit{\mu m}$, generating a phase shift of $\pi$ at the design energy. The vertical FOV is limited by the height of the grating structures of G2, which is $100 \unit{\mu m}$. With a pixel size of $80 \unit{\mu m}$, only a single detector line must be read out. To avoid blurring of the interference pattern in perpendicular direction of this line, an efficient beam collimation has been implemented. Two collimator slits have been used, one with a slit height of $25 \unit{\mu m}$ placed after the source and another one with a slit width of $100 \unit{\mu m}$ placed between G2 and the detector.
+
+
+%Results
+- It would be nice to show an image from the slit, where also the fringes are visible. Specify visibility \\
+- Phantom tomography \\
+- Real data tomography \\
+- Effect of scattering (Silvia) \\
+
+
+
+
+
+
+
+\bibliography{library.bib}
+\bibliographystyle{apsrev4-1}
+
+\end{document}
