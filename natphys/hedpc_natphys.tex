@@ -3,23 +3,19 @@
 %\documentclass[aps,preprint,showpacs,superscriptaddress,groupedaddress]{revtex4}
 % for double-spaced preprint
 %\documentclass[aps,prl,floatfix,twocolumn,10pt]{revtex4-1}
-% for review and submission
+%for review and submission
 %\documentclass[aps,prl,preprint]{revtex4-1} 
 % for double-spaced preprint
+%\documentclass[aip,apl,amsmath,amssymb,floatfix,preprint,a4paper]{revtex4-1}
 \documentclass[aip,apl,amsmath,amssymb,floatfix,reprint,a4paper]{revtex4-1}
 
 %% Packages
-\usepackage{graphicx}  %figures
-\usepackage{subfigure} %subfigures
-\usepackage{amssymb}   %math
-\usepackage[detect-all]{siunitx}
 \usepackage[utf8]{inputenc} %Umlaute
 \usepackage{acronym}
-
-%% hyphenation settings
-\hyphenation{ALPGEN} 
-\hyphenation{EVTGEN}
-\hyphenation{PYTHIA}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}  %figures
+\usepackage[detect-all]{siunitx}
 
 %% New commands
 \newcommand{\msub}[1]{\ensuremath{\textnormal{\begin{tiny}#1\end{tiny}}}}
@@ -30,27 +26,31 @@
 \acrodef{SNR}{signal-to-noise ratio}
 \acrodef{CNR}{contrast-to-noise ratio}
 %% ----------------------------------------------------------------------------------------------------------------
+
 \begin{document}
 
 \title{X-ray phase-contrast imaging at \SI{100}{\kilo\electronvolt}}
 
-\author{T.~Thüring} \affiliation{Paul Scherrer Institut, Villigen PSI,
-Switzerland} \affiliation{Institute for Biomedical Engineering, Swiss
-Federal Institute of Technology, Zurich, Switzerland} \author{M.~Abis}
+\author{T.~Thüring}
 \affiliation{Paul Scherrer Institut, Villigen PSI, Switzerland}
-\affiliation{Institute for Biomedical Engineering, Swiss Federal Institute
-of Technology, Zurich, Switzerland} \author{Z.~Wang} \affiliation{Paul
-Scherrer Institut, Villigen PSI, Switzerland} \author{C.~David}
+\affiliation{Institute for Biomedical Engineering, Swiss Federal Institute of Technology, Zurich, Switzerland}
+\author{M.~Abis}
 \affiliation{Paul Scherrer Institut, Villigen PSI, Switzerland}
-\author{M.~Stampanoni} \affiliation{Paul Scherrer Institut, Villigen PSI,
-Switzerland} \affiliation{Institute for Biomedical Engineering, Swiss
-Federal Institute of Technology, Zurich, Switzerland}
+\affiliation{Institute for Biomedical Engineering, Swiss Federal Institute of Technology, Zurich, Switzerland}
+\author{Z.~Wang}
+\affiliation{Paul Scherrer Institut, Villigen PSI, Switzerland}
+\author{C.~David}
+\affiliation{Paul Scherrer Institut, Villigen PSI, Switzerland}
+\author{M.~Stampanoni}
+\affiliation{Paul Scherrer Institut, Villigen PSI, Switzerland}
+\affiliation{Institute for Biomedical Engineering, Swiss Federal Institute of Technology, Zurich, Switzerland}
 
 \date{\today}
 
 
 %% ----------------------------------------------------------------------------------------------------------------
-\begin{abstract} Phase contrast imaging with X-rays provides access to
+\begin{abstract}
+    Phase contrast imaging with X-rays provides access to
     complementary physical contrast mechanisms. Phase sensitive imaging in
     the diagnostic energy range between $80$ and
     $\SI{150}{\kilo\electronvolt}$ is still largely unexplored, as the
@@ -69,7 +69,8 @@ Federal Institute of Technology, Zurich, Switzerland}
     $\SI{100}{\kilo\electronvolt}$ is demonstrated. This achievement paves
     the road for the transfer of phase-contrast imaging into fields where
     high energies are required, such as medical computed tomography, chip
-    failure analysis or homeland security. \end{abstract}
+    failure analysis or homeland security.
+\end{abstract}
 
 \maketitle
 
@@ -284,7 +285,9 @@ useful to identify flaws in multi-layered structures such as electronic
 chips.
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{figures/img_chip_dabs.eps}
-    \caption{}
+    \caption{Radiographic scan of an electronic chip. The image was acquired
+        with 24 phase steps and an exposure time of \SI{15}{\second} per
+    step.}
     \label{Fig:img_chip}
 \end{figure}
 
