@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.8.14)  20 AUG 2013 11:18
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.8.14)  3 SEP 2013 10:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -75,120 +75,45 @@ Class revtex4-1 Info: Overriding \@vspace, \@vspacer, \@no@pgbk, \@newline, and
 \@bibdataout=\write3
 \widetext@top=\box39
 \widetext@bot=\box40
-Class revtex4-1 Info: Selecting society aip on input line 7542.
-(/usr/share/texlive/texmf-dist/tex/latex/revtex/aip4-1.rtx
-File: aip4-1.rtx 2010/07/25 4.1r AIP substyle for REVTeX
-Class revtex4-1 Info: RevTeX society AIP selected on input line 67.
+Class revtex4-1 Info: Selecting society aps on input line 7542.
+(/usr/share/texlive/texmf-dist/tex/latex/revtex/aps4-1.rtx
+File: aps4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ for docu
+mentation)
+Class revtex4-1 Info: RevTeX society APS selected on input line 31.
 )
-Class revtex4-1 Info: Selecting journal apl on input line 7544.
+Class revtex4-1 Info: Selecting journal prl on input line 7544.
+Class revtex4-1 Info: APS journal PRL selected on input line 7545.
 
-Using journal substyle apl.
-Class revtex4-1 Info: Reading file aps10pt4-1.rtx on input line 7547.
-(/usr/share/texlive/texmf-dist/tex/latex/revtex/aps10pt4-1.rtx
-File: aps10pt4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ for 
+(/usr/share/texlive/texmf-dist/tex/latex/revtex/aps12pt4-1.rtx
+File: aps12pt4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ for 
 documentation)
-Class revtex4-1 Info: RevTeX pointsize 10pt selected on input line 30.
+Class revtex4-1 Info: RevTeX pointsize 12pt selected on input line 30.
 )
-Class revtex4-1 Info: Overriding 10pt on input line 7547.
-
 (/usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
 Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2009/06/22 v3.00
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
-\@emptytoks=\toks16
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
-))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2000/07/18 v2.13 AMS math features
-\@mathmargin=\skip44
-
-For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks17
-\ex@=\dimen102
-)
-LaTeX Info: Redefining \text on input line 53.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen103
-)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 1999/12/14 v2.01 operator names
-)
-\inf@bad=\count94
-LaTeX Info: Redefining \frac on input line 211.
-\uproot@=\count95
-\leftroot@=\count96
-LaTeX Info: Redefining \overline on input line 307.
-\classnum@=\count97
-\DOTSCASE@=\count98
-LaTeX Info: Redefining \ldots on input line 379.
-LaTeX Info: Redefining \dots on input line 382.
-LaTeX Info: Redefining \cdots on input line 467.
-\Mathstrutbox@=\box41
-\strutbox@=\box42
-\big@size=\dimen104
-LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
-\macc@depth=\count99
-\c@MaxMatrixCols=\count100
-\dotsspace@=\muskip10
-\c@parentequation=\count101
-\dspbrk@lvl=\count102
-\tag@help=\toks18
-\row@=\count103
-\column@=\count104
-\maxfields@=\count105
-\andhelp@=\toks19
-\eqnshift@=\dimen105
-\alignsep@=\dimen106
-\tagshift@=\dimen107
-\tagwidth@=\dimen108
-\totwidth@=\dimen109
-\lineht@=\dimen110
-\@envbody=\toks20
-\multlinegap=\skip45
-\multlinetaggap=\skip46
-\mathdisplay@stack=\toks21
-LaTeX Info: Redefining \[ on input line 2666.
-LaTeX Info: Redefining \] on input line 2667.
-)
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip11
+\Urlmuskip=\muskip10
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip47
-\bibsep=\skip48
+\bibhang=\skip44
+\bibsep=\skip45
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count106
+\c@NAT@ctr=\count94
 )
 Class revtex4-1 Info: Repairing natbib's \BibitemShut on input line 7549.
 
 (/usr/share/texlive/texmf-dist/tex/latex/revtex/revsymb4-1.sty
 Package: revsymb4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ f
 or documentation)
-LaTeX Info: Redefining \frak on input line 95.
-LaTeX Info: Redefining \Bbb on input line 111.
 LaTeX Info: Redefining \REV@mathfrak on input line 119.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks22
-\inpenc@posthook=\toks23
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
@@ -408,14 +333,86 @@ Package: acronym 2010/09/08 v1.36 Support for acronyms (Tobias Oetiker)
 (/usr/share/texlive/texmf-dist/tex/latex/bigfoot/suffix.sty
 Package: suffix 2006/07/15 1.5 Variant command support
 )
-\AC@clearlist=\toks24
+\AC@clearlist=\toks18
 )
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip46
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks19
+\ex@=\dimen102
+)
+LaTeX Info: Redefining \text on input line 53.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen103
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count95
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count96
+\leftroot@=\count97
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count98
+\DOTSCASE@=\count99
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box41
+\strutbox@=\box42
+\big@size=\dimen104
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count100
+\c@MaxMatrixCols=\count101
+\dotsspace@=\muskip11
+\c@parentequation=\count102
+\dspbrk@lvl=\count103
+\tag@help=\toks20
+\row@=\count104
+\column@=\count105
+\maxfields@=\count106
+\andhelp@=\toks21
+\eqnshift@=\dimen105
+\alignsep@=\dimen106
+\tagshift@=\dimen107
+\tagwidth@=\dimen108
+\totwidth@=\dimen109
+\lineht@=\dimen110
+\@envbody=\toks22
+\multlinegap=\skip47
+\multlinetaggap=\skip48
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+LaTeX Info: Redefining \frak on input line 99.
+LaTeX Info: Redefining \Bbb on input line 101.
+))
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
-\KV@toks@=\toks25
+\KV@toks@=\toks24
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
@@ -641,7 +638,7 @@ Package: siunitx 2012/05/03 v2.5c A comprehensive (SI) units package
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen148
 \extrarowheight=\dimen149
-\NC@list=\toks26
+\NC@list=\toks25
 \extratabsurround=\skip55
 \backup@length=\skip56
 )
@@ -956,69 +953,41 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 30.
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
 \c_siunitx_mathtt_int=\count200
+ [1]
 Package acronym Info: Label `acro:CT' newly defined as it shall be overridden
-although it is yet undefined on input line 81.
-
-
-Package acronym Warning: Acronym `CT' is not defined on input line 81.
-
-
-Package acronym Warning: Acronym `CT' is not defined on input line 81.
-
+although it is yet undefined on input line 83.
 Package acronym Info: Label `acro:CNR' newly defined as it shall be overridden
-although it is yet undefined on input line 111.
+although it is yet undefined on input line 113.
+ [2]
 
-Package acronym Warning: Acronym `CNR' is not defined on input line 111.
+Package natbib Warning: Citation `Ruiz2013' on page 3 undefined on input line 1
+39.
 
-
-Package acronym Warning: Acronym `CNR' is not defined on input line 111.
-
-
-Package acronym Warning: Acronym `CT' is not defined on input line 144.
-
-[1]
 File: figures/figure1.eps Graphic file (type eps)
- <figures/figure1.eps>
+<figures/figure1.eps> [3]
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 218.
 
-Package acronym Warning: Acronym `CT' is not defined on input line 213.
-
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 219.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 File: figures/grating_mask.eps Graphic file (type eps)
 
-<figures/grating_mask.eps>
+<figures/grating_mask.eps> [4] [5]
 File: figures/img_chip_dabs.eps Graphic file (type eps)
- <figures/img_chip_dabs.eps> [2]
+ <figures/img_chip_dabs.eps> [6] [7]
+(./hedpc_natphys.bbl [8])
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 293.
+Package natbib Warning: There were undefined citations.
 
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 293.
-
-
-Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
-
-[3] (./hedpc_natphys.bbl
-Underfull \hbox (badness 2662) in paragraph at lines 187--194
- []\OT1/cmr/m/n/8 P. Cloetens, R. Bar-rett, J. Baruchel, J. Guigay,  and
- []
-
-) [4] (./hedpc_natphys.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
-
-
- ) 
+[9] (./hedpc_natphys.aux) ) 
 Here is how much of TeX's memory you used:
- 12068 strings out of 493486
- 237424 string characters out of 3143549
- 263395 words of memory out of 3000000
- 15200 multiletter control sequences out of 15000+200000
- 19323 words of font info for 74 fonts, out of 3000000 for 9000
+ 12085 strings out of 493486
+ 237525 string characters out of 3143549
+ 242388 words of memory out of 3000000
+ 15226 multiletter control sequences out of 15000+200000
+ 20745 words of font info for 80 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 34i,13n,32p,591b,765s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 32i,13n,32p,591b,772s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on hedpc_natphys.dvi (4 pages, 29280 bytes).
+Output written on hedpc_natphys.dvi (9 pages, 27792 bytes).

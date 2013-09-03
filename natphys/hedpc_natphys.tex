@@ -4,10 +4,10 @@
 % for double-spaced preprint
 %\documentclass[aps,prl,floatfix,twocolumn,10pt]{revtex4-1}
 %for review and submission
-%\documentclass[aps,prl,preprint]{revtex4-1} 
+\documentclass[aps,prl,preprint]{revtex4-1} 
 % for double-spaced preprint
 %\documentclass[aip,apl,amsmath,amssymb,floatfix,preprint,a4paper]{revtex4-1}
-\documentclass[aip,apl,amsmath,amssymb,floatfix,reprint,a4paper]{revtex4-1}
+%\documentclass[aip,apl,amsmath,amssymb,floatfix,reprint,a4paper]{revtex4-1}
 
 %% Packages
 \usepackage[utf8]{inputenc} %Umlaute
@@ -64,7 +64,9 @@
     current limits of achievable grating aspect ratios, which has been a key
     issue for a long time. The curvature of the gratings solves the
     intrinsic reduction of the field of view which occurs for gratings with
-    such high aspect ratios. Using an imaging arrangement based on a
+    such high aspect ratios and allows for a very compact setup, with a
+    distance of \SI{31}{\centi\metre} between the source grating and the
+    analyzer grating. Using an imaging arrangement based on a
     conventional X-ray tube, phase and dark-field contrast imaging at
     $\SI{100}{\kilo\electronvolt}$ is demonstrated. This achievement paves
     the road for the transfer of phase-contrast imaging into fields where
@@ -132,12 +134,10 @@ spatial coherence such as conventional low-brilliance X-ray tubes have been
 demonstrated with Talbot-Lau interferometry \cite{Pfeiffer2006} and coded
 apertures \cite{Munro2012}.
 
-Phase-contrast imaging has so far been used in the energy
-range from $15$ up to $\SI{85}{\kilo\electronvolt}$. Talbot
-interferometry has been demonstrated using a synchrotron source at
-$\SI{82}{\kilo\electronvolt}$ \cite{Willner2013}. Also using a synchrotron
-source, phase-contrast imaging at $\SI{85}{\kilo\electronvolt}$ has been
-reported. Using a low-brilliance X-ray tube, Talbot-Lau interferometry was
+Talbot interferometry has been demonstrated using a synchrotron source at
+$\SI{82}{\kilo\electronvolt}$ \cite{Willner2013} and
+$\SI{123}{\kilo\electronvolt}$\cite{Ruiz2013}.
+Using a low-brilliance X-ray tube, Talbot-Lau interferometry was
 applied at $\SI{60}{\kilo\electronvolt}$ mean energy \cite{Donath2009}.
 Medical imaging applications may benefit from phase contrast at higher
 energies: chest or abdominal
@@ -151,8 +151,7 @@ compatible with the entire diagnostic energy range of X-rays. Moreover, the
 method is fully compatible with compact imaging arrangements based on
 conventional X-ray tubes. The method is based on Talbot-Lau interferometry
 \cite{Pfeiffer2006} and employs an edge-on approach for the grating design and
-arrangement. Up to now, Talbot-Lau interferometry has been applied with a
-maximum design energy of $\SI{60}{\kilo\electronvolt}$ \cite{Donath2009}.
+arrangement. 
 The challenge which limited the progress towards higher energies was mainly
 related to the manufacturing of gratings with high aspect ratios. The aspect
 ratio, given by
@@ -185,7 +184,7 @@ effective structure height of the grating is then determined by the grating
 dimension along the grating lines, which essentially allows arbitrarily high
 aspect ratios. 
 \begin{figure}[ht]
-    \includegraphics[width=\linewidth]{figures/figure1.eps}
+    \includegraphics[width=.5\textwidth]{figures/figure1.eps}
     \caption{Schematic of a grating
         interferometer for X-ray energies between 60 and
         \SI{150}{\kilo\electronvolt} in edge-on illumination mode. The
@@ -233,7 +232,7 @@ source grating splits the relatively large focal spot ($\sim
 incoherent sources \cite{Pfeiffer2006}. It is also made of gold structures
 with a structure length of $h_0 = h_2 = \SI{800}{\micro \metre}$.
 \begin{figure} [ht]
-    \includegraphics[width=\linewidth]{figures/grating_mask.eps}
+    \includegraphics[width=.5\textwidth]{figures/grating_mask.eps}
     \caption{Grating design mask for
         the edge-on illumination approach. (a) Top part of the 4 inch wafer,
         showing five grating chips; one source grating, two beam splitter
@@ -277,17 +276,17 @@ on the chip. The images were acquired in scanning mode, using a step size of
 $\SI{100}{\micro \metre}$ along the $y$ axis. For a better comparison of the
 magnified phase and attenuation images, the attenuation image has been
 replaced with the differential attenuation image, which was obtained by
-digital differentiation. In the attenuation image, the soldering points of
-the integrated circuit are hardly visible underneath the resistors, while in
+digital differentiation. In the attenuation image, the contrast of the soldering points of
+the integrated circuit is reduced underneath the resistors, while in
 the phase image, they can clearly be identified. This shows the
-benefit of the differential nature of the phase-contrast image, which may be
-useful to identify flaws in multi-layered structures such as electronic
+benefit of the phase nature of the image, which may be
+useful to identify flaws in multilayered structures such as electronic
 chips.
 \begin{figure}[ht]
-    \includegraphics[width=\linewidth]{figures/img_chip_dabs.eps}
+    \includegraphics[width=.5\textwidth]{figures/img_chip_dabs.eps}
     \caption{Radiographic scan of an electronic chip. The image was acquired
         with 24 phase steps and an exposure time of \SI{15}{\second} per
-    step.}
+    step. The top right image shows the differential absorption image.}
     \label{Fig:img_chip}
 \end{figure}
 
@@ -325,14 +324,19 @@ is $\SI{80}{\micro \metre}$. The widths of the collimating slits are
 $\SI{25}{\micro \metre}$ and $\SI{100}{\micro \metre}$, respectively.
 
 In Fig.~\ref{Fig:img_chip}, image acquisition involved 24 phase steps
-\cite{Weitkamp2005} and an exposure time of 15 seconds per step.
+\cite{Weitkamp2005} and an exposure time of 15 seconds per step. The long
+exposure times are mostly constrained by the low average visibility of the
+gratings (\SI{5}{\percent}). As the quality in the manufacturing of the
+structure increases, the exposure time can become substantially shorter.
+
 
 \section*{Acknowledgements} We thank Gordan Mikuljan from Paul Scherrer
 Institute, Switzerland, for his work on the mechanical design, Joachim
-Schulz and Marco Walter from Micro Works GmbH, Germany, for the competent
+Schulz and Marco Walter from Microworks GmbH, Germany, for the competent
 support on grating design issues, Christian Kottler and Vincent Revol from
 Centre Suisse d'Electronique et de Microtechnique (CSEM), Switzerland for
 the fruitful discussions on the design of the system.
+Part of this work has been supported by the ERC Grant ERC-2012-StG 310005-PhaseX.
 
 \bibliographystyle{apsrev4-1} \bibliography{library}
 
