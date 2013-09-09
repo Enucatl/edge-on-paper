@@ -64,7 +64,7 @@
     implementation of a Talbot-Lau interferometer operated at
     $\SI{100}{\kilo\electronvolt}$ using a conventional X-ray tube and a
     compact geometry, with a total length of $\SI{54}{\centi\metre}$. We
-    suggest edge-on illumination of the gratings to overcome their current
+    present edge-on illumination of the gratings to overcome their current
     fabrication limits as well as curved structures, to match beam
     divergence and allow large field of views on a short and efficient
     setup.
@@ -91,10 +91,10 @@ The imaginary part $\beta(\mathbf{r},\lambda)$ is related to the
 attenuation per unit length (attenuation coefficient) by $\mu = 4 \pi
 \beta(\mathbf{r},\lambda) / \lambda$ and the total attenuation by an object
 of thickness $d$ can be described by the line integral $L_\mu = \int_0^d
-\mu(\mathbf{r},\lambda) \d l$. Similarly, the real part
+\mu(\mathbf{r},\lambda) \d{} \mathbf{r}$. Similarly, the real part
 $\delta(\mathbf{r},\lambda)$ determines the phase shift per unit length by
 $\phi = 2 \pi \delta / \lambda$ and the total phase shift is $L_\phi =
-\int_0^d \phi(\mathbf{r}) \d l$.
+\int_0^d \phi(\mathbf{r}) \d{} \mathbf{r}$.
 
 While the attenuation line integral $L_\mu$ can be directly measured with an
 X-ray detector by measuring the reduction of the beam intensity $I$ ($L_\mu
@@ -124,9 +124,12 @@ Phase-contrast imaging using X-ray beams of low temporal \emph{and}
 spatial coherence such as conventional low-brilliance X-ray tubes have been
 demonstrated with Talbot-Lau interferometry \cite{Pfeiffer2006} and coded
 apertures \cite{Munro2012}.
+In addition to phase sensitivity, these techniques provide a dark-field
+contrast, also called scatter contrast or visibility-reduction contrast,
+that is proportional to the scatter strength of details in the sample\cite{Pfeiffer2008}.
 
 Talbot interferometry has been demonstrated using a synchrotron source at
-$\SI{82}{\kilo\electronvolt}$ \cite{Willner2013} and
+$\SI{82}{\kilo\electronvolt}$\cite{Willner2013} and
 $\SI{123}{\kilo\electronvolt}$\cite{Ruiz2013}.
 Using a low-brilliance X-ray tube, Talbot-Lau interferometry was
 applied at $\SI{60}{\kilo\electronvolt}$ mean energy \cite{Donath2009}.
@@ -160,7 +163,7 @@ for the absorption grating of around $\textnormal{AR}=30$ is necessary for a
 reasonable length of the experimental arrangement, it would have to be at
 least $128$ for $E=\SI{100}{\kilo\electronvolt}$. Moreover, when using a
 broad spectrum, photons above the design energy should also be
-efficiently attenuated by the gratings, which requires even higher aspect ratios.
+efficiently blocked by the gratings, which requires even higher aspect ratios.
 Maximum achievable aspect ratios of current grating fabrication techniques
 \cite{David2007,Kenntner2010} are approximately around 60,
 larger values are often not achievable or come at the expense of a very poor
@@ -237,8 +240,8 @@ with a structure length of $h_0 = h_2 = \SI{800}{\micro \metre}$.
 
 Due to the high spectral acceptance \cite{Weitkamp2005,Thuering2013c} of the
 interferometer ($\SI{50}{\kilo\electronvolt}$ to
-$>\SI{160}{\kilo\electronvolt}$) and the high attenuation efficiencies of
-the source- and analyzer gratings ($>90\%$ up to
+more than $\SI{160}{\kilo\electronvolt}$) and the high attenuation efficiencies of
+the source and analyzer gratings ($>90\%$ up to
 $\SI{160}{\kilo\electronvolt}$), the voltage of the X-ray source was set to
 the maximum of $\SI{160}{\kilo\volt}$. With a grating structure height of
 approx. $\SI{100}{\micro \metre}$, the field of view in the vertical
@@ -276,7 +279,7 @@ chips.
 \begin{figure}[ht]
     \includegraphics[width=.5\textwidth]{figures/img_chip_dabs.eps}
     \caption{Radiographic scan of an electronic chip. The image was acquired
-        with 24 phase steps and an exposure time of \SI{15}{\second} per
+        with 24 phase steps per line and an exposure time of \SI{15}{\second} per
     step. The top right image shows the differential absorption image.}
     \label{Fig:img_chip}
 \end{figure}
@@ -292,17 +295,14 @@ imaging modalities (e.g., with neutrons \cite{Grunzweig2008}) where high
 aspect ratios are required.
 
 \section*{Methods}
-Edge-on illuminated gratings were manufactured by Micro
-Works GmbH, Germany, using a LIGA process \cite{Kenntner2010}. Each grating
+Edge-on illuminated gratings were manufactured by Microworks GmbH, Germany, using a LIGA process \cite{Kenntner2010}. Each grating
 resides on a $5 \times \SI{60}{\milli\metre^2}$ silicon chip and several
 grating chips are fabricated on a single 4 inch silicon wafer. The
 experimental arrangement for a design energy at \SI{100}{\kilo\electronvolt}
 is a symmetric Talbot-Lau interferometer with a grating period of $p =
 \SI{2.8}{\micro \metre}$ for all gratings. The distance from the source
 grating to the analyzer grating is $\SI{32}{\centi\metre}$ and the source
-grating is positioned $\SI{23}{\centi\metre}$ away from the source. The
-number of phase steps for one projection was 24 \cite{Weitkamp2005} and the
-exposure time for the images was 15 seconds per phase step.
+grating is positioned $\SI{23}{\centi\metre}$ away from the source.
 
 The X-ray source is a COMET MXR-160HP/11 X-ray tube with a maximum output
 voltage of $\SI{160}{\kilo\volt}$. In the experiment, it was set to the
@@ -312,13 +312,13 @@ Instruments. A cesium iodide (CsI:Ti) scintillator of $\SI{600}{\micro
 \metre}$ thickness converts the X-rays to visible light and is coupled with
 an optical lens projecting the image onto the CCD. The effective pixel size
 is $\SI{80}{\micro \metre}$. The widths of the collimating slits are
-$\SI{25}{\micro \metre}$ and $\SI{100}{\micro \metre}$, respectively.
+$\SI{25}{\micro \metre}$ and $\SI{100}{\micro\metre}$, respectively.
 
-In Fig.~\ref{Fig:img_chip}, image acquisition involved 24 phase steps
-\cite{Weitkamp2005} and an exposure time of 15 seconds per step. The long
+In Fig.~\ref{Fig:img_chip}, image acquisition involved 24 phase steps per
+line \cite{Weitkamp2005} and an exposure time of 15 seconds per step. The long
 exposure times are mostly constrained by the low average visibility of the
-gratings (\SI{5}{\percent}). As the quality in the manufacturing of the
-structure increases, the exposure time can become substantially shorter.
+gratings (\SI{5}{\percent}). The exposure time can be shortened with better
+gratings and an efficient detector.
 
 
 \section*{Acknowledgements} We thank Gordan Mikuljan from Paul Scherrer
@@ -330,6 +330,7 @@ the fruitful discussions on the design of the system.
 Part of this work has been supported by the ERC Grant ERC-2012-StG 310005-PhaseX.
 
 \bibliographystyle{apsrev4-1}
+ %\bibliography{library}
 
 %merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
 %Control: key (0)
@@ -339,7 +340,7 @@ Part of this work has been supported by the ERC Grant ERC-2012-StG 310005-PhaseX
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{25}%
+\begin{thebibliography}{26}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -580,6 +581,22 @@ Part of this work has been supported by the ERC Grant ERC-2012-StG 310005-PhaseX
   {\doibase 10.1073/pnas.1205396109} {\bibfield  {journal} {\bibinfo  {journal}
   {Proceedings of the National Academy of Sciences}\ }\textbf {\bibinfo
   {volume} {2012}},\ \bibinfo {pages} {2} (\bibinfo {year} {2012})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Pfeiffer}\ \emph {et~al.}(2008)\citenamefont
+  {Pfeiffer}, \citenamefont {Bech}, \citenamefont {Bunk}, \citenamefont
+  {Kraft}, \citenamefont {Eikenberry}, \citenamefont {Br\"{o}nnimann},
+  \citenamefont {Gr\"{u}nzweig},\ and\ \citenamefont {David}}]{Pfeiffer2008}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Pfeiffer}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Bech}},
+  \bibinfo {author} {\bibfnamefont {O.}~\bibnamefont {Bunk}}, \bibinfo {author}
+  {\bibfnamefont {P.}~\bibnamefont {Kraft}}, \bibinfo {author} {\bibfnamefont
+  {E.}~\bibnamefont {Eikenberry}}, \bibinfo {author} {\bibfnamefont
+  {C.}~\bibnamefont {Br\"{o}nnimann}}, \bibinfo {author} {\bibfnamefont
+  {C.}~\bibnamefont {Gr\"{u}nzweig}}, \ and\ \bibinfo {author} {\bibfnamefont
+  {C.}~\bibnamefont {David}},\ }\href {\doibase 10.1038/nmat2096} {\bibfield
+  {journal} {\bibinfo  {journal} {Nature Materials}\ }\textbf {\bibinfo
+  {volume} {7}},\ \bibinfo {pages} {134} (\bibinfo {year} {2008})}\BibitemShut
   {NoStop}%
 \bibitem [{\citenamefont {Willner}\ \emph {et~al.}(2013)\citenamefont
   {Willner}, \citenamefont {Bech}, \citenamefont {Herzen}, \citenamefont
