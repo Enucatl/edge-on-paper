@@ -264,16 +264,10 @@ magnified phase and attenuation images, the attenuation image has been
 replaced with the differential attenuation image, which was obtained by
 digital differentiation. In the attenuation image, the contrast of the soldering points of
 the integrated circuit is reduced underneath the resistors, while in
-the phase image, they can clearly be identified. The reduced contrast of the 
-soldering points in the absorption image is due to beam hardening. The spectrum
-impinging on these soldering point is hardened by the resistors in the upper
-layer, resuluting in lower absorption contrast. Due to the weaker energy
-dependency of phase shifts ($1/E$ compared to $1/E^3$), phase-contrast images
-are less sensitive to beam hardening \cite{Chabior2011a}, which explains the
-lower contrast reduction of the soldering points underneath the resistors in the
-phase image of the chip. This result shows the benefit of the phase nature in
-high energy X-ray imaging, which may be useful to identify flaws in multilayered
-structures such as electronic chips.
+the phase image, they can clearly be identified. This shows the
+benefit of the phase nature of the image, which may be
+useful to identify flaws in multilayered structures such as electronic
+chips.
 \begin{figure}[ht]
     \includegraphics[width=.5\textwidth]{figures/img_chip_dabs.eps}
     \caption{Radiographic scan of an electronic chip. The image was acquired
@@ -332,7 +326,7 @@ supported by the Competence Centre for Materials Science and Technology
 (CCMX) of the ETH-Board, Project Nr. 61 and by the ERC Grant ERC-2012-StG 310005-PhaseX.
 
 \bibliographystyle{apsrev4-1}
-%\bibliography{library}
+ %\bibliography{library}
 
 %merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
 %Control: key (0)
@@ -732,21 +726,6 @@ supported by the Competence Centre for Materials Science and Technology
   10.1063/1.4805073} {\bibfield  {journal} {\bibinfo  {journal} {Applied
   Physics Letters}\ }\textbf {\bibinfo {volume} {102}},\ \bibinfo {pages}
   {191113} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Chabior}\ \emph {et~al.}(2011)\citenamefont
-  {Chabior}, \citenamefont {Donath}, \citenamefont {David}, \citenamefont
-  {Bunk}, \citenamefont {Schuster}, \citenamefont {Schroer},\ and\
-  \citenamefont {Pfeiffer}}]{Chabior2011a}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Chabior}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Donath}},
-  \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {David}}, \bibinfo
-  {author} {\bibfnamefont {O.}~\bibnamefont {Bunk}}, \bibinfo {author}
-  {\bibfnamefont {M.}~\bibnamefont {Schuster}}, \bibinfo {author}
-  {\bibfnamefont {C.}~\bibnamefont {Schroer}}, \ and\ \bibinfo {author}
-  {\bibfnamefont {F.}~\bibnamefont {Pfeiffer}},\ }\href {\doibase
-  10.1118/1.3553408} {\bibfield  {journal} {\bibinfo  {journal} {Medical
-  Physics}\ }\textbf {\bibinfo {volume} {38}},\ \bibinfo {pages} {1189}
-  (\bibinfo {year} {2011})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Gr\"{u}nzweig}\ \emph {et~al.}(2008)\citenamefont
   {Gr\"{u}nzweig}, \citenamefont {Pfeiffer}, \citenamefont {Bunk},
   \citenamefont {Donath}, \citenamefont {K\"{u}hne}, \citenamefont {Frei},
