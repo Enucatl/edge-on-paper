@@ -28,11 +28,13 @@
 \acrodef{CT}{computed tomography}
 \acrodef{SNR}{signal-to-noise ratio}
 \acrodef{CNR}{contrast-to-noise ratio}
+\acrodef{SEM}{scanning electron microscope}
 %% ----------------------------------------------------------------------------------------------------------------
 
 \begin{document}
 
-\title{X-ray phase-contrast imaging at \SI{100}{\kilo\electronvolt}}
+\title{X-ray phase-contrast imaging at \SI{100}{\kilo\electronvolt} on
+table top sources}
 
 \author{T.~Thüring}
 \affiliation{Paul Scherrer Institute, Villigen PSI, Switzerland}
@@ -86,44 +88,43 @@ shift. The interaction contributing to phase shifts is coherent (Rayleigh)
 scattering \cite{Als-Nielsen2011}.
 
 The attenuation and phase shift properties are described by the complex index of refraction
-$n=1-\delta(\mathbf{r},\lambda) + i \beta(\mathbf{r},\lambda)$.
-The imaginary part $\beta(\mathbf{r},\lambda)$ is related to the
-attenuation per unit length (attenuation coefficient) by $\mu = 4 \pi
-\beta(\mathbf{r},\lambda) / \lambda$ and the total attenuation by an object
-of thickness $d$ can be described by the line integral $L_\mu = \int_0^d
-\mu(\mathbf{r},\lambda) \d{} \mathbf{r}$. Similarly, the real part
-$\delta(\mathbf{r},\lambda)$ determines the phase shift per unit length by
-$\phi = 2 \pi \delta / \lambda$ and the total phase shift is $L_\phi =
-\int_0^d \phi(\mathbf{r}) \d{} \mathbf{r}$.
+$n=1-\delta + i \beta$.
+The imaginary part $\beta$ is related to the
+attenuation coefficient by $\mu = 4 \pi
+\beta(\lambda) / \lambda$, while the real part
+$\delta(\lambda)$ determines the phase shift 
+$\phi = 2 \pi \delta(\lambda) / \lambda$
 
-While the attenuation line integral $L_\mu$ can be directly measured with an
-X-ray detector by measuring the reduction of the beam intensity $I$ ($L_\mu
-\propto \log(I)$), the measurement of the phase shift integral $L_\phi$ is
-more challenging as there is no such simple relation. However, phase-sensitive
-imaging is a desirable modality, as it can provide an enhanced
+While the attenuation can be measured with an
+X-ray detector as the reduction of the beam intensity, the phase
+is not directly observable. Therefore, an optical system is needed to
+convert the phase shift into intensity modulations.
+
+Phase-sensitive
+imaging is a desirable modality, as it can provide a complementary source of
+contrast with respect to absorption by providing direct access 
+to the electron density \cite{Als-Nielsen2011}. Moreover, the combination with
+attenuation enables the determination of the effective atomic
+number \cite{Qi2010}.
+An enhanced
 \ac{CNR} in images compared to attenuation for certain
-materials or in different tissues \cite{Pfeiffer2007a,McDonald2009}.
-Furthermore, the refractive index decrement $\delta$ provides direct access
-to the electron density \cite{Als-Nielsen2011} and in combination with
-attenuation, it further enables the determination of the effective atomic
-number of a material \cite{Qi2010}.
+materials or tissues \cite{Pfeiffer2007a,McDonald2009} has also been
+demonstrated.
 
-In the past, a lot of effort has been invested into the development of
-techniques which are sensitive to the phase shift. Since most of the
-available phase contrast techniques rely on interference and thus typically
-on optical hardware (e.g. crystals, gratings), they vary a lot in terms of
-sensitivity, practical applicability or achievable resolution. The vast
-majority of the methods, including crystal analyzer based
+The vast majority of phase-sensitive techniques, including crystal analyzer based
 \cite{Davis1995,Chapman1997} or interferometric \cite{Bonse1965,Momose1996}
 methods rely on X-ray beams of high spatial and temporal coherence, which is
-available only at synchrotron sources. Techniques which are compatible with
-an X-ray beam of low temporal coherence (broad bandwidth) are the inline
-phase contrast method \cite{Snigirev1995,Wilkins1996,Cloetens1996} and
-Talbot interferometry \cite{Cloetens1997,David2002,Momose2003a}.
+available only at synchrotron sources. Inline
+phase contrast \cite{Snigirev1995,Wilkins1996,Cloetens1996} and
+Talbot interferometry \cite{Cloetens1997,David2002,Momose2003a} need high
+spatial coherence but are available on microfocus sources.
 Phase-contrast imaging using X-ray beams of low temporal \emph{and}
 spatial coherence such as conventional low-brilliance X-ray tubes have been
-demonstrated with Talbot-Lau interferometry \cite{Pfeiffer2006} and coded
-apertures \cite{Munro2012}.
+demonstrated with coded
+apertures \cite{Munro2012} and Talbot-Lau interferometry \cite{Pfeiffer2006}.
+
+WHAT IS TLINTERFEROMETER
+
 In addition to phase sensitivity, these techniques provide a dark-field
 contrast, also called scatter contrast or visibility-reduction contrast,
 that is proportional to the integrated local small angle scattering power
@@ -142,8 +143,8 @@ security or chip failure analysis, which require high energies for the
 visualization of materials of high density and atomic number.
 
 Here, we introduce a method for phase-contrast imaging which is
-compatible with the entire diagnostic energy range of X-rays. Moreover, the
-method is fully compatible with compact imaging arrangements based on
+compatible with the entire diagnostic energy range of X-rays, 
+compact imaging arrangements and 
 conventional X-ray tubes. The method is based on Talbot-Lau interferometry
 \cite{Pfeiffer2006} and employs an edge-on approach for the grating design and
 arrangement. 
@@ -151,30 +152,28 @@ The challenge which limited the progress towards higher energies was mainly
 related to the manufacturing of gratings with high aspect ratios. The aspect
 ratio, given by
 \begin{equation}
-    \text{AR} = \frac{2h}{p},
+    \text{R} = \frac{2h}{p},
 \end{equation}
-where $p$ is the grating period and $h$ the grating structure
+where $p$ is the grating period and $h$ the  structure
 height, is normally limited by the lithographic process, as grating
-structures tend to collapse or to deform (e.g. through capillary forces) if
-the aspect ratio is too high. For a given setup distance these parameters
+structures tend to collapse or deform (e.g. due to capillary forces) if
+the aspect ratio is too high. For a given setup length these parameters
 depend on the target energy $E$ according to $p \propto
-1/\sqrt{E}$ and $h \propto E^3$, and therefore $\textnormal{AR}
-\propto E^{7/2}$\cite{Momose2003a}. If at $E=\SI{25}{\kilo\electronvolt}$ an aspect ratio
-for the absorption grating of around $\textnormal{AR}=30$ is necessary for a
+1/\sqrt{E}$ and $h \propto E^3$, and therefore $\textnormal{R}
+\propto E^{7/2}$~\cite{Momose2003a}. If at $E=\SI{25}{\kilo\electronvolt}$ an aspect ratio
+for the absorption grating around $\textnormal{R}=30$ is necessary for a
 reasonable length of the experimental arrangement, it would have to be at
 least $128$ for $E=\SI{100}{\kilo\electronvolt}$. Moreover, when using a
 broad spectrum, photons above the design energy should also be
 efficiently blocked by the gratings, which requires even higher aspect ratios.
-Maximum achievable aspect ratios of current grating fabrication techniques
-\cite{David2007,Kenntner2010} are approximately around 60,
-larger values are often not achievable or come at the expense of a very poor
-grating quality and performance.
+The maximum achievable aspect ratios of current fabrication techniques
+\cite{David2007,Kenntner2010} are around 60.
 
 Our design introduces the edge-on
 illumination of circularly aligned structures. Edge-on illumination
 (figure~\ref{Fig:schematic}), as
 opposed to face-on illumination, exploits the dimension along the grating
-lines to form a high aspect ratio of the structures in direction of the beam. The
+lines to form a high aspect ratio of the structures in the direction of the beam. The
 effective structure height of the grating is then determined by the grating
 dimension along the grating lines, which essentially allows arbitrarily high
 aspect ratios. 
@@ -192,9 +191,7 @@ aspect ratios.
 
 Increasing the aspect ratio of the gratings typically leads to a
 reduction of the field of view due to the change of the grating transmission
-function at high incident angles, which has also been identified by using a
-glancing angle of the gratings between zero and \SI{90}{\degree}
-\cite{Stutman2012a}. In order to overcome this problem, the grating lines are circularly aligned 
+function at high incident angles. In order to overcome this problem, the grating lines are circularly aligned 
 with a radius equal to the distance to the source.
 
 The combination of edge-on illumination and circularly aligned structures
@@ -217,24 +214,24 @@ gold as the phase shifting material, this requires a structure length of
 $h_1 = \SI{19.8}{\micro \metre}$. The analyzer grating is an absorption mask
 for sensing slight changes of the interference pattern generated by the beam
 splitter \cite{Momose2003a}. With a structure length of $h_2 =
-\SI{800}{\micro \metre}$, this grating has an aspect ratio of $2h/p \approx
-570$ and thus sufficiently attenuates X-rays up to energies of 
+\SI{800}{\micro \metre}$
+it can sufficiently attenuate X-rays up to energies of 
 $\SI{160}{\kilo\electronvolt}$. Beam splitter and analyzer grating are
 separated at the first fractional Talbot order \cite{Weitkamp2005},
 resulting in an intergrating distance of $\SI{158}{\milli\metre}$. The
 source grating splits the relatively large focal spot ($\sim
 \SI{1}{\milli\metre}$) into an array of individually coherent, but mutually
 incoherent sources \cite{Pfeiffer2006}. It is also made of gold structures
-with a structure length of $h_0 = h_2 = \SI{800}{\micro \metre}$.
+with a length of $h_0 = h_2 = \SI{800}{\micro \metre}$.
 \begin{figure} [ht]
     \includegraphics[width=.6\textwidth]{figures/grating_mask.eps}
     \caption{Grating design mask for
-        the edge-on illumination approach and scanning electron microscope
+        the edge-on illumination approach and \ac{SEM}
         image of the grating. The top part of the 4 inch wafer shows
         five grating chips. The
         gratings have different curvatures which are specific to the grating
         interferometer geometry. 
-        The SEM image shows the gold structures and the interrupting bridges
+        The \ac{SEM} image shows the gold structures and the interrupting bridges
         that prevent the lamellae from collapsing\cite{Kenntner2010}.}
         \label{Fig:grating_mask}
 \end{figure}
@@ -245,16 +242,14 @@ more than $\SI{160}{\kilo\electronvolt}$) and the high attenuation efficiencies 
 the source and analyzer gratings ($>90\%$ up to
 $\SI{160}{\kilo\electronvolt}$), the voltage of the X-ray source was set to
 the maximum of $\SI{160}{\kilo\volt}$. With a grating structure height of
-approx. $\SI{100}{\micro \metre}$, the field of view in the vertical
+approximately $\SI{100}{\micro \metre}$, the field of view in the vertical
 direction is limited to one detector pixel row. In the horizontal direction,
 the field of view is limited by the grating size and the geometric
 magnification of the sample, yielding a maximum field of view of
 $\SI{30}{\milli\metre}$. In addition to the standard components (source,
 camera, interferometer), two optical slits, one in front of the source
 grating, the other in front of the camera, were required for the collimation
-of the beam in the vertical direction. X-rays which are not travelling
-through all of the gratings do not contribute to the signal and are
-attenuated by the slits.
+of the beam in the vertical direction. 
 
 Fig.~\ref{Fig:img_chip} shows a radiographic scan of an electronic chip.
 Several resistors and an integrated circuits are located on different layers
@@ -287,8 +282,8 @@ phase-contrast imaging to the lower diagnostic energy range. Compact
 geometries  using conventional X-ray sources for design energies well above
 $\SI{100}{\kilo\electronvolt}$ could be realized with the approach. This
 enables the examination of materials of higher density or thickness which
-would be intransparent at lower energies. Finally, the approach is not
-limited to X-ray imaging, but could easily be applied to other grating-based
+would be opaque at lower energies. Finally, the approach is not
+limited to X-ray imaging, but could be easily applied to other grating-based
 imaging modalities (e.g., with neutrons \cite{Grunzweig2008}) where high
 aspect ratios are required.
 
