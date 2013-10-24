@@ -19,9 +19,5 @@ point_by_point_response.pdf: point_by_point_response.tex
 	pdflatex $^
 	pdflatex $^
 
-appeal_letter.pdf: appeal_letter.tex
-	pdflatex $^
-	pdflatex $^
-
 clean:
 	-rm *.aux *.bbl *.blg *.dvi *.log *.ps *.backup
