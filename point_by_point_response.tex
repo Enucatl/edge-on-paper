@@ -2,7 +2,13 @@
 %     Created: Wed Oct 23 05:00 PM 2013 C
 % Last Change: Wed Oct 23 05:00 PM 2013 C
 %
-\documentclass[a4paper]{scrartcl}
+\documentclass[a4paper,english]{scrartcl}
+\usepackage[detect-all]{siunitx}
+\usepackage{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} %Umlaute
+
+\DeclareSIUnit{\voltpeak}{Vp}
 
 \title{Point-by-point response to the reviewers}
 \date{}
@@ -10,18 +16,28 @@
 \maketitle
 
 \section*{Reviewer \#1}
-We would like to provide more information on our experiments, as recommended
-by the first reviewer.
 \begin{quote}
-    I could not find a significant advance in this work. X-ray Talbot-Lau interferometers with high-energy x-rays have been already reported (Ref. 18-20, 23, D. Stutman et al., Appl. Opt. 49 (2010) 4677 etc.). The authors mention that the edge-on- illuminated grating interferometry breaks the current limitations of x-ray phase-contrast imaging, but I don't think that there is clear evidence showing that the authors' method is much more promising than the methods reported in the previous papers. If the authors want to show that the edge-on-illumination method is by far the most promising for high-energy and large-field-of-view x-ray phase imaging, I think that the authors have to quantitatively compare the method with those previously reported in terms of the total exposure time, spatial resolution, signal-to-noise ratio, and so on, and show that the authors' method is much better than the others.
+    I could not find a significant advance in this work. X-ray Talbot-Lau
+    interferometers with high-energy x-rays have been already reported (Ref.
+    18-20, 23, D. Stutman et al., Appl. Opt. 49 (2010) 4677 etc.). The
+    authors mention that the edge-on- illuminated grating interferometry
+    breaks the current limitations of x-ray phase-contrast imaging, but I
+    don't think that there is clear evidence showing that the authors'
+    method is much more promising than the methods reported in the previous
+    papers. If the authors want to show that the edge-on-illumination method
+    is by far the most promising for high-energy and large-field-of-view
+    x-ray phase imaging, I think that the authors have to quantitatively
+    compare the method with those previously reported in terms of the total
+    exposure time, spatial resolution, signal-to-noise ratio, and so on, and
+    show that the authors' method is much better than the others.
 \end{quote}
 We think that the experiments presented in the current manuscript show
 indeed significant progress with respect to the cited references.
 The method presented by Stutman et al. has a fundamental limitation that
 prevents it from achieving curved structures and large aspect ratios.
 Moreover, those experiments were performed on a source
-with~\SI{60}{\kilo\volt\peak}, which is significantly lower than
-the~\SI{160}{\kilo\volt\peak} of our source and the~\SI{100}{\kilo\eV} used
+with~\SI{60}{\kilo\voltpeak}, which is significantly lower than
+the~\SI{160}{\kilo\voltpeak} of our source and the~\SI{100}{\kilo\eV} used
 as the design energy for our interferometer.
 
 The other works also present results in a much lower energy range or very
@@ -29,14 +45,17 @@ different conditions, thus preventing a meaningful comparison.
 Reference~23 reported images taken at \num{30} and~\SI{60}{\kilo\eV},
 reference~20 also has a design energy of~\SI{47.9}{\kilo\eV}. Finally,
 references~18 and~19 present Talbot interferometry at~\num{82}
-and~\SI{123}{\kilo\eV} respectively, but only the first result was published
-in a peer reviewed journal, and both experiments were performed at the ESRF
+and~\SI{123}{\kilo\eV} respectively, but only the first result is published
+on a peer reviewed journal, and both experiments were performed at the ESRF
 synchrotron, with a monochromatic and coherent beam that is incomparable to
 a conventional tube.
 
 \begin{quote}
     Furthermore, the authors mention that the results in Fig. 3 show the benefit of the phase nature of the image, but I think that the authors should provide a more detailed explanation about the contrasts in the images because the contrast of soldering points underneath the resistors should not be reduced in the differential attenuation image for monochromatic x-rays. The authors should explain quantitatively why the contrast is reduced. Otherwise, the authors' assertion is suspicious.
 \end{quote}
+A paragraph was added to discuss the different beam hardening behaviour of
+the absorption and differential phase image to address the reviewer's
+concerns.
 
 \section*{Reviewer \#2}
 \begin{quote}
@@ -47,13 +66,15 @@ There is no fundamental limitation on the horizontal field of view in our
 approach. On the contrary, our solution actually solves precisely this
 issue, by easily matching the spherical wave front with the curved
 structures. Any limitation to horizontal the field of view given by large glancing
-angles is therefore removed.
+angles is therefore removed. The gratings could already be fabricated on
+larger wafers with the existing technology.
 
 The limitations in the vertical field of view do not come at the expense of
 an increased dose with our proposed scanning solution. Larger areas could in
 principle be scanned with short exposure times by stacking an array of
-edge-illuminated gratings. This is already offered in some commercial X-ray
-diagnostic devices such as the Philips MicroDose mammography system.
+edge-illuminated gratings. This scanning technique is already offered in commercial X-ray
+diagnostic devices, such as the Philips MicroDose mammography system, to
+reduce scattering.
 
 \begin{quote}
     Moreover, in the methods section the authors talk of a
@@ -69,8 +90,8 @@ source, unpublished results) should also be taken into account here.
 Finally, the novelty of the result is diminished by previous demonstrations that high energies in phase-contrast x-ray imaging could be reached by other methods (e.g. Ignatyev et al JAP 110 (2011) 014906), albeit in that case image quality seems to be lower.     
 \end{quote}
 In the paper from Ignatyev et al., an admittedly lower image quality was
-achieved again in a lower energy range, from~\num{60}
-to~\SI{100}{\kilo\volt\peak}. Thus, we would like to claim that our results
+achieved again with softer X-rays, from~\num{60}
+to~\SI{100}{\kilo\voltpeak}. Thus, we claim that our results
 are a significantly more promising than the technique described therein.
 
 \section*{Reviewer \#3}
@@ -82,7 +103,7 @@ are a significantly more promising than the technique described therein.
     acquired in \SI{6}{\minute}.  The authors admit this situation in the last sentences of the manuscripts without giving a convincing solution to the problem.
 \end{quote}
 This is indeed an issue, as the exposure time is mostly affected by the low visibility. The manuscript
-was amended to include a more detailed discussion of how we plan to reduce
+was amended to include a more detailed discussion of our plans to reduce
 the exposure time. We briefly mention here that raising the visibility to
 \SI{15}{\percent}, a value already reached in lower energy experiments,
 would immediately cut the exposure by \num{9} times.
@@ -96,7 +117,8 @@ would immediately cut the exposure by \num{9} times.
     clear indications how the exposure times in x-ray tube based ABI can be
     reduced by an order of magnitude or more. On the other hand, the upper
     limit of photon energy is that of the tungsten Kalpha line,
-    \SI{60}{\kilo\eV}. For references, see Nesch et al.(2009), Rev. Sci. Instrum. 80, 093702, and Parham et al.(2009), Acad.Radiol. 16, 911-917.
+    \SI{60}{\kilo\eV}. For references, see Nesch et al.(2009), Rev. Sci.
+    Instrum. 80, 093702, and Parham et al.(2009), Acad.Radiol. 16, 911-917.
 \end{quote}
 We now included references to these papers, but we point out that our
 experiments do not have any intrinsical limit to the photon energy.
