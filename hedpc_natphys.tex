@@ -10,6 +10,7 @@
 %\documentclass[aip,apl,amsmath,amssymb,floatfix,reprint,a4paper]{revtex4-1}
 
 %% Packages
+\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc} %Umlaute
 \usepackage{babel}
 \usepackage{acronym}
@@ -23,7 +24,7 @@
 %% New commands
 \newcommand{\msub}[1]{\ensuremath{\textnormal{\begin{tiny}#1\end{tiny}}}}
 \renewcommand{\d}[1]{\ensuremath{\operatorname{d}\!{#1}}}
-\DeclareSIUnit{\peak}{p}
+\DeclareSIUnit{\voltpeak}{Vp}
 
 %acronyms
 \acrodef{CT}{computed tomography}
@@ -86,7 +87,7 @@ or tissue types. The dominant physical effects contributing to attenuation
 are the photoelectric effect and incoherent (Compton) scattering. Besides attenuation, the wave
 nature of X-rays reveals another contrast mechanism, which is the phase
 shift. The interaction contributing to phase shifts is coherent (Rayleigh)
-scattering \cite{Als-Nielsen2011}.
+scattering~\cite{Als-Nielsen2011}.
 
 The attenuation and phase shift properties are described by the complex index of refraction
 $n=1-\delta + i \beta$.
@@ -104,47 +105,50 @@ convert the phase shift into intensity modulations.
 Phase-sensitive
 imaging is a desirable modality, as it can provide a complementary source of
 contrast with respect to absorption by providing direct access 
-to the electron density \cite{Als-Nielsen2011}. Moreover, the combination with
+to the electron density~\cite{Als-Nielsen2011}. Moreover, the combination with
 attenuation enables the determination of the effective atomic
-number \cite{Qi2010}.
+number~\cite{Qi2010}.
 An enhanced
 \ac{CNR} in images compared to attenuation for certain
-materials or tissues \cite{Pfeiffer2007a,McDonald2009} has also been
+materials or tissues~\cite{Pfeiffer2007a,McDonald2009} has also been
 demonstrated.
 
-The vast majority of phase-sensitive techniques, including crystal analyzer based
-\cite{Davis1995,Chapman1997} or interferometric \cite{Bonse1965,Momose1996}
+The vast majority of phase-sensitive techniques, including crystal analyzer
+based~\cite{Davis1995,Chapman1997} or interferometric~\cite{Bonse1965,Momose1996}
 methods rely on X-ray beams of high spatial and temporal coherence, which is
 available only at synchrotron sources. Inline
-phase contrast \cite{Snigirev1995,Wilkins1996,Cloetens1996} and
-Talbot interferometry \cite{Cloetens1997,David2002,Momose2003a} need high
+phase contrast~\cite{Snigirev1995,Wilkins1996,Cloetens1996} and
+Talbot interferometry~\cite{Cloetens1997,David2002,Momose2003a} need high
 spatial coherence but are available on microfocus sources.
 Phase-contrast imaging using X-ray beams of low temporal \emph{and}
 spatial coherence such as conventional low-brilliance X-ray tubes have been
 demonstrated with coded
-apertures \cite{Munro2012} and Talbot-Lau interferometry \cite{Pfeiffer2006}.
+apertures~\cite{Munro2012} and Talbot-Lau
+interferometry~\cite{Pfeiffer2006}. Analyzer-based systems have been
+recently extended to tube sources~\cite{Nesch2009,Parham2009}
+but the photon energy is limited
+to the tungsten $K_\alpha$ line at~\SI{60}{\kilo\eV}.
 In addition to phase sensitivity, these techniques provide a dark-field
 contrast, also called scatter contrast or visibility-reduction contrast,
 that is proportional to the integrated local small angle scattering power
-from microscopic density fluctuations in a specimen\cite{Pfeiffer2008}.
+from microscopic density fluctuations in a specimen~\cite{Pfeiffer2008}.
 
 Talbot interferometry has been demonstrated using a synchrotron source at
-$\SI{82}{\kilo\electronvolt}$\cite{Willner2013} and
-$\SI{123}{\kilo\electronvolt}$\cite{Ruiz2013}.
+$\SI{82}{\kilo\electronvolt}$~\cite{Willner2013} and
+$\SI{123}{\kilo\electronvolt}$~\cite{Ruiz2013}.
 Using a low-brilliance X-ray tube, Talbot-Lau interferometry was
-applied at $\SI{60}{\kilo\electronvolt}$ mean energy \cite{Donath2009}.
+applied at $\SI{60}{\kilo\electronvolt}$ mean energy~\cite{Donath2009}.
 Medical imaging applications may benefit from phase contrast at higher
 energies: chest or abdominal
 radiography or \ac{CT} require energies between $100$ and
-$\SI{150}{\kilo\volt\peak}$. Other potential applications are homeland
+$\SI{150}{\kilo\voltpeak}$. Other potential applications are homeland
 security or chip failure analysis, which require high energies for the
 visualization of materials of high density and atomic number.
 
 Here, we introduce a method for phase-contrast imaging which is
 compatible with the entire diagnostic energy range of X-rays, 
 compact imaging arrangements and 
-conventional X-ray tubes. The method is based on Talbot-Lau interferometry
-\cite{Pfeiffer2006} and employs an edge-on approach for the grating design and
+conventional X-ray tubes. The method is based on Talbot-Lau interferometry~\cite{Pfeiffer2006} and employs an edge-on approach for the grating design and
 arrangement. 
 The challenge which limited the progress towards higher energies was mainly
 related to the manufacturing of gratings with high aspect ratios. The aspect
@@ -164,8 +168,7 @@ reasonable length of the experimental arrangement, it would have to be at
 least $128$ for $E=\SI{100}{\kilo\electronvolt}$. Moreover, when using a
 broad spectrum, photons above the design energy should also be
 efficiently blocked by the gratings, which requires even higher aspect ratios.
-The maximum achievable aspect ratios of current fabrication techniques
-\cite{David2007,Kenntner2010} are around 60.
+The maximum achievable aspect ratios of current fabrication techniques~\cite{David2007,Kenntner2010} are around 60.
 
 Our design introduces the edge-on
 illumination of circularly aligned structures. Edge-on illumination
@@ -207,19 +210,19 @@ silicon chip and has its specific structure length and curvature. For the
 current experiments, a symmetric interferometer with a grating period of $p
 = \SI{2.8}{\micro\metre}$ for all gratings has been used. The design energy
 is $\SI{100}{\kilo\electronvolt}$ and the beam splitter grating periodically
-shifts the phase by zero and $\pi$ at this energy \cite{David2002}. Using
-gold as the phase shifting material, this requires a structure length of
-$h_1 = \SI{19.8}{\micro \metre}$. The analyzer grating is an absorption mask
+shifts the phase by zero and $\pi$ at this energy~\cite{David2002}. Using
+gold as the phase shifting material, a structure length of
+$h_1 = \SI{19.8}{\micro \metre}$ is required. The analyzer grating is an absorption mask
 for sensing slight changes of the interference pattern generated by the beam
-splitter \cite{Momose2003a}. With a structure length of $h_2 =
+splitter~\cite{Momose2003a}. With a structure length of $h_2 =
 \SI{800}{\micro \metre}$
 it can sufficiently attenuate X-rays up to energies of 
 $\SI{160}{\kilo\electronvolt}$. Beam splitter and analyzer grating are
-separated at the first fractional Talbot order \cite{Weitkamp2005},
+separated at the first fractional Talbot order~\cite{Weitkamp2005},
 resulting in an intergrating distance of $\SI{158}{\milli\metre}$. The
 source grating splits the relatively large focal spot ($\sim
 \SI{1}{\milli\metre}$) into an array of individually coherent, but mutually
-incoherent sources \cite{Pfeiffer2006}. It is also made of gold structures
+incoherent sources~\cite{Pfeiffer2006}. It is also made of gold structures
 with a length of $h_0 = h_2 = \SI{800}{\micro \metre}$.
 \begin{figure} [ht]
     \includegraphics[width=.6\textwidth]{figures/grating_mask.eps}
@@ -230,11 +233,11 @@ with a length of $h_0 = h_2 = \SI{800}{\micro \metre}$.
         gratings have different curvatures which are specific to the grating
         interferometer geometry. 
         The \ac{SEM} image shows the gold structures and the interrupting bridges
-        that prevent the lamellae from collapsing\cite{Kenntner2010}.}
+        that prevent the lamellae from collapsing~\cite{Kenntner2010}.}
         \label{Fig:grating_mask}
 \end{figure}
 
-Due to the high spectral acceptance \cite{Weitkamp2005,Thuering2013c} of the
+Due to the high spectral acceptance~\cite{Weitkamp2005,Thuering2013c} of the
 interferometer ($\SI{50}{\kilo\electronvolt}$ to
 more than $\SI{160}{\kilo\electronvolt}$) and the high attenuation efficiencies of
 the source and analyzer gratings ($>90\%$ up to
@@ -262,10 +265,10 @@ soldering points in the absorption image is due to beam hardening. The spectrum
 impinging on these soldering point is hardened by the resistors in the upper
 layer, resuluting in lower absorption contrast. Due to the weaker energy
 dependency of phase shifts ($1/E$ compared to $1/E^3$), phase-contrast images
-are less sensitive to beam hardening \cite{Chabior2011a}, which explains the
+are less sensitive to beam hardening~\cite{Chabior2011a}, which explains the
 lower contrast reduction of the soldering points underneath the resistors in the
 phase image of the chip. This result shows the benefit of the phase nature in
-high energy X-ray imaging, which may be useful to identify flaws in multilayered
+high-energy X-ray imaging, which may be useful to identify flaws in multilayered
 structures such as electronic chips.
 \begin{figure}[ht]
     \includegraphics[width=.5\textwidth]{figures/img_chip_dabs.eps}
@@ -282,11 +285,11 @@ $\SI{100}{\kilo\electronvolt}$ could be realized with the approach. This
 enables the examination of materials of higher density or thickness which
 would be opaque at lower energies. Finally, the approach is not
 limited to X-ray imaging, but could be easily applied to other grating-based
-imaging modalities (e.g., with neutrons \cite{Grunzweig2008}) where high
+imaging modalities (e.g., with neutrons~\cite{Grunzweig2008}) where high
 aspect ratios are required.
 
 \section*{Methods}
-Edge-on illuminated gratings were manufactured by Microworks GmbH, Germany, using a LIGA process \cite{Kenntner2010}. Each grating
+Edge-on illuminated gratings were manufactured by Microworks GmbH, Germany, using a LIGA process~\cite{Kenntner2010}. Each grating
 resides on a $5 \times \SI{60}{\milli\metre^2}$ silicon chip and several
 grating chips are fabricated on a single 4 inch silicon wafer. The
 experimental arrangement for a design energy at \SI{100}{\kilo\electronvolt}
@@ -323,7 +326,7 @@ leaving an additional margin for improvement.
 \section*{Acknowledgements}
 We thank Gordan Mikuljan, Peter Modregger and István Mohácsi from the Paul
 Scherrer Institute (PSI), Switzerland, for the
-work on the mechanical design, the scientific advice, and the SEM images
+work on the mechanical design, the scientific advice, and the \ac{SEM} images
 respectively, Joachim Schulz and Marco Walter from
 Microworks GmbH, Germany, for the competent support on grating design
 issues, Christian Kottler and Vincent Revol from Centre Suisse
@@ -343,7 +346,7 @@ supported by the Competence Centre for Materials Science and Technology
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{26}%
+\begin{thebibliography}{29}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -396,6 +399,17 @@ supported by the Competence Centre for Materials Science and Technology
   {http://books.google.com/books?hl=en\&lr=\&id=rlqlboWlTRMC\&oi=fnd\&pg=PA29\&dq=Elements+of+Modern+X-ray+Physics\&ots=P2D3XwrDgd\&sig=b3iO97q1hfsT8TkTYKxsvUbFink}
   {\emph {\bibinfo {title} {{Elements of modern X-ray physics}}}}\ (\bibinfo
   {year} {2011})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Qi}\ \emph {et~al.}(2010)\citenamefont {Qi},
+  \citenamefont {Zambelli}, \citenamefont {Bevins},\ and\ \citenamefont
+  {Chen}}]{Qi2010}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont
+  {Qi}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Zambelli}},
+  \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Bevins}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {G.-H.}\ \bibnamefont {Chen}},\ }\href {\doibase
+  10.1088/0031-9155/55/9/016} {\bibfield  {journal} {\bibinfo  {journal}
+  {Physics in medicine and biology}\ }\textbf {\bibinfo {volume} {55}},\
+  \bibinfo {pages} {2669} (\bibinfo {year} {2010})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Pfeiffer}\ \emph {et~al.}(2007)\citenamefont
   {Pfeiffer}, \citenamefont {Bunk}, \citenamefont {David}, \citenamefont
   {Bech}, \citenamefont {{Le Duc}}, \citenamefont {Bravin},\ and\ \citenamefont
@@ -428,17 +442,6 @@ supported by the Competence Centre for Materials Science and Technology
   10.1107/S0909049509017920} {\bibfield  {journal} {\bibinfo  {journal}
   {Journal of Synchrotron Radiation}\ }\textbf {\bibinfo {volume} {16}},\
   \bibinfo {pages} {562} (\bibinfo {year} {2009})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Qi}\ \emph {et~al.}(2010)\citenamefont {Qi},
-  \citenamefont {Zambelli}, \citenamefont {Bevins},\ and\ \citenamefont
-  {Chen}}]{Qi2010}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont
-  {Qi}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Zambelli}},
-  \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Bevins}}, \ and\ \bibinfo
-  {author} {\bibfnamefont {G.-H.}\ \bibnamefont {Chen}},\ }\href {\doibase
-  10.1088/0031-9155/55/9/016} {\bibfield  {journal} {\bibinfo  {journal}
-  {Physics in medicine and biology}\ }\textbf {\bibinfo {volume} {55}},\
-  \bibinfo {pages} {2669} (\bibinfo {year} {2010})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Davis}\ \emph {et~al.}(1995)\citenamefont {Davis},
   \citenamefont {Gao}, \citenamefont {Gureyev}, \citenamefont {Stevenson},\
   and\ \citenamefont {Wilkins}}]{Davis1995}%
@@ -562,17 +565,6 @@ supported by the Competence Centre for Materials Science and Technology
   10.1143/JJAP.42.L866} {\bibfield  {journal} {\bibinfo  {journal} {Japanese
   Journal of Applied Physics}\ }\textbf {\bibinfo {volume} {42}},\ \bibinfo
   {pages} {L866} (\bibinfo {year} {2003})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Pfeiffer}\ \emph {et~al.}(2006)\citenamefont
-  {Pfeiffer}, \citenamefont {Weitkamp}, \citenamefont {Bunk},\ and\
-  \citenamefont {David}}]{Pfeiffer2006}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
-  {Pfeiffer}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Weitkamp}},
-  \bibinfo {author} {\bibfnamefont {O.}~\bibnamefont {Bunk}}, \ and\ \bibinfo
-  {author} {\bibfnamefont {C.}~\bibnamefont {David}},\ }\href {\doibase
-  10.1038/nphys265} {\bibfield  {journal} {\bibinfo  {journal} {Nature
-  Physics}\ }\textbf {\bibinfo {volume} {2}},\ \bibinfo {pages} {258} (\bibinfo
-  {year} {2006})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Munro}\ \emph {et~al.}(2012)\citenamefont {Munro},
   \citenamefont {Ignatyev}, \citenamefont {Speller},\ and\ \citenamefont
   {Olivo}}]{Munro2012}%
@@ -585,6 +577,46 @@ supported by the Competence Centre for Materials Science and Technology
   {Proceedings of the National Academy of Sciences}\ }\textbf {\bibinfo
   {volume} {2012}},\ \bibinfo {pages} {2} (\bibinfo {year} {2012})}\BibitemShut
   {NoStop}%
+\bibitem [{\citenamefont {Pfeiffer}\ \emph {et~al.}(2006)\citenamefont
+  {Pfeiffer}, \citenamefont {Weitkamp}, \citenamefont {Bunk},\ and\
+  \citenamefont {David}}]{Pfeiffer2006}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Pfeiffer}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Weitkamp}},
+  \bibinfo {author} {\bibfnamefont {O.}~\bibnamefont {Bunk}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {C.}~\bibnamefont {David}},\ }\href {\doibase
+  10.1038/nphys265} {\bibfield  {journal} {\bibinfo  {journal} {Nature
+  Physics}\ }\textbf {\bibinfo {volume} {2}},\ \bibinfo {pages} {258} (\bibinfo
+  {year} {2006})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Nesch}\ \emph {et~al.}(2009)\citenamefont {Nesch},
+  \citenamefont {Fogarty}, \citenamefont {Tzvetkov}, \citenamefont {Reinhart},
+  \citenamefont {Walus}, \citenamefont {Khelashvili}, \citenamefont
+  {Muehleman},\ and\ \citenamefont {Chapman}}]{Nesch2009}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.}~\bibnamefont
+  {Nesch}}, \bibinfo {author} {\bibfnamefont {D.~P.}\ \bibnamefont {Fogarty}},
+  \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Tzvetkov}}, \bibinfo
+  {author} {\bibfnamefont {B.}~\bibnamefont {Reinhart}}, \bibinfo {author}
+  {\bibfnamefont {a.~C.}\ \bibnamefont {Walus}}, \bibinfo {author}
+  {\bibfnamefont {G.}~\bibnamefont {Khelashvili}}, \bibinfo {author}
+  {\bibfnamefont {C.}~\bibnamefont {Muehleman}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {D.}~\bibnamefont {Chapman}},\ }\href {\doibase
+  10.1063/1.3213621} {\bibfield  {journal} {\bibinfo  {journal} {The Review of
+  scientific instruments}\ }\textbf {\bibinfo {volume} {80}},\ \bibinfo {pages}
+  {093702} (\bibinfo {year} {2009})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Parham}\ \emph {et~al.}(2009)\citenamefont {Parham},
+  \citenamefont {Zhong}, \citenamefont {Connor}, \citenamefont {Chapman},\ and\
+  \citenamefont {Pisano}}]{Parham2009}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Parham}}, \bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont {Zhong}},
+  \bibinfo {author} {\bibfnamefont {D.~M.}\ \bibnamefont {Connor}}, \bibinfo
+  {author} {\bibfnamefont {L.~D.}\ \bibnamefont {Chapman}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {E.~D.}\ \bibnamefont {Pisano}},\ }\href
+  {http://linkinghub.elsevier.com/retrieve/pii/S1076633209001366?showall=true}
+  {\enquote {\bibinfo {title} {{Design and Implementation of a Compact Low-Dose
+  Diffraction Enhanced Medical Imaging System}},}\ } (\bibinfo {year}
+  {2009})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Pfeiffer}\ \emph {et~al.}(2008)\citenamefont
   {Pfeiffer}, \citenamefont {Bech}, \citenamefont {Bunk}, \citenamefont
   {Kraft}, \citenamefont {Eikenberry}, \citenamefont {Br\"{o}nnimann},
@@ -695,15 +727,6 @@ supported by the Competence Centre for Materials Science and Technology
   \href@noop {} {\emph {\bibinfo {booktitle} {Proceedings of SPIE}}},\ Vol.\
   \bibinfo {volume} {7804}\ (\bibinfo {year} {2010})\ p.\ \bibinfo {pages}
   {780408}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Stutman}\ and\ \citenamefont
-  {Finkenthal}(2012)}]{Stutman2012a}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
-  {Stutman}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Finkenthal}},\ }\href {\doibase 10.1063/1.4748882} {\bibfield  {journal}
-  {\bibinfo  {journal} {Applied physics letters}\ }\textbf {\bibinfo {volume}
-  {101}},\ \bibinfo {pages} {91108} (\bibinfo {year} {2012})}\BibitemShut
-  {NoStop}%
 \bibitem [{\citenamefont {Weitkamp}\ \emph {et~al.}(2005)\citenamefont
   {Weitkamp}, \citenamefont {Diaz}, \citenamefont {David}, \citenamefont
   {Pfeiffer}, \citenamefont {Stampanoni}, \citenamefont {Cloetens},\ and\
@@ -764,5 +787,14 @@ supported by the Competence Centre for Materials Science and Technology
   {journal} {\bibinfo  {journal} {The Review of scientific instruments}\
   }\textbf {\bibinfo {volume} {79}},\ \bibinfo {pages} {053703} (\bibinfo
   {year} {2008})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Raupach}\ and\ \citenamefont
+  {Flohr}(2011)}]{Raupach2011}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Raupach}}\ and\ \bibinfo {author} {\bibfnamefont {T.~G.}\ \bibnamefont
+  {Flohr}},\ }\href {\doibase 10.1088/0031-9155/56/7/020} {\bibfield  {journal}
+  {\bibinfo  {journal} {Physics in medicine and biology}\ }\textbf {\bibinfo
+  {volume} {56}},\ \bibinfo {pages} {2219} (\bibinfo {year}
+  {2011})}\BibitemShut {NoStop}%
 \end{thebibliography}%
 \end{document}
