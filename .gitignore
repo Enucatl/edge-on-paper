@@ -4,5 +4,6 @@
 *.blg
 *.dvi
 *.ps
+*.pdf_original
 *log
 hedpc_natphysNotes.bib
