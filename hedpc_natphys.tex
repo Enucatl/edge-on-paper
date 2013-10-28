@@ -81,7 +81,7 @@ conventional sources}
 
 X-ray radiography and \ac{CT} are standard imaging techniques in
 materials and life sciences for the nondestructive examination of samples or
-the diagnosis of diseases in patients. The underlying contrast mechanism
+diagnostic tasks in medicine. The underlying contrast mechanism
 relies on the different X-ray attenuation properties of different materials
 or tissue types. The dominant physical effects contributing to attenuation
 are the photoelectric effect and incoherent (Compton) scattering. Besides attenuation, the wave
@@ -103,7 +103,7 @@ is not directly observable. Therefore, an optical system is needed to
 convert the phase shift into intensity modulations.
 
 Phase-sensitive
-imaging is a desirable modality, as it can provide a complementary source of
+imaging is a desirable modality, as it delivers a complementary source of
 contrast with respect to absorption by providing direct access 
 to the electron density~\cite{Als-Nielsen2011}. Moreover, the combination with
 attenuation enables the determination of the effective atomic
@@ -126,18 +126,19 @@ demonstrated with coded
 apertures~\cite{Munro2012} and Talbot-Lau
 interferometry~\cite{Pfeiffer2006}. Analyzer-based systems have been
 recently extended to tube sources~\cite{Nesch2009,Parham2009}
-but the photon energy is limited
+but only at energies up
 to the tungsten $K_\alpha$ line at~\SI{60}{\kilo\eV}.
-In addition to phase sensitivity, these techniques provide a dark-field
-contrast, also called scatter contrast or visibility-reduction contrast,
-that is proportional to the integrated local small angle scattering power
-from microscopic density fluctuations in a specimen~\cite{Pfeiffer2008}.
+In addition to phase sensitivity, analyzer-based, Talbot interferometry and
+coded-aperture approaches also provide (with different retrieval mechanisms)
+information about the integrated local small angle scattering power from
+microscopic density fluctuations in a specimen~\cite{Pfeiffer2008}. This signal is known under the name of dark-field, scatter or visibility reduction contrast.
 
-Talbot interferometry has been demonstrated using a synchrotron source at
-$\SI{82}{\kilo\electronvolt}$~\cite{Willner2013} and
+High-energy Talbot interferometry has been reported so far using a
+synchrotron source at nominal energies of
+$\SI{82}{\kilo\electronvolt}$~\cite{Willner2013} and 
 $\SI{123}{\kilo\electronvolt}$~\cite{Ruiz2013}.
 Using a low-brilliance X-ray tube, Talbot-Lau interferometry was
-applied at $\SI{60}{\kilo\electronvolt}$ mean energy~\cite{Donath2009}.
+applied so far at $\SI{60}{\kilo\electronvolt}$ mean energy~\cite{Donath2009}.
 Medical imaging applications may benefit from phase contrast at higher
 energies: chest or abdominal
 radiography or \ac{CT} require energies between $100$ and
@@ -145,20 +146,22 @@ $\SI{150}{\kilo\voltpeak}$. Other potential applications are homeland
 security or chip failure analysis, which require high energies for the
 visualization of materials of high density and atomic number.
 
-Here, we introduce a method for phase-contrast imaging which is
-compatible with the entire diagnostic energy range of X-rays, 
-compact imaging arrangements and 
-conventional X-ray tubes. The method is based on Talbot-Lau
+Here we introduce a method for phase contrast imaging which works on
+conventional X-ray sources, covers the entire diagnostic X-ray energy range
+and is compatible with compact imaging arrangements. The approach is based
+on
+Talbot-Lau
 interferometry~\cite{Pfeiffer2006} and employs an edge-on illumination approach for the grating design and
 arrangement. 
-The challenge which limited the progress towards higher energies was mainly
-related to the manufacturing of gratings with high aspect ratios. The aspect
+Our solution removes one on the major hurdle which prevented grating interferometry to be applied at very high X-ray energies so far, namely the fabrication of gratings with high-aspect ratios.
+ The aspect
 ratio, given by
 \begin{equation}
     \text{R} = \frac{2h}{p},
 \end{equation}
 where $p$ is the grating period and $h$ the  structure
-height, is normally limited by the lithographic process, as grating
+height, is normally limited by the fabrication process, usually
+photolithography~\cite{David2002} or X-ray lithography~\cite{Mohr2012} as grating
 structures tend to collapse or deform (e.g. due to capillary forces) if
 the aspect ratio is too high. For a given setup length these parameters
 depend on the target energy $E$ according to $p \propto
@@ -169,10 +172,10 @@ reasonable length of the experimental arrangement, it would have to be at
 least $128$ for $E=\SI{100}{\kilo\electronvolt}$. Moreover, when using a
 broad spectrum, photons above the design energy should also be
 efficiently blocked by the gratings, which requires even higher aspect ratios.
-The maximum achievable aspect ratios of current fabrication techniques~\cite{David2007,Kenntner2010} are around 60.
+The largest aspect ratios achieved by current fabrication techniques~\cite{David2007,Kenntner2010} are around 60.
 
 Our design introduces the edge-on
-illumination of circularly aligned structures. Edge-on illumination
+illuminated,  circularly aligned structures. Edge-on illumination
 (figure~\ref{Fig:schematic}), as
 opposed to face-on illumination, exploits the dimension along the grating
 lines to form a high aspect ratio of the structures in the direction of the beam. The
@@ -194,20 +197,31 @@ aspect ratios.
 Increasing the aspect ratio of the gratings typically leads to a
 reduction of the field of view due to the change of the grating transmission
 function at high incident angles. In order to overcome this problem, the grating lines are circularly aligned 
-with a radius equal to the distance to the source.
+with a radius equal to the distance to the source. This cannot be done with
+the glancing angle approach~\cite{Stutman2012a}, and allows an arbitrarily
+large field-of-view in a fan beam geometry.
 
 The combination of edge-on illumination and circularly aligned structures
 enables phase-contrast imaging at arbitrary design energies and with a
 maximum field of view in the horizontal direction ($x$ direction). These
 advantages come at the expense of a limited field of view in the vertical
 direction ($y$ direction), which is, depending on the X-ray detector,
-typically a few pixels. However, radiographic 2D imaging is possible in
-scanning mode, without increasing dose. Similarly, for tomographic images,
+typically a few pixels. 
+Radiographic 2D imaging can be obtained by scanning the sample or a thin fan
+beam. The scanning technique has been demonstrated to deliver less dose than
+the conventional approach based on the illumination of a large area. In
+digital mammography, for instance, where dose is a critical issue, Philips'
+MicroDose system combines a scanning approach with an highly collimated fan
+beam~\cite{Aslund2007}. Thanks to the high collimation, the dose deposited
+on  patients has been reported to be significantly lower than with other
+instruments based on the illumination of a large area
+detector~\cite{Oduko2010}.
+Similarly, for tomographic images,
 the approach allows single slice \ac{CT} or full 3D imaging in scanning mode.
 
 Grating design and fabrication is nonstandard and involves a complex mask
-design, as shown in Figure~\ref{Fig:grating_mask}. Each grating resides on a
-silicon chip and has its specific structure length and curvature. For the
+design, as shown in Figure~\ref{Fig:grating_mask}. Multiple gratings can reside on a
+silicon chip with their specific structure length and curvature. For the
 current experiments, a symmetric interferometer with a grating period of $p
 = \SI{2.8}{\micro\metre}$ for all gratings has been used. The design energy
 is $\SI{100}{\kilo\electronvolt}$ and the beam splitter grating periodically
@@ -279,15 +293,16 @@ structures such as electronic chips.
     \label{Fig:img_chip}
 \end{figure}
 
-Edge-on illuminated grating interferometry breaks the current limitations of
-phase-contrast imaging to the lower diagnostic energy range. Compact
-geometries  using conventional X-ray sources for design energies well above
-$\SI{100}{\kilo\electronvolt}$ could be realized with the approach. This
-enables the examination of materials of higher density or thickness which
-would be opaque at lower energies. Finally, the approach is not
-limited to X-ray imaging, but could be easily applied to other grating-based
-imaging modalities (e.g., with neutrons~\cite{Grunzweig2008}) where high
-aspect ratios are required.
+Edge-on illuminated grating interferometry finally allows phase contrast
+imaging to be performed at high energies ($>\SI{100}{\kilo\eV}$) on conventional X-ray
+sources. With a circular distribution of the gratings, the diffracting and
+absorbing structures can be matched to the divergent beam, even for very
+compact geometries. Short, high-energy phase-contrast systems enable the
+efficient investigation of high-density materials or large thickness,
+adding information on electron density and integrated small angle scattering
+power to the conventional absorption based signal. This will improve
+material discrimination and density sensitivity capabilities in future
+X-rays or even neutron~\cite{Grunzweig2008} investigations.
 
 \section*{Methods}
 Edge-on illuminated gratings were manufactured by Microworks GmbH, Germany, using a LIGA process~\cite{Kenntner2010}. Each grating
@@ -350,7 +365,7 @@ supported by the Competence Centre for Materials Science and Technology
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{29}%
+\begin{thebibliography}{33}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -693,6 +708,21 @@ supported by the Competence Centre for Materials Science and Technology
   {journal} {\bibinfo  {journal} {Journal of Applied Physics}\ }\textbf
   {\bibinfo {volume} {106}},\ \bibinfo {pages} {054703} (\bibinfo {year}
   {2009})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Mohr}\ \emph {et~al.}(2012)\citenamefont {Mohr},
+  \citenamefont {Grund}, \citenamefont {Kunka}, \citenamefont {Kenntner},
+  \citenamefont {Leuthold}, \citenamefont {Meiser}, \citenamefont {Schulz},\
+  and\ \citenamefont {Walter}}]{Mohr2012}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Mohr}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Grund}},
+  \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Kunka}}, \bibinfo
+  {author} {\bibfnamefont {J.}~\bibnamefont {Kenntner}}, \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {Leuthold}}, \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {Meiser}}, \bibinfo {author} {\bibfnamefont
+  {J.}~\bibnamefont {Schulz}}, \ and\ \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Walter}},\ }\href {\doibase 10.1063/1.4742267} {\ \textbf
+  {\bibinfo {volume} {41}},\ \bibinfo {pages} {41} (\bibinfo {year}
+  {2012})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {David}\ \emph {et~al.}(2007)\citenamefont {David},
   \citenamefont {Bruder}, \citenamefont {Rohbeck}, \citenamefont
   {Gr\"{u}nzweig}, \citenamefont {Kottler}, \citenamefont {Diaz}, \citenamefont
@@ -731,6 +761,36 @@ supported by the Competence Centre for Materials Science and Technology
   \href@noop {} {\emph {\bibinfo {booktitle} {Proceedings of SPIE}}},\ Vol.\
   \bibinfo {volume} {7804}\ (\bibinfo {year} {2010})\ p.\ \bibinfo {pages}
   {780408}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Stutman}\ and\ \citenamefont
+  {Finkenthal}(2012)}]{Stutman2012a}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Stutman}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Finkenthal}},\ }\href {\doibase 10.1063/1.4748882} {\bibfield  {journal}
+  {\bibinfo  {journal} {Applied physics letters}\ }\textbf {\bibinfo {volume}
+  {101}},\ \bibinfo {pages} {91108} (\bibinfo {year} {2012})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {{\AA slund, M}}(2007)}]{Aslund2007}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{\AA slund, M}}},\
+  }\emph {\bibinfo {title} {{Digital Mammography with a Photon Counting
+  Detector in a Scanned Multislit Geometry}}},\ \href@noop {} {Ph.D. thesis}
+  (\bibinfo {year} {2007})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Oduko}\ \emph {et~al.}(2010)\citenamefont {Oduko},
+  \citenamefont {Young},\ and\ \citenamefont {Burch}}]{Oduko2010}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont
+  {Oduko}}, \bibinfo {author} {\bibfnamefont {K.~C.}\ \bibnamefont {Young}}, \
+  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Burch}},\ }in\ \href
+  {\doibase 10.1007/978-3-642-13666-5_49} {\emph {\bibinfo {booktitle} {Digital
+  Mammography}}},\ \bibinfo {series} {Lecture Notes in Computer Science}, Vol.\
+  \bibinfo {volume} {6136},\ \bibinfo {editor} {edited by\ \bibinfo {editor}
+  {\bibfnamefont {J.}~\bibnamefont {Martí}}, \bibinfo {editor} {\bibfnamefont
+  {A.}~\bibnamefont {Oliver}}, \bibinfo {editor} {\bibfnamefont
+  {J.}~\bibnamefont {Freixenet}}, \ and\ \bibinfo {editor} {\bibfnamefont
+  {R.}~\bibnamefont {Martí}}}\ (\bibinfo  {publisher} {Springer Berlin
+  Heidelberg},\ \bibinfo {year} {2010})\ pp.\ \bibinfo {pages}
+  {365--370}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Weitkamp}\ \emph {et~al.}(2005)\citenamefont
   {Weitkamp}, \citenamefont {Diaz}, \citenamefont {David}, \citenamefont
   {Pfeiffer}, \citenamefont {Stampanoni}, \citenamefont {Cloetens},\ and\
