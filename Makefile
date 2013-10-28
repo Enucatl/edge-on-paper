@@ -1,13 +1,28 @@
-.PHONY: hedpc_natphys bibtex
+.PHONY: hedpc_natphys bibtex prepare_for_bibtex cleanup_bibtex no_bibtex
 
-hedpc_natphys: hedpc_natphys.tex
-	latex $@
-	latex $@
-	dvips $@.dvi
-	ps2pdf $@.ps
+hedpc_natphys: hedpc_natphys.tex library.bib
+	make prepare_for_bibtex
+	make bibtex
+	make cleanup_bibtex
+	make no_bibtex
+
+no_bibtex: hedpc_natphys.tex
+	latex $<
+	latex $<
+	dvips $(addsuffix .dvi, $(basename $<))
+	ps2pdf $(addsuffix .ps, $(basename $<))
+
+prepare_for_bibtex: hedpc_natphys.tex library.bib
+	sed -i '/bibliography{library}/s/%//g' $<
+	sed -i '/merlin/,/end{thebib/d' $<
+
+cleanup_bibtex: hedpc_natphys.tex library.bib
+	sed -i '/end{document}/d' $<
+	sed -i '/bibliography{library}/s/^/%/' $<
+	cat $(addsuffix .bbl, $(basename $<)) >> $<
+	echo '\\end{document}' >> $<
 
 bibtex: hedpc_natphys.tex 
-	rm *.aux
 	latex hedpc_natphys
 	bibtex hedpc_natphys
 	latex hedpc_natphys
@@ -20,4 +35,4 @@ point_by_point_response.pdf: point_by_point_response.tex
 	pdflatex $^
 
 clean:
-	-rm *.aux *.bbl *.blg *.dvi *.log *.ps *.backup
+	-rm -f *.aux *.bbl *.blg *.dvi *.log *.ps *.backup
