@@ -12,13 +12,14 @@
 \newenvironment{reviewerquote}{\begin{quote}\itshape}{\end{quote}}
 
 \title{Point-by-point response to the reviewers}
+\author{Revised manuscript NCOMMS-13-09247-T}
 \date{}
 \begin{document}
 \maketitle
 
 \noindent
 The comments from the reviewers are quoted in \emph{italic}, whereas the
-revised article parts are reported in upright font.
+revised article parts are reported in upright font in indented sections.
 \section*{Reviewer \#1}
 \begin{reviewerquote}
     I could not find a significant advance in this work. X-ray Talbot-Lau
@@ -35,17 +36,25 @@ revised article parts are reported in upright font.
     exposure time, spatial resolution, signal-to-noise ratio, and so on, and
     show that the authors' method is much better than the others.
 \end{reviewerquote}
-We think that the experiments presented in the current manuscript show
-indeed significant progress with respect to the cited references.
-The method presented by Stutman et al. has a fundamental limitation that
-prevents it from achieving curved structures and large aspect ratios.
-Moreover, those experiments were performed on a source
-with~\SI{60}{\kilo\voltpeak}, which is significantly lower than
-the~\SI{160}{\kilo\voltpeak} of our source and the~\SI{100}{\kilo\eV} used
-as the design energy for our interferometer.
 
-The other works also present results in a much lower energy range or very
-different conditions, thus preventing a meaningful comparison.
+Stuntman et al.  present a method which increases the effective
+aspect ratio of the gratings by slightly rotating them along an axis
+perpendicular to the propagation direction. However, his method has
+the major limitation of not being compatible with divergent
+geometries. As a result, his interferometer will show a high
+visibility, although still limited compared to what we can achieve in
+theory, but its horizontal field of view will be strongly limited in
+case of divergent beams, as commonly found in any table-top device.
+Our solution, on the other hand, solves both issues at the same time,
+and therefore we consider this as a significant improvement with
+respect to Stuntman's work.  Moreover, the cited experiments were
+performed on a source with~\SI{60}{\kilo\voltpeak}, which is significantly lower than
+the~\SI{160}{\kilo\voltpeak} of our source and the~\SI{100}{\kilo\eV} used as the design energy
+for our interferometer. Reviewer \#1 further cites other related works
+which, however, where carried out either in much lower energy range or
+under very different imaging conditions, thus preventing a meaningful
+comparison. 
+
 Reference~23 reported images taken at \num{30} and~\SI{60}{\kilo\eV},
 reference~20 also has a design energy of~\SI{47.9}{\kilo\eV}. Finally,
 references~18 and~19 present Talbot interferometry at~\num{82}
@@ -69,14 +78,13 @@ sources. Phase-contrast imaging using X-ray beams of low temporal and spatial co
 such as conventional low-brilliance X-ray tubes have been demonstrated with coded apertures [15] and Talbot-Lau interferometry [16]. Analyzer-based systems have been recently
 extended to tube sources [17, 18] but only at energies up to the tungsten
 $K_\alpha$ line at 60 keV. In
-addition to phase sensitivity, analyzer-based, Talbot interferometry and coded-aperture approaches also provide (with different retrieval mechanisms) information about the integrated
+addition to phase sensitivity, analyzer-based and Talbot interferometry also provide (with different retrieval mechanisms) information about the integrated
 local small angle scattering power from microscopic density fluctuations in a specimen [19].
 This signal is known under the name of dark-field, scatter or visibility reduction contrast.
 High-energy Talbot interferometry has been reported so far using a synchrotron source
 at nominal energies of 82 keV [20] and 123 keV [21]. Using a low-brilliance X-ray tube,
-2
 Talbot-Lau interferometry was applied so far at 60 keV mean energy [22]. Medical imaging
-applications may benefit from phase contrast at higher energies: chest or abdominal radiography or CT require energies between 100 and 150 kVp. Other potential applications are
+applications may benefit from phase contrast at higher energies: chest or abdominal radiography or CT require an acceleration voltage between 100 and 150 kVp. Other potential applications are
 homeland security or chip failure analysis, which require high energies for the visualization
 of materials of high density and atomic number.
 \end{quote}
@@ -87,6 +95,7 @@ of materials of high density and atomic number.
 A paragraph has been added to discuss the different beam hardening behaviour of
 the absorption and differential phase image:
 \begin{quote}
+In the attenuation image, the contrast of the soldering points of the integrated circuit is reduced underneath the
 resistors, while in the phase image, they can clearly be identified. The reduced contrast
 of the soldering points in the absorption image is due to beam hardening. The spectrum
 impinging on these soldering point is hardened by the resistors in the upper layer, resulting
@@ -108,15 +117,17 @@ There is no fundamental limitation on the horizontal field of view in our
 approach. On the contrary, our solution actually solves precisely this
 issue, by easily matching the spherical wave front with the curved
 structures. Any limitation to horizontal the field of view given by large glancing
-angles is therefore removed. The gratings could already be fabricated on
-larger wafers with the existing technology.
+angles is therefore removed. 
+Our approach removes any limitation to the horizontal field of view which would arise due to the large beam divergence. In addition, curved gratings can be easily stitched to cover an even larger field of view, if necessary.
 
-The limitations in the vertical field of view do not come at the expense of
+With our scanning solution, the limitation of the vertical field of view does not come at the expense of
 an increased dose with our proposed scanning solution. Larger areas could in
 principle be scanned with short exposure times by stacking an array of
-edge-illuminated gratings. This scanning technique is already offered in commercial X-ray
-diagnostic devices, such as the Philips MicroDose mammography system, to
-reduce scattering. References are now provided in the following paragraph:
+edge-illuminated gratings. 
+A similar scanning technique is already commercially offered in X-ray
+mammography systems, like the MicroDose instrument of Philips, with a
+significant reduction of the scattered radiation. We discussed this issue and
+amended the text accordingly.
 \begin{quote}
  Radiographic 2D imaging can be obtained by scanning the sample or a
 thin fan beam. The scanning technique has been demonstrated to deliver less dose than the
@@ -132,18 +143,26 @@ based on the illumination of a large area detector [28].
     \SI{5}{\percent} visibility, which is even lower than that of the quoted papers by Pfeiffer's group (refs 18, 19), which, at least nominally, reach even higher energies (123 keV). Hence, the reduction in field-of-view does not seem to be counterbalanced by significant improvements in visibility. This is also supported by the relatively poor quality of the differential phase image compared to the derivative of the absorption image, where the only advantage seems to be the visibility of the soldering points beneath the resistors (primarily due to the fact that these do not produce area contrast in the DPC image), while everywhere else the contrast of the differentiated absorption image seems to be higher.
 \end{reviewerquote}
 The visibility in our experiment is still low, and this obviously
-affects the quality of the images, but we also mentioned
-that this is the first attempt in building gratings with our new design,
-while the fabrication of traditional structures has been developed for over
-a decade now. The remarks above about references~18 and~19 (synchrotron
-source, unpublished results) should also be taken into account here.
+affects the quality of the images, 
+
+We would like to remind to the reviewer \#2 that our data have been obtained on
+a commercially available X-ray tube, while the cited experiment of Pfeiffer's
+et al. has been carried out at a third generation synchrotron source, where
+notably unsurpassed beam conditions can be created which are far from what one
+can expect in real life (i.e. with conventional X-ray tubes). And, even if one
+would like to still carry out this (unfair) comparison, we should mention that
+our experiment is the first measurement of its kind with the first generation
+of gratings made according to our innovative design. Pfeiffer's team uses
+gratings obtained after almost a decade of development and, despite this and
+the use of a synchrotron, they are not really further than us while they still
+carry the intrinsic limitation of a limited grating height. We are well aware
+that the quality of our images has still to be improved, but here we are
+presenting the first experiments with edge-on grating illumination: we describe
+its great potential but also mention its (temporary) limitations.
 \begin{reviewerquote}
 Finally, the novelty of the result is diminished by previous demonstrations that high energies in phase-contrast x-ray imaging could be reached by other methods (e.g. Ignatyev et al JAP 110 (2011) 014906), albeit in that case image quality seems to be lower.     
 \end{reviewerquote}
-In the paper from Ignatyev et al., an admittedly lower image quality was
-achieved again with softer X-rays, from~\num{60}
-to~\SI{100}{\kilo\voltpeak}. Thus, we claim that our results
-are a significantly more promising than the technique described therein.
+Reviewer \#2 admits that in comparison with a coded-aperture based experiment at 100 kVp (Ignatyev et al.) our images (taken at 160 kVp) are better, which we of course appreciate.
 
 \section*{Reviewer \#3}
 
@@ -158,17 +177,16 @@ was amended to include a more detailed discussion of our plans to reduce
 the exposure time. We mention now that raising the visibility to
 \SI{15}{\percent}, a value already reached in lower energy experiments and
 in some sections of our gratings,
-would immediately cut the exposure by \num{9} times:
+would immediately cut the exposure by almost an order of magnitude:
 \begin{quote}
+The long exposure times are mostly constrained by the low average
 visibility of the gratings (5 \%). The exposure time was chosen in order to get a low noise in
 the differential phase image. The signal-to-noise ratio (SNR) is proportional to the visibility
 and the square root of the exposure time [33]. This implies that the exposure times can
 easily drop by an order of magnitude as these gratings become comparable in quality to
 those developed in the last ten years. Smaller regions of these gratings actually exhibit a
 visibility up to 14 \% already, indicating that this goal is reachable as the fabrication becomes
-more reliable and uniform. The detector is also relatively inefficient (30
-\%) leaving an
-additional margin for improvement.
+more reliable and uniform.
 \end{quote}
 \begin{reviewerquote}
     The authors suggest that the only imaging methods that can be used with
@@ -183,8 +201,11 @@ additional margin for improvement.
     \SI{60}{\kilo\eV}. For references, see Nesch et al.(2009), Rev. Sci.
     Instrum. 80, 093702, and Parham et al.(2009), Acad.Radiol. 16, 911-917.
 \end{reviewerquote}
-We now included references to these papers (in the first paragraph above), but we point out that our
-experiments do not have any intrinsical limit to the photon energy.
+We thank Reviewer \#3 for pointing out this issue. We amended the text
+accordingly, discussing specifically the cited analyzer-based imaging experiment. In particular,
+we highlight that the mentioned ABI investigation was carried out at 60 keV,
+far below our nominal energy of 100 keV. We are also not aware of any ABI
+operated at energies higher or equal to 100 keV on conventional X-ray sources. 
 \end{document}
 
 
