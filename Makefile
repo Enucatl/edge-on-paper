@@ -2,6 +2,8 @@
 
 VERSION=$(shell git describe --always --abbrev=4)
 
+all: hedpc_natphys point_by_point_response.pdf
+
 hedpc_natphys: hedpc_natphys.tex library.bib
 	make prepare_for_bibtex
 	make bibtex
