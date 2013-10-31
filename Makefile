@@ -1,10 +1,10 @@
-.PHONY: hedpc_natphys bibtex prepare_for_bibtex cleanup_bibtex no_bibtex
+.PHONY: bibtex prepare_for_bibtex cleanup_bibtex no_bibtex
 
 VERSION=$(shell git describe --always --abbrev=4)
 
-all: hedpc_natphys point_by_point_response.pdf appeal_letter.pdf
+all: hedpc_natphys.pdf point_by_point_response.pdf appeal_letter.pdf
 
-hedpc_natphys: hedpc_natphys.tex library.bib
+hedpc_natphys.pdf: hedpc_natphys.tex library.bib
 	make prepare_for_bibtex
 	make bibtex
 	make cleanup_bibtex
