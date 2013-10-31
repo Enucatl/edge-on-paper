@@ -2,7 +2,7 @@
 
 VERSION=$(shell git describe --always --abbrev=4)
 
-all: hedpc_natphys point_by_point_response.pdf
+all: hedpc_natphys point_by_point_response.pdf appeal_letter.pdf
 
 hedpc_natphys: hedpc_natphys.tex library.bib
 	make prepare_for_bibtex
@@ -42,6 +42,10 @@ point_by_point_response.pdf: point_by_point_response.tex
 	pdflatex $<
 	exiftool -Subject="$(VERSION)" $@
 
+appeal_letter.pdf: appeal_letter.tex
+	pdflatex $^
+	pdflatex $^
+	exiftool -Subject="$(VERSION)" $@
 
 clean:
 	-rm -f *.aux *.bbl *.blg *.dvi *.log *.ps *.backup
