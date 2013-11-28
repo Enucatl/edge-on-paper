@@ -2,50 +2,50 @@
 
 VERSION=$(shell git describe --always --abbrev=4)
 
-all: hedpc_natphys.pdf point_by_point_response.pdf appeal_letter.pdf
+all: hedpc.pdf point_by_point_response.pdf appeal_letter.pdf
 
-hedpc_natphys.pdf: hedpc_natphys.tex library.bib
+hedpc.pdf: hedpc.tex library.bib
 	make prepare_for_bibtex
 	make bibtex
 	make cleanup_bibtex
 	make no_bibtex
 
-no_bibtex: hedpc_natphys.tex
+no_bibtex: hedpc.tex
 	latex $<
 	latex $<
 	dvips $(addsuffix .dvi, $(basename $<))
 	ps2pdf $(addsuffix .ps, $(basename $<))
-	exiftool -delete_original -Subject="$(VERSION)" $(addsuffix .pdf, $(basename $<))
+	exiftool -overwrite_original -Subject="$(VERSION)" $(addsuffix .pdf, $(basename $<))
 
-prepare_for_bibtex: hedpc_natphys.tex library.bib
+prepare_for_bibtex: hedpc.tex library.bib
 	sed -i '/bibliography{library}/s/%//g' $<
 	sed -i '/merlin/,/end{thebib/d' $<
 
-cleanup_bibtex: hedpc_natphys.tex library.bib
+cleanup_bibtex: hedpc.tex library.bib
 	sed -i '/end{document}/d' $<
 	sed -i '/bibliography{library}/s/^/%/' $<
 	cat $(addsuffix .bbl, $(basename $<)) >> $<
 	echo '\\end{document}' >> $<
 
-bibtex: hedpc_natphys.tex 
-	latex hedpc_natphys
-	bibtex hedpc_natphys
-	latex hedpc_natphys
-	latex hedpc_natphys
-	dvips hedpc_natphys.dvi
-	ps2pdf hedpc_natphys.ps
-	exiftool -delete_original -Subject="$(VERSION)" $(addsuffix .pdf, $(basename $<))
+bibtex: hedpc.tex 
+	latex hedpc
+	bibtex hedpc
+	latex hedpc
+	latex hedpc
+	dvips hedpc.dvi
+	ps2pdf hedpc.ps
+	exiftool -overwrite_original -Subject="$(VERSION)" $(addsuffix .pdf, $(basename $<))
 
 
 point_by_point_response.pdf: point_by_point_response.tex
 	pdflatex $<
 	pdflatex $<
-	exiftool -delete_original -Subject="$(VERSION)" $@
+	exiftool -overwrite_original -Subject="$(VERSION)" $@
 
 appeal_letter.pdf: appeal_letter.tex
 	pdflatex $^
 	pdflatex $^
-	exiftool -delete_original -Subject="$(VERSION)" $@
+	exiftool -overwrite_original -Subject="$(VERSION)" $@
 
 clean:
 	-rm -f *.aux *.bbl *.blg *.dvi *.log *.ps *.backup
