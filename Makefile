@@ -15,7 +15,7 @@ no_bibtex: hedpc_natphys.tex
 	latex $<
 	dvips $(addsuffix .dvi, $(basename $<))
 	ps2pdf $(addsuffix .ps, $(basename $<))
-	exiftool -Subject="$(VERSION)" $(addsuffix .pdf, $(basename $<))
+	exiftool -delete_original -Subject="$(VERSION)" $(addsuffix .pdf, $(basename $<))
 
 prepare_for_bibtex: hedpc_natphys.tex library.bib
 	sed -i '/bibliography{library}/s/%//g' $<
@@ -34,18 +34,18 @@ bibtex: hedpc_natphys.tex
 	latex hedpc_natphys
 	dvips hedpc_natphys.dvi
 	ps2pdf hedpc_natphys.ps
-	exiftool -Subject="$(VERSION)" $(addsuffix .pdf, $(basename $<))
+	exiftool -delete_original -Subject="$(VERSION)" $(addsuffix .pdf, $(basename $<))
 
 
 point_by_point_response.pdf: point_by_point_response.tex
 	pdflatex $<
 	pdflatex $<
-	exiftool -Subject="$(VERSION)" $@
+	exiftool -delete_original -Subject="$(VERSION)" $@
 
 appeal_letter.pdf: appeal_letter.tex
 	pdflatex $^
 	pdflatex $^
-	exiftool -Subject="$(VERSION)" $@
+	exiftool -delete_original -Subject="$(VERSION)" $@
 
 clean:
 	-rm -f *.aux *.bbl *.blg *.dvi *.log *.ps *.backup
