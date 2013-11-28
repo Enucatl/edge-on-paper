@@ -2,8 +2,9 @@
 *.aux
 *.bbl
 *.blg
+*.pdf
 *.dvi
 *.ps
 *.pdf_original
 *log
-hedpc_natphysNotes.bib
+hedpcNotes.bib
