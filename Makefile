@@ -20,7 +20,7 @@ no_bibtex: hedpc.tex
 prepare_for_bibtex: hedpc.tex library.bib
 	sed -i '/bibliographystyle/s/%//g' $<
 	sed -i '/bibliography{library}/s/%//g' $<
-	sed -i '/merlin/,/end{thebib/d' $<
+	sed -i '/begin{thebibliography/,/end{thebibliography/d' $<
 
 cleanup_bibtex: hedpc.tex library.bib
 	sed -i '/bibliographystyle/s/^/%/' $<

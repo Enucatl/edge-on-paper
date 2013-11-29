@@ -6,7 +6,6 @@
 \usepackage[english]{babel}
 \usepackage{amssymb,amsfonts,amsmath}
 \usepackage{graphicx}  %figures
-\usepackage[detect-all]{siunitx}
 %\usepackage{pnastwof}
 
 %% New commands
@@ -26,30 +25,32 @@ of the National Academy of Sciences of the United States of America}
 \volume{Volume}
 \issuenumber{Issue Number}
 %%%%%%%%%%%%
+\footlineauthor{ Corresponding author:
+    M. Abis, 
+    matteo.abis@psi.ch
+}
 
 \begin{document}
 
-\title{X-ray phase-contrast imaging at \SI{100}{\kilo\electronvolt} on
-a conventional source}
+\title{X-ray phase-contrast imaging at 100 keV on a conventional source}
 
-\author{T.~Thüring
-\affil{1}{Paul Scherrer Institute, 5232 Villigen, Switzerland}
-\affil{2}{Institute for Biomedical Engineering, Swiss Federal
-Institute of Technology,
-Gloriastrasse 35
-8092 Zurich, Switzerland}}
-\author{M.~Abis
-\affil{1}{}
+\author{T.~Thüring%
+\affil{1}{Paul Scherrer Institute, 5232 Villigen, Switzerland}%
+\affil{2}{Institute for Biomedical Engineering,
+    Swiss Federal Institute of Technology,
+    Gloriastrasse 35,
+8092 Zurich, Switzerland},%
+M.~Abis%%
+\affil{1}{}%
+\affil{2}{},%
+Z.~Wang%
+\affil{1}{},%
+C.~David%
+\affil{1}{},%
+\and%
+M.~Stampanoni%
+\affil{1}{}%
 \affil{2}{}}
-\author{Z.~Wang}
-\affil{1}{}
-\author{C.~David}
-\affil{1}{}
-\author{M.~Stampanoni
-\affil{1}{}
-\affil{2}{}}
-
-\author{}
 
 \contributor{Submitted to Proceedings of the National Academy of Sciences
 of the United States of America}
@@ -63,7 +64,7 @@ of the United States of America}
     X-ray grating interferometry is a promising imaging technique sensitive
     to attenuation, refraction and scattering of the radiation. Applications
     of this technique in the energy range between $80$ and
-    $\SI{150}{\kilo\electronvolt}$ are still largely unexplored due to the
+    \SI{150}{\kilo\electronvolt} are still largely unexplored due to the
     severe technical challenges. Phase-contrast X-ray imaging at such high
     energies is of relevant scientific and industrial interest, in
     particular for the investigation of materials with high atomic number or
@@ -89,27 +90,29 @@ of the United States of America}
 
 \abbreviations{
 %acronyms
-CT,computed tomography;
-SNR,signal-to-noise ratio;
-CNR,contrast-to-noise ratio;
-SEM,scanning electron microscope;
+CT, computed tomography;
+SNR, signal-to-noise ratio;
+CNR, contrast-to-noise ratio;
+SEM, scanning electron microscope;
 }
 %% ----------------------------------------------------------------------------------------------------------------
 %% The first letter of the article should be drop cap: \dropcap{}
 %\dropcap{I}n this article we study the evolution of ''almost-sharp'' fronts
 
 \section{Significance statement}
-Phase sensitive X-ray imaging provides access to additional information
-on the investigated samples with respect to the conventional absorption
-radiography and tomography.
 
-Here we show a grating interferometer with a new design of the optical
-elements that enables a large field of view and an efficient imaging at
-a target energy of~\SI{100}{\kilo\eV} on a conventional tube.
+Phase sensitive X-ray imaging techniques provide access to new and
+invaluable information compared to traditional absorption-based radiography
+and tomography.
 
-Our results demonstrate that phase contrast can be achieved at these
-energies, which are relevant for many applications, ranging from medical
-diagnostics to nondestructive testing or homeland security.
+Here we show a Talbot-Lau grating interferometer based on a novel optical
+design, enabling imaging at X-ray energies of~\SI{100}{\kilo\eV} and above
+with a large field of view as well as a very compact and efficient geometry. 
+
+Our results demonstrate, for the first time, that phase contrast X-ray
+imaging can be successfully performed at diagnostically relevant energies
+using a conventional X-ray tube, with potential applications spanning from
+medical imaging to nondestructive testing or homeland security.
 
 \section{}
 \dropcap{X}-ray radiography and CT are standard imaging techniques in
@@ -390,632 +393,8 @@ supported by the Competence Centre for Materials Science and Technology
 % targeting of chitinases to the plant vacuole. 
 % {\it Proc Natl Acad Sci USA} 88:10362-10366.
 
-
-%% Enter the largest bibliography number in the facing curly brackets
-%% following \begin{thebibliography}
-
 %\bibliographystyle{pnas}
 %\bibliography{library}
-\begin{thebibliography}{10}
-
-\bibitem{Als-Nielsen2011}
-Als-Nielsen J, McMorrow D (2011) {\em {Elements of modern X-ray physics}}.
-
-\bibitem{Qi2010}
-Qi Z, Zambelli J, Bevins N, Chen GH (2010) {Quantitative imaging of electron
-  density and effective atomic number using phase contrast CT.}
-\newblock {\em Physics in medicine and biology} 55:2669--77.
-
-\bibitem{Pfeiffer2007a}
-Pfeiffer F et~al. (2007) {High-resolution brain tumor visualization using
-  three-dimensional x-ray phase contrast tomography.}
-\newblock {\em Physics in medicine and biology} 52:6923--6930.
-
-\bibitem{McDonald2009}
-McDonald SA et~al. (2009) {Advanced phase-contrast imaging using a grating
-  interferometer}.
-\newblock {\em Journal of Synchrotron Radiation} 16:562--572.
-
-\bibitem{Davis1995}
-Davis T, Gao D, Gureyev T, Stevenson A, Wilkins S (1995) {Phase-contrast
-  imaging of weakly absorbing materials using hard X-rays}.
-\newblock {\em Nature} 373:595--598.
-
-\bibitem{Chapman1997}
-Chapman D et~al. (1997) {Diffraction enhanced x-ray imaging}.
-\newblock {\em Physics in Medicine and Biology} 42:2015--2025.
-
-\bibitem{Bonse1965}
-Bonse U, Hart M (1965) {An x-ray interferometer}.
-\newblock {\em Applied Physics Letters} 6:155--156.
-
-\bibitem{Momose1996}
-Momose A, Takeda T, Itai Y, Hirano K (1996) {Phase-contrast X-ray computed
-  tomography for observing biological soft tissues}.
-\newblock {\em Nature Medicine} 2:473--475.
-
-\bibitem{Snigirev1995}
-Snigirev A, Snigireva I, Kohn V, Kuznetsov S, Schelokov I (1995) {On the
-  possibilities of x-ray phase contrast microimaging by coherent high-energy
-  synchrotron radiation}.
-\newblock {\em Review of Scientific Instruments} 66:5486--5492.
-
-\bibitem{Wilkins1996}
-Wilkins S, Gureyev T, Gao D, Pogany A, Stevenson A (1996) {Phase-contrast
-  imaging using polychromatic hard X-rays}.
-\newblock {\em Nature} 384:335--338.
-
-\bibitem{Cloetens1996}
-Cloetens P, Barrett R, Baruchel J, Guigay J, Schlenker M (1996) {Phase objects
-  in synchrotron radiation hard x-ray imaging}.
-\newblock {\em Journal of Physics D: Applied Physics} 29:133--146.
-
-\bibitem{Cloetens1997}
-Cloetens P, Guigay J, {De Martino} C, Baruchel J, Schlenker M (1997)
-  {Fractional Talbot imaging of phase gratings with hard x rays.}
-\newblock {\em Optics letters} 22:1059--61.
-
-\bibitem{David2002}
-David C, N\"{o}hammer B, Solak H, Ziegler E (2002) {Differential x-ray phase
-  contrast imaging using a shearing interferometer}.
-\newblock {\em Applied Physics Letters} 81:3287--3289.
-
-\bibitem{Momose2003a}
-Momose A et~al. (2003) {Demonstration of X-Ray Talbot Interferometry}.
-\newblock {\em Japanese Journal of Applied Physics} 42:L866--L868.
-
-\bibitem{Munro2012}
-Munro P, Ignatyev K, Speller R, Olivo A (2012) {Phase and absorption retrieval
-  using incoherent X-ray sources}.
-\newblock {\em Proceedings of the National Academy of Sciences} 2012:2--7.
-
-\bibitem{Pfeiffer2006}
-Pfeiffer F, Weitkamp T, Bunk O, David C (2006) {Phase retrieval and
-  differential phase-contrast imaging with low-brilliance X-ray sources}.
-\newblock {\em Nature Physics} 2:258--261.
-
-\bibitem{Nesch2009}
-Nesch I et~al. (2009) {The design and application of an in-laboratory
-  diffraction-enhanced x-ray imaging instrument.}
-\newblock {\em The Review of scientific instruments} 80:093702.
-
-\bibitem{Parham2009}
-Parham C, Zhong Z, Connor DM, Chapman LD, Pisano ED (2009) {Design and
-  Implementation of a Compact Low-Dose Diffraction Enhanced Medical Imaging
-  System}.
-
-\bibitem{Pfeiffer2008}
-Pfeiffer F et~al. (2008) {Hard-X-ray dark-field imaging using a grating
-  interferometer}.
-\newblock {\em Nature Materials} 7:134--137.
-
-\bibitem{Willner2013}
-Willner M et~al. (2013) {Quantitative X-ray phase-contrast computed tomography
-  at 82 keV}.
-\newblock {\em Optics express} 21:4155--4166.
-
-\bibitem{Donath2009}
-Donath T et~al. (2009) {Inverse geometry for grating-based x-ray phase-contrast
-  imaging}.
-\newblock {\em Journal of Applied Physics} 106:054703.
-
-\bibitem{Mohr2012}
-Mohr J et~al. (2012) {High aspect ratio gratings for X-ray phase contrast
-  imaging}.
-\newblock 41:41--50.
-
-\bibitem{David2007}
-David C et~al. (2007) {Fabrication of diffraction gratings for hard X-ray phase
-  contrast imaging}.
-\newblock {\em Microelectronic Engineering} 84:1172--1177.
-
-\bibitem{Kenntner2010}
-Kenntner J et~al. (2010) {\em {Front- and backside structuring of gratings for
-  phase contrast imaging with x-ray tubes}}.
-\newblock Vol.{} 7804, p. 780408.
-
-\bibitem{Stutman2012a}
-Stutman D, Finkenthal M (2012) {Glancing angle Talbot-Lau grating
-  interferometers for phase contrast imaging at high x-ray energy}.
-\newblock {\em Applied physics letters} 101:91108.
-
-\bibitem{Aslund2007}
-{\AA slund, M} (2007) Ph.D. thesis.
-
-\bibitem{Oduko2010}
-Oduko JM, Young KC, Burch A (2010) in {\em Digital Mammography}, Lecture Notes
-  in Computer Science, eds.{} Martí J, Oliver A, Freixenet J, Martí R.
-\newblock (Springer Berlin Heidelberg) Vol.{} 6136, pp. 365--370.
-
-\bibitem{Weitkamp2005}
-Weitkamp T et~al. (2005) {X-ray phase imaging with a grating interferometer}.
-\newblock {\em Optics Express} 13:6296--6304.
-
-\bibitem{Thuering2013c}
-Thuering T et~al. (2013) {Energy resolved X-ray grating interferometry}.
-\newblock {\em Applied Physics Letters} 102:191113.
-
-\bibitem{Chabior2011a}
-Chabior M et~al. (2011) {Beam hardening effects in grating-based x-ray
-  phase-contrast imaging}.
-\newblock {\em Medical Physics} 38:1189.
-
-\bibitem{Grunzweig2008}
-Gr\"{u}nzweig C et~al. (2008) {Design, fabrication, and characterization of
-  diffraction gratings for neutron phase contrast imaging.}
-\newblock {\em The Review of scientific instruments} 79:053703.
-
-\bibitem{Raupach2011}
-Raupach R, Flohr TG (2011) {Analytical evaluation of the signal and noise
-  propagation in x-ray differential phase-contrast computed tomography.}
-\newblock {\em Physics in medicine and biology} 56:2219--2244.
-
-\end{thebibliography}
-\begin{thebibliography}{10}
-
-\bibitem{Als-Nielsen2011}
-Als-Nielsen J, McMorrow D (2011) {\em {Elements of modern X-ray physics}}.
-
-\bibitem{Qi2010}
-Qi Z, Zambelli J, Bevins N, Chen GH (2010) {Quantitative imaging of electron
-  density and effective atomic number using phase contrast CT.}
-\newblock {\em Physics in medicine and biology} 55:2669--77.
-
-\bibitem{Pfeiffer2007a}
-Pfeiffer F et~al. (2007) {High-resolution brain tumor visualization using
-  three-dimensional x-ray phase contrast tomography.}
-\newblock {\em Physics in medicine and biology} 52:6923--6930.
-
-\bibitem{McDonald2009}
-McDonald SA et~al. (2009) {Advanced phase-contrast imaging using a grating
-  interferometer}.
-\newblock {\em Journal of Synchrotron Radiation} 16:562--572.
-
-\bibitem{Davis1995}
-Davis T, Gao D, Gureyev T, Stevenson A, Wilkins S (1995) {Phase-contrast
-  imaging of weakly absorbing materials using hard X-rays}.
-\newblock {\em Nature} 373:595--598.
-
-\bibitem{Chapman1997}
-Chapman D et~al. (1997) {Diffraction enhanced x-ray imaging}.
-\newblock {\em Physics in Medicine and Biology} 42:2015--2025.
-
-\bibitem{Bonse1965}
-Bonse U, Hart M (1965) {An x-ray interferometer}.
-\newblock {\em Applied Physics Letters} 6:155--156.
-
-\bibitem{Momose1996}
-Momose A, Takeda T, Itai Y, Hirano K (1996) {Phase-contrast X-ray computed
-  tomography for observing biological soft tissues}.
-\newblock {\em Nature Medicine} 2:473--475.
-
-\bibitem{Snigirev1995}
-Snigirev A, Snigireva I, Kohn V, Kuznetsov S, Schelokov I (1995) {On the
-  possibilities of x-ray phase contrast microimaging by coherent high-energy
-  synchrotron radiation}.
-\newblock {\em Review of Scientific Instruments} 66:5486--5492.
-
-\bibitem{Wilkins1996}
-Wilkins S, Gureyev T, Gao D, Pogany A, Stevenson A (1996) {Phase-contrast
-  imaging using polychromatic hard X-rays}.
-\newblock {\em Nature} 384:335--338.
-
-\bibitem{Cloetens1996}
-Cloetens P, Barrett R, Baruchel J, Guigay J, Schlenker M (1996) {Phase objects
-  in synchrotron radiation hard x-ray imaging}.
-\newblock {\em Journal of Physics D: Applied Physics} 29:133--146.
-
-\bibitem{Cloetens1997}
-Cloetens P, Guigay J, {De Martino} C, Baruchel J, Schlenker M (1997)
-  {Fractional Talbot imaging of phase gratings with hard x rays.}
-\newblock {\em Optics letters} 22:1059--61.
-
-\bibitem{David2002}
-David C, N\"{o}hammer B, Solak H, Ziegler E (2002) {Differential x-ray phase
-  contrast imaging using a shearing interferometer}.
-\newblock {\em Applied Physics Letters} 81:3287--3289.
-
-\bibitem{Momose2003a}
-Momose A et~al. (2003) {Demonstration of X-Ray Talbot Interferometry}.
-\newblock {\em Japanese Journal of Applied Physics} 42:L866--L868.
-
-\bibitem{Munro2012}
-Munro P, Ignatyev K, Speller R, Olivo A (2012) {Phase and absorption retrieval
-  using incoherent X-ray sources}.
-\newblock {\em Proceedings of the National Academy of Sciences} 2012:2--7.
-
-\bibitem{Pfeiffer2006}
-Pfeiffer F, Weitkamp T, Bunk O, David C (2006) {Phase retrieval and
-  differential phase-contrast imaging with low-brilliance X-ray sources}.
-\newblock {\em Nature Physics} 2:258--261.
-
-\bibitem{Nesch2009}
-Nesch I et~al. (2009) {The design and application of an in-laboratory
-  diffraction-enhanced x-ray imaging instrument.}
-\newblock {\em The Review of scientific instruments} 80:093702.
-
-\bibitem{Parham2009}
-Parham C, Zhong Z, Connor DM, Chapman LD, Pisano ED (2009) {Design and
-  Implementation of a Compact Low-Dose Diffraction Enhanced Medical Imaging
-  System}.
-
-\bibitem{Pfeiffer2008}
-Pfeiffer F et~al. (2008) {Hard-X-ray dark-field imaging using a grating
-  interferometer}.
-\newblock {\em Nature Materials} 7:134--137.
-
-\bibitem{Willner2013}
-Willner M et~al. (2013) {Quantitative X-ray phase-contrast computed tomography
-  at 82 keV}.
-\newblock {\em Optics express} 21:4155--4166.
-
-\bibitem{Donath2009}
-Donath T et~al. (2009) {Inverse geometry for grating-based x-ray phase-contrast
-  imaging}.
-\newblock {\em Journal of Applied Physics} 106:054703.
-
-\bibitem{Mohr2012}
-Mohr J et~al. (2012) {High aspect ratio gratings for X-ray phase contrast
-  imaging}.
-\newblock 41:41--50.
-
-\bibitem{David2007}
-David C et~al. (2007) {Fabrication of diffraction gratings for hard X-ray phase
-  contrast imaging}.
-\newblock {\em Microelectronic Engineering} 84:1172--1177.
-
-\bibitem{Kenntner2010}
-Kenntner J et~al. (2010) {\em {Front- and backside structuring of gratings for
-  phase contrast imaging with x-ray tubes}}.
-\newblock Vol.{} 7804, p. 780408.
-
-\bibitem{Stutman2012a}
-Stutman D, Finkenthal M (2012) {Glancing angle Talbot-Lau grating
-  interferometers for phase contrast imaging at high x-ray energy}.
-\newblock {\em Applied physics letters} 101:91108.
-
-\bibitem{Aslund2007}
-{\AA slund, M} (2007) Ph.D. thesis.
-
-\bibitem{Oduko2010}
-Oduko JM, Young KC, Burch A (2010) in {\em Digital Mammography}, Lecture Notes
-  in Computer Science, eds.{} Martí J, Oliver A, Freixenet J, Martí R.
-\newblock (Springer Berlin Heidelberg) Vol.{} 6136, pp. 365--370.
-
-\bibitem{Weitkamp2005}
-Weitkamp T et~al. (2005) {X-ray phase imaging with a grating interferometer}.
-\newblock {\em Optics Express} 13:6296--6304.
-
-\bibitem{Thuering2013c}
-Thuering T et~al. (2013) {Energy resolved X-ray grating interferometry}.
-\newblock {\em Applied Physics Letters} 102:191113.
-
-\bibitem{Chabior2011a}
-Chabior M et~al. (2011) {Beam hardening effects in grating-based x-ray
-  phase-contrast imaging}.
-\newblock {\em Medical Physics} 38:1189.
-
-\bibitem{Grunzweig2008}
-Gr\"{u}nzweig C et~al. (2008) {Design, fabrication, and characterization of
-  diffraction gratings for neutron phase contrast imaging.}
-\newblock {\em The Review of scientific instruments} 79:053703.
-
-\bibitem{Raupach2011}
-Raupach R, Flohr TG (2011) {Analytical evaluation of the signal and noise
-  propagation in x-ray differential phase-contrast computed tomography.}
-\newblock {\em Physics in medicine and biology} 56:2219--2244.
-
-\end{thebibliography}
-\begin{thebibliography}{10}
-
-\bibitem{Als-Nielsen2011}
-Als-Nielsen J, McMorrow D (2011) {\em {Elements of modern X-ray physics}}.
-
-\bibitem{Qi2010}
-Qi Z, Zambelli J, Bevins N, Chen GH (2010) {Quantitative imaging of electron
-  density and effective atomic number using phase contrast CT.}
-\newblock {\em Physics in medicine and biology} 55:2669--77.
-
-\bibitem{Pfeiffer2007a}
-Pfeiffer F et~al. (2007) {High-resolution brain tumor visualization using
-  three-dimensional x-ray phase contrast tomography.}
-\newblock {\em Physics in medicine and biology} 52:6923--6930.
-
-\bibitem{McDonald2009}
-McDonald SA et~al. (2009) {Advanced phase-contrast imaging using a grating
-  interferometer}.
-\newblock {\em Journal of Synchrotron Radiation} 16:562--572.
-
-\bibitem{Davis1995}
-Davis T, Gao D, Gureyev T, Stevenson A, Wilkins S (1995) {Phase-contrast
-  imaging of weakly absorbing materials using hard X-rays}.
-\newblock {\em Nature} 373:595--598.
-
-\bibitem{Chapman1997}
-Chapman D et~al. (1997) {Diffraction enhanced x-ray imaging}.
-\newblock {\em Physics in Medicine and Biology} 42:2015--2025.
-
-\bibitem{Bonse1965}
-Bonse U, Hart M (1965) {An x-ray interferometer}.
-\newblock {\em Applied Physics Letters} 6:155--156.
-
-\bibitem{Momose1996}
-Momose A, Takeda T, Itai Y, Hirano K (1996) {Phase-contrast X-ray computed
-  tomography for observing biological soft tissues}.
-\newblock {\em Nature Medicine} 2:473--475.
-
-\bibitem{Snigirev1995}
-Snigirev A, Snigireva I, Kohn V, Kuznetsov S, Schelokov I (1995) {On the
-  possibilities of x-ray phase contrast microimaging by coherent high-energy
-  synchrotron radiation}.
-\newblock {\em Review of Scientific Instruments} 66:5486--5492.
-
-\bibitem{Wilkins1996}
-Wilkins S, Gureyev T, Gao D, Pogany A, Stevenson A (1996) {Phase-contrast
-  imaging using polychromatic hard X-rays}.
-\newblock {\em Nature} 384:335--338.
-
-\bibitem{Cloetens1996}
-Cloetens P, Barrett R, Baruchel J, Guigay J, Schlenker M (1996) {Phase objects
-  in synchrotron radiation hard x-ray imaging}.
-\newblock {\em Journal of Physics D: Applied Physics} 29:133--146.
-
-\bibitem{Cloetens1997}
-Cloetens P, Guigay J, {De Martino} C, Baruchel J, Schlenker M (1997)
-  {Fractional Talbot imaging of phase gratings with hard x rays.}
-\newblock {\em Optics letters} 22:1059--61.
-
-\bibitem{David2002}
-David C, N\"{o}hammer B, Solak H, Ziegler E (2002) {Differential x-ray phase
-  contrast imaging using a shearing interferometer}.
-\newblock {\em Applied Physics Letters} 81:3287--3289.
-
-\bibitem{Momose2003a}
-Momose A et~al. (2003) {Demonstration of X-Ray Talbot Interferometry}.
-\newblock {\em Japanese Journal of Applied Physics} 42:L866--L868.
-
-\bibitem{Munro2012}
-Munro P, Ignatyev K, Speller R, Olivo A (2012) {Phase and absorption retrieval
-  using incoherent X-ray sources}.
-\newblock {\em Proceedings of the National Academy of Sciences} 2012:2--7.
-
-\bibitem{Pfeiffer2006}
-Pfeiffer F, Weitkamp T, Bunk O, David C (2006) {Phase retrieval and
-  differential phase-contrast imaging with low-brilliance X-ray sources}.
-\newblock {\em Nature Physics} 2:258--261.
-
-\bibitem{Nesch2009}
-Nesch I et~al. (2009) {The design and application of an in-laboratory
-  diffraction-enhanced x-ray imaging instrument.}
-\newblock {\em The Review of scientific instruments} 80:093702.
-
-\bibitem{Parham2009}
-Parham C, Zhong Z, Connor DM, Chapman LD, Pisano ED (2009) {Design and
-  Implementation of a Compact Low-Dose Diffraction Enhanced Medical Imaging
-  System}.
-
-\bibitem{Pfeiffer2008}
-Pfeiffer F et~al. (2008) {Hard-X-ray dark-field imaging using a grating
-  interferometer}.
-\newblock {\em Nature Materials} 7:134--137.
-
-\bibitem{Willner2013}
-Willner M et~al. (2013) {Quantitative X-ray phase-contrast computed tomography
-  at 82 keV}.
-\newblock {\em Optics express} 21:4155--4166.
-
-\bibitem{Donath2009}
-Donath T et~al. (2009) {Inverse geometry for grating-based x-ray phase-contrast
-  imaging}.
-\newblock {\em Journal of Applied Physics} 106:054703.
-
-\bibitem{Mohr2012}
-Mohr J et~al. (2012) {High aspect ratio gratings for X-ray phase contrast
-  imaging}.
-\newblock 41:41--50.
-
-\bibitem{David2007}
-David C et~al. (2007) {Fabrication of diffraction gratings for hard X-ray phase
-  contrast imaging}.
-\newblock {\em Microelectronic Engineering} 84:1172--1177.
-
-\bibitem{Kenntner2010}
-Kenntner J et~al. (2010) {\em {Front- and backside structuring of gratings for
-  phase contrast imaging with x-ray tubes}}.
-\newblock Vol.{} 7804, p. 780408.
-
-\bibitem{Stutman2012a}
-Stutman D, Finkenthal M (2012) {Glancing angle Talbot-Lau grating
-  interferometers for phase contrast imaging at high x-ray energy}.
-\newblock {\em Applied physics letters} 101:91108.
-
-\bibitem{Aslund2007}
-{\AA slund, M} (2007) Ph.D. thesis.
-
-\bibitem{Oduko2010}
-Oduko JM, Young KC, Burch A (2010) in {\em Digital Mammography}, Lecture Notes
-  in Computer Science, eds.{} Martí J, Oliver A, Freixenet J, Martí R.
-\newblock (Springer Berlin Heidelberg) Vol.{} 6136, pp. 365--370.
-
-\bibitem{Weitkamp2005}
-Weitkamp T et~al. (2005) {X-ray phase imaging with a grating interferometer}.
-\newblock {\em Optics Express} 13:6296--6304.
-
-\bibitem{Thuering2013c}
-Thuering T et~al. (2013) {Energy resolved X-ray grating interferometry}.
-\newblock {\em Applied Physics Letters} 102:191113.
-
-\bibitem{Chabior2011a}
-Chabior M et~al. (2011) {Beam hardening effects in grating-based x-ray
-  phase-contrast imaging}.
-\newblock {\em Medical Physics} 38:1189.
-
-\bibitem{Grunzweig2008}
-Gr\"{u}nzweig C et~al. (2008) {Design, fabrication, and characterization of
-  diffraction gratings for neutron phase contrast imaging.}
-\newblock {\em The Review of scientific instruments} 79:053703.
-
-\bibitem{Raupach2011}
-Raupach R, Flohr TG (2011) {Analytical evaluation of the signal and noise
-  propagation in x-ray differential phase-contrast computed tomography.}
-\newblock {\em Physics in medicine and biology} 56:2219--2244.
-
-\end{thebibliography}
-\begin{thebibliography}{10}
-
-\bibitem{Als-Nielsen2011}
-Als-Nielsen J, McMorrow D (2011) {\em {Elements of modern X-ray physics}}.
-
-\bibitem{Qi2010}
-Qi Z, Zambelli J, Bevins N, Chen GH (2010) {Quantitative imaging of electron
-  density and effective atomic number using phase contrast CT.}
-\newblock {\em Physics in medicine and biology} 55:2669--77.
-
-\bibitem{Pfeiffer2007a}
-Pfeiffer F et~al. (2007) {High-resolution brain tumor visualization using
-  three-dimensional x-ray phase contrast tomography.}
-\newblock {\em Physics in medicine and biology} 52:6923--6930.
-
-\bibitem{McDonald2009}
-McDonald SA et~al. (2009) {Advanced phase-contrast imaging using a grating
-  interferometer}.
-\newblock {\em Journal of Synchrotron Radiation} 16:562--572.
-
-\bibitem{Davis1995}
-Davis T, Gao D, Gureyev T, Stevenson A, Wilkins S (1995) {Phase-contrast
-  imaging of weakly absorbing materials using hard X-rays}.
-\newblock {\em Nature} 373:595--598.
-
-\bibitem{Chapman1997}
-Chapman D et~al. (1997) {Diffraction enhanced x-ray imaging}.
-\newblock {\em Physics in Medicine and Biology} 42:2015--2025.
-
-\bibitem{Bonse1965}
-Bonse U, Hart M (1965) {An x-ray interferometer}.
-\newblock {\em Applied Physics Letters} 6:155--156.
-
-\bibitem{Momose1996}
-Momose A, Takeda T, Itai Y, Hirano K (1996) {Phase-contrast X-ray computed
-  tomography for observing biological soft tissues}.
-\newblock {\em Nature Medicine} 2:473--475.
-
-\bibitem{Snigirev1995}
-Snigirev A, Snigireva I, Kohn V, Kuznetsov S, Schelokov I (1995) {On the
-  possibilities of x-ray phase contrast microimaging by coherent high-energy
-  synchrotron radiation}.
-\newblock {\em Review of Scientific Instruments} 66:5486--5492.
-
-\bibitem{Wilkins1996}
-Wilkins S, Gureyev T, Gao D, Pogany A, Stevenson A (1996) {Phase-contrast
-  imaging using polychromatic hard X-rays}.
-\newblock {\em Nature} 384:335--338.
-
-\bibitem{Cloetens1996}
-Cloetens P, Barrett R, Baruchel J, Guigay J, Schlenker M (1996) {Phase objects
-  in synchrotron radiation hard x-ray imaging}.
-\newblock {\em Journal of Physics D: Applied Physics} 29:133--146.
-
-\bibitem{Cloetens1997}
-Cloetens P, Guigay J, {De Martino} C, Baruchel J, Schlenker M (1997)
-  {Fractional Talbot imaging of phase gratings with hard x rays.}
-\newblock {\em Optics letters} 22:1059--61.
-
-\bibitem{David2002}
-David C, N\"{o}hammer B, Solak H, Ziegler E (2002) {Differential x-ray phase
-  contrast imaging using a shearing interferometer}.
-\newblock {\em Applied Physics Letters} 81:3287--3289.
-
-\bibitem{Momose2003a}
-Momose A et~al. (2003) {Demonstration of X-Ray Talbot Interferometry}.
-\newblock {\em Japanese Journal of Applied Physics} 42:L866--L868.
-
-\bibitem{Munro2012}
-Munro P, Ignatyev K, Speller R, Olivo A (2012) {Phase and absorption retrieval
-  using incoherent X-ray sources}.
-\newblock {\em Proceedings of the National Academy of Sciences} 2012:2--7.
-
-\bibitem{Pfeiffer2006}
-Pfeiffer F, Weitkamp T, Bunk O, David C (2006) {Phase retrieval and
-  differential phase-contrast imaging with low-brilliance X-ray sources}.
-\newblock {\em Nature Physics} 2:258--261.
-
-\bibitem{Nesch2009}
-Nesch I et~al. (2009) {The design and application of an in-laboratory
-  diffraction-enhanced x-ray imaging instrument.}
-\newblock {\em The Review of scientific instruments} 80:093702.
-
-\bibitem{Parham2009}
-Parham C, Zhong Z, Connor DM, Chapman LD, Pisano ED (2009) {Design and
-  Implementation of a Compact Low-Dose Diffraction Enhanced Medical Imaging
-  System}.
-
-\bibitem{Pfeiffer2008}
-Pfeiffer F et~al. (2008) {Hard-X-ray dark-field imaging using a grating
-  interferometer}.
-\newblock {\em Nature Materials} 7:134--137.
-
-\bibitem{Willner2013}
-Willner M et~al. (2013) {Quantitative X-ray phase-contrast computed tomography
-  at 82 keV}.
-\newblock {\em Optics express} 21:4155--4166.
-
-\bibitem{Donath2009}
-Donath T et~al. (2009) {Inverse geometry for grating-based x-ray phase-contrast
-  imaging}.
-\newblock {\em Journal of Applied Physics} 106:054703.
-
-\bibitem{Mohr2012}
-Mohr J et~al. (2012) {High aspect ratio gratings for X-ray phase contrast
-  imaging}.
-\newblock 41:41--50.
-
-\bibitem{David2007}
-David C et~al. (2007) {Fabrication of diffraction gratings for hard X-ray phase
-  contrast imaging}.
-\newblock {\em Microelectronic Engineering} 84:1172--1177.
-
-\bibitem{Kenntner2010}
-Kenntner J et~al. (2010) {\em {Front- and backside structuring of gratings for
-  phase contrast imaging with x-ray tubes}}.
-\newblock Vol.{} 7804, p. 780408.
-
-\bibitem{Stutman2012a}
-Stutman D, Finkenthal M (2012) {Glancing angle Talbot-Lau grating
-  interferometers for phase contrast imaging at high x-ray energy}.
-\newblock {\em Applied physics letters} 101:91108.
-
-\bibitem{Aslund2007}
-{\AA slund, M} (2007) Ph.D. thesis.
-
-\bibitem{Oduko2010}
-Oduko JM, Young KC, Burch A (2010) in {\em Digital Mammography}, Lecture Notes
-  in Computer Science, eds.{} Martí J, Oliver A, Freixenet J, Martí R.
-\newblock (Springer Berlin Heidelberg) Vol.{} 6136, pp. 365--370.
-
-\bibitem{Weitkamp2005}
-Weitkamp T et~al. (2005) {X-ray phase imaging with a grating interferometer}.
-\newblock {\em Optics Express} 13:6296--6304.
-
-\bibitem{Thuering2013c}
-Thuering T et~al. (2013) {Energy resolved X-ray grating interferometry}.
-\newblock {\em Applied Physics Letters} 102:191113.
-
-\bibitem{Chabior2011a}
-Chabior M et~al. (2011) {Beam hardening effects in grating-based x-ray
-  phase-contrast imaging}.
-\newblock {\em Medical Physics} 38:1189.
-
-\bibitem{Grunzweig2008}
-Gr\"{u}nzweig C et~al. (2008) {Design, fabrication, and characterization of
-  diffraction gratings for neutron phase contrast imaging.}
-\newblock {\em The Review of scientific instruments} 79:053703.
-
-\bibitem{Raupach2011}
-Raupach R, Flohr TG (2011) {Analytical evaluation of the signal and noise
-  propagation in x-ray differential phase-contrast computed tomography.}
-\newblock {\em Physics in medicine and biology} 56:2219--2244.
-
-\end{thebibliography}
 \begin{thebibliography}{10}
 
 \bibitem{Als-Nielsen2011}
