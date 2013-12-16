@@ -2,7 +2,7 @@
 
 VERSION=$(shell git describe --always --abbrev=4)
 
-all: hedpc.pdf point_by_point_response.pdf appeal_letter.pdf
+all: hedpc.pdf
 
 hedpc.pdf: hedpc.tex library.bib
 	make prepare_for_bibtex
@@ -18,14 +18,14 @@ no_bibtex: hedpc.tex
 	exiftool -overwrite_original -Subject="$(VERSION)" $(addsuffix .pdf, $(basename $<))
 
 prepare_for_bibtex: hedpc.tex library.bib
+	sed -i '/bibliographystyle/s/%//g' $<
 	sed -i '/bibliography{library}/s/%//g' $<
-	sed -i '/merlin/,/end{thebib/d' $<
+	sed -i '/begin{thebibliography/,/end{thebibliography/d' $<
 
 cleanup_bibtex: hedpc.tex library.bib
-	sed -i '/end{document}/d' $<
+	sed -i '/bibliographystyle/s/^/%/' $<
 	sed -i '/bibliography{library}/s/^/%/' $<
-	cat $(addsuffix .bbl, $(basename $<)) >> $<
-	echo '\\end{document}' >> $<
+	sed -i '/bibliography{library}/r $(addsuffix .bbl, $(basename $<))' $<
 
 bibtex: hedpc.tex 
 	latex hedpc
@@ -35,17 +35,6 @@ bibtex: hedpc.tex
 	dvips hedpc.dvi
 	ps2pdf hedpc.ps
 	exiftool -overwrite_original -Subject="$(VERSION)" $(addsuffix .pdf, $(basename $<))
-
-
-point_by_point_response.pdf: point_by_point_response.tex
-	pdflatex $<
-	pdflatex $<
-	exiftool -overwrite_original -Subject="$(VERSION)" $@
-
-appeal_letter.pdf: appeal_letter.tex
-	pdflatex $^
-	pdflatex $^
-	exiftool -overwrite_original -Subject="$(VERSION)" $@
 
 clean:
 	-rm -f *.aux *.bbl *.blg *.dvi *.log *.ps *.backup
