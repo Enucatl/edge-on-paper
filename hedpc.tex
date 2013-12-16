@@ -1,125 +1,80 @@
-\documentclass{pnastwo}
+%\documentclass[aps,prl,twocolumn,showpacs,superscriptaddress,groupedaddress]{revtex4}
+%% for review and submission
+%\documentclass[aps,preprint,showpacs,superscriptaddress,groupedaddress]{revtex4}
+% for double-spaced preprint
+%\documentclass[aps,prl,floatfix,twocolumn,10pt]{revtex4-1}
+%for review and submission
+\documentclass[english]{nature} 
+% for double-spaced preprint
+%\documentclass[aip,apl,amsmath,amssymb,floatfix,preprint,a4paper]{revtex4-1}
+%\documentclass[aip,apl,amsmath,amssymb,floatfix,reprint,a4paper]{revtex4-1}
 
 %% Packages
 \usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[english]{babel}
-\usepackage{amssymb,amsfonts,amsmath}
+\usepackage[utf8]{inputenc} %Umlaute
+\usepackage{babel}
+\usepackage{acronym}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[bf,small,labelsep=period]{caption}
 \usepackage{graphicx}  %figures
 \usepackage[detect-all]{siunitx}
-%\usepackage{pnastwof}
-
-\DeclareMathSizes{10}{18}{12}{7}
+\usepackage[affil-it]{authblk}
 
 %% New commands
 \newcommand{\msub}[1]{\ensuremath{\textnormal{\begin{tiny}#1\end{tiny}}}}
 \renewcommand{\d}[1]{\ensuremath{\operatorname{d}\!{#1}}}
 \DeclareSIUnit{\voltpeak}{Vp}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Don't type in anything in the following section:
-%%%%%%%%%%%%
-%% For PNAS Only:
-\contributor{Submitted to Proceedings
-of the National Academy of Sciences of the United States of America}
-\url{www.pnas.org/cgi/doi/10.1073/pnas.0709640104}
-\copyrightyear{2008}
-\issuedate{Issue Date}
-\volume{Volume}
-\issuenumber{Issue Number}
-%%%%%%%%%%%%
-\footlineauthor{ Corresponding author:
-    M. Abis, 
-    matteo.abis@psi.ch
-}
+%acronyms
+\acrodef{CT}{computed tomography}
+\acrodef{SNR}{signal-to-noise ratio}
+\acrodef{CNR}{contrast-to-noise ratio}
+\acrodef{SEM}{scanning electron microscope}
+%% ----------------------------------------------------------------------------------------------------------------
 
 \begin{document}
 
-\title{X-ray phase-contrast imaging at 100 keV on a conventional source}
+\title{X-ray phase-contrast imaging at \SI{100}{\kilo\electronvolt} on
+a conventional source}
 
-\author{T.~Thuering%
-\affil{1}{Paul Scherrer Institute, 5232 Villigen, Switzerland}%
-\affil{2}{Institute for Biomedical Engineering,
-    Swiss Federal Institute of Technology,
-    Gloriastrasse 35,
-8092 Zurich, Switzerland},
-M.~Abis%%
-\affil{1}{}%
-\affil{2}{},
-Z.~Wang%
-\affil{1}{},
-C.~David%
-\affil{1}{},
-\and%
-M.~Stampanoni%
-\affil{1}{}%
-\affil{2}{}}
+\author[1,2]{T.~Thüring}
+\author[1,2]{M.~Abis}
+\author[1]{Z.~Wang}
+\author[1]{C.~David}
+\author[1,2]{M.~Stampanoni}
+\affil[1]{Paul Scherrer Institute, Villigen PSI, Switzerland}
+\affil[2]{Institute for Biomedical Engineering, Swiss Federal Institute of Technology, Zurich, Switzerland}
 
-\contributor{Submitted to Proceedings of the National Academy of Sciences
-of the United States of America}
+\date{\today}
 
-%% The \maketitle command is necessary to build the title page.
+
 \maketitle
 
-\begin{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Body of manuscript
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%% ----------------------------------------------------------------------------------------------------------------
 \begin{abstract}
     X-ray grating interferometry is a promising imaging technique sensitive
     to attenuation, refraction and scattering of the radiation. Applications
-    of this technique in the energy range between 80 and
-    150 keV are still largely unexplored due to the
+    of this technique in the energy range between $\num{80}$ and
+    $\SI{150}{\kilo\electronvolt}$ are still largely unexplored due to the
     severe technical challenges. Phase-contrast X-ray imaging at such high
     energies is of relevant scientific and industrial interest, in
     particular for the investigation of materials with high atomic number or
     thickness as well as for medical imaging. Here we show the successful
     implementation of a Talbot-Lau interferometer operated at
-    100 keV using a conventional X-ray tube and a
-    compact geometry, with a total length of 54 cm. We
+    $\SI{100}{\kilo\electronvolt}$ using a conventional X-ray tube and a
+    compact geometry, with a total length of $\SI{54}{\centi\metre}$. We
     present edge-on illumination of the gratings to overcome their current
     fabrication limits as well as curved structures, to match the beam
     divergence and allow a large field of view on a short and efficient
     setup.
 \end{abstract}
 
-
-%% When adding keywords, separate each term with a straight line: |
-\keywords{X-ray phase contrast | grating interferometry | X-ray
-interferometry | medical imaging}
-
-%% Optional for entering abbreviations, separate the abbreviation from
-%% its definition with a comma, separate each pair with a semicolon:
-%% for example:
-%% \abbreviations{SAM, self-assembled monolayer; OTS,
-%% octadecyltrichlorosilane}
-
-\abbreviations{
-%acronyms
-CT, computed tomography;
-SNR, signal-to-noise ratio;
-CNR, contrast-to-noise ratio;
-SEM, scanning electron microscope;
-}
-%% ----------------------------------------------------------------------------------------------------------------
-%% The first letter of the article should be drop cap: \dropcap{}
-%\dropcap{I}n this article we study the evolution of ''almost-sharp'' fronts
-
-\section{Significance statement}
-
-Phase sensitive X-ray imaging techniques provide access to new and
-invaluable information compared to traditional absorption-based radiography
-and tomography.
-
-Here we show a Talbot-Lau grating interferometer based on a novel optical
-design, enabling imaging at X-ray energies of~\SI{100}{\kilo\eV} and above
-with a large field of view as well as a very compact and efficient geometry. 
-
-Our results demonstrate, for the first time, that phase contrast X-ray
-imaging can be successfully performed at diagnostically relevant energies
-using a conventional X-ray tube, with potential applications spanning from
-medical imaging to nondestructive testing or homeland security.
-
-\section{}
-\dropcap{X}-ray radiography and CT are standard imaging techniques in
+X-ray radiography and \ac{CT} are standard imaging techniques in
 materials and life sciences for the nondestructive examination of samples or
 diagnostic tasks in medicine. The underlying contrast mechanism
 relies on the different X-ray attenuation properties of different materials
@@ -129,88 +84,78 @@ nature of X-rays reveals another contrast mechanism, which is the phase
 shift. The interaction contributing to phase shifts is coherent (Rayleigh)
 scattering~\cite{Als-Nielsen2011}.
 
-The attenuation and phase shift properties are described by the complex index of refraction
-$n=1-\delta + i \beta$.
-The imaginary part $\beta$ is related to the
-attenuation coefficient by $\mu = 4 \pi
-\beta(\lambda) / \lambda$, while the real part
-$\delta(\lambda)$ determines the phase shift 
+The attenuation and phase shift properties are described by the complex
+index of refraction $n=1 - \delta + i \beta$. The imaginary part $\beta$ is
+related to the attenuation coefficient by $\mu = 4 \pi \beta(\lambda) /
+\lambda$, while the real part $\delta(\lambda)$ determines the phase shift
 $\phi = 2 \pi \delta(\lambda) / \lambda$.
 
-While the attenuation can be measured with an
-X-ray detector as the reduction of the beam intensity, the phase
-is not directly observable. Therefore, an optical system is needed to
-convert the phase shift into intensity modulations.
+While the attenuation can be measured with an X-ray detector as the
+reduction of the beam intensity, the phase is not directly observable.
+Therefore, an optical system is needed to convert the phase shift into
+intensity modulations.
 
-Phase-sensitive
-imaging is a desirable modality, as it delivers a complementary source of
-contrast with respect to absorption by providing direct access 
-to the electron density~\cite{Als-Nielsen2011}. Moreover, the combination with
-attenuation enables the determination of the effective atomic
-number~\cite{Qi2010}.
-An enhanced CNR in images compared to attenuation for certain
-materials or tissues~\cite{Pfeiffer2007a,McDonald2009} has also been
-demonstrated.
+Phase-sensitive imaging is a desirable modality, as it delivers a
+complementary source of contrast with respect to absorption by providing
+direct access to the electron density~\cite{Als-Nielsen2011}. Moreover, the
+combination with attenuation enables the determination of the effective
+atomic number~\cite{Qi2010}. An enhanced \ac{CNR} in images compared to
+attenuation for certain materials or
+tissues~\cite{Pfeiffer2007a,McDonald2009} has also been demonstrated.
 
 The vast majority of phase-sensitive techniques, including crystal analyzer
-based~\cite{Davis1995,Chapman1997} or interferometric~\cite{Bonse1965,Momose1996}
-methods rely on X-ray beams of high spatial and temporal coherence, which is
-available only at synchrotron sources. Inline
-phase contrast~\cite{Snigirev1995,Wilkins1996,Cloetens1996} and
-Talbot interferometry~\cite{Cloetens1997,David2002,Momose2003a} need high
-spatial coherence but are available on polychromatic microfocus sources.
-Phase-contrast imaging using X-ray beams of low temporal \emph{and}
+based~\cite{Davis1995,Chapman1997} or
+interferometric~\cite{Bonse1965,Momose1996} methods rely on X-ray beams of
+high spatial and temporal coherence, which is available only at synchrotron
+sources. Inline phase contrast~\cite{Snigirev1995,Wilkins1996,Cloetens1996}
+and Talbot interferometry~\cite{Cloetens1997,David2002,Momose2003a} need
+high spatial coherence but are available on polychromatic microfocus
+sources. Phase-contrast imaging using X-ray beams of low temporal \emph{and}
 spatial coherence such as conventional low-brilliance X-ray tubes have been
-demonstrated with coded
-apertures~\cite{Munro2012} and Talbot-Lau
+demonstrated with coded apertures~\cite{Munro2012} and Talbot-Lau
 interferometry~\cite{Pfeiffer2006}. Analyzer-based systems have been
-recently extended to tube sources~\cite{Nesch2009,Parham2009}
-but only at energies up
-to the tungsten $K_\alpha$ line at~\SI{60}{\kilo\eV}.
-In addition to phase sensitivity, analyzer-based and Talbot interferometry 
-approaches also provide (with different retrieval mechanisms)
-information about the integrated local small angle scattering power from
-microscopic density fluctuations in a specimen~\cite{Pfeiffer2008}. This signal is known under the name of dark-field, scatter or visibility reduction contrast.
+recently extended to tube sources~\cite{Nesch2009,Parham2009} but only at
+energies up to the tungsten $K_\alpha$ line at~\SI{60}{\kilo\eV}. In
+addition to phase sensitivity, analyzer-based and Talbot interferometry
+approaches also provide (with different retrieval mechanisms) information
+about the integrated local small angle scattering power from microscopic
+density fluctuations in a specimen~\cite{Pfeiffer2008}. This signal is known
+under the name of dark-field, scatter or visibility reduction contrast.
 
 High-energy Talbot interferometry has been reported so far using a
 synchrotron source at nominal energies of
-$\SI{82}{\kilo\electronvolt}$~\cite{Willner2013}.
-Using a low-brilliance X-ray tube, Talbot-Lau interferometry was
-applied so far at $\SI{60}{\kilo\electronvolt}$ mean energy~\cite{Donath2009}.
-Medical imaging applications may benefit from phase contrast at higher
-energies: chest or abdominal
-radiography or CT require an acceleration voltage between \num{100} and
-$\SI{150}{\kilo\voltpeak}$. Other potential applications are homeland
-security or chip failure analysis, which require high energies for the
-visualization of materials of high density and atomic number.
+$\SI{82}{\kilo\electronvolt}$~\cite{Willner2013}. Using a low-brilliance
+X-ray tube, Talbot-Lau interferometry was applied so far at
+$\SI{60}{\kilo\electronvolt}$ mean energy~\cite{Donath2009}. Medical imaging
+applications may benefit from phase contrast at higher energies: chest or
+abdominal radiography or \ac{CT} require an acceleration voltage between
+\num{100} and $\SI{150}{\kilo\voltpeak}$. Other potential applications are
+homeland security or chip failure analysis, which require high energies for
+the visualization of materials of high density and atomic number.
 
 Here we introduce a method for phase contrast imaging which works on
 conventional X-ray sources, covers the entire diagnostic X-ray energy range
 and is compatible with compact imaging arrangements. The approach is based
-on
-Talbot-Lau
-interferometry~\cite{Pfeiffer2006} and employs an edge-on illumination approach for the grating design and
-arrangement. 
-Our solution removes one on the major hurdle which prevented grating interferometry to be applied at very high X-ray energies so far, namely the fabrication of gratings with high-aspect ratios.
- The aspect
-ratio, given by
-\begin{equation}
-    \text{R} = \frac{2h}{p},
-\end{equation}
-where $p$ is the grating period and $h$ the  structure
-height, is normally limited by the fabrication process, usually
-photolithography~\cite{David2002} or X-ray lithography~\cite{Mohr2012} as grating
-structures tend to collapse or deform (e.g. due to capillary forces) if
-the aspect ratio is too high. For a given setup length these parameters
-depend on the target energy $E$ according to $p \propto
-1/\sqrt{E}$ and $h \propto E^3$, and therefore $\textnormal{R}
-\propto E^{7/2}$~\cite{Momose2003a}. If at $E=\SI{25}{\kilo\electronvolt}$ an aspect ratio
-for the absorption grating around $\textnormal{R}=30$ is necessary for a
-reasonable length of the experimental arrangement, it would have to be at
-least $128$ for $E=\SI{100}{\kilo\electronvolt}$. Moreover, when using a
-broad spectrum, photons above the design energy should also be
-efficiently blocked by the gratings, which requires even higher aspect ratios.
-The largest aspect ratios achieved by current fabrication techniques~\cite{David2007,Kenntner2010} are around 60.
+on Talbot-Lau interferometry~\cite{Pfeiffer2006} and employs an edge-on
+illumination approach for the grating design and arrangement. Our solution
+removes one on the major hurdle which prevented grating interferometry to be
+applied at very high X-ray energies so far, namely the fabrication of
+gratings with high-aspect ratios. The aspect ratio, given by
+\begin{equation} \text{R} = \frac{2h}{p}, \end{equation} where $p$ is the
+grating period and $h$ the  structure height, is normally limited by the
+fabrication process, usually photolithography~\cite{David2002} or X-ray
+lithography~\cite{Mohr2012} as grating structures tend to collapse or deform
+(e.g.\ due to capillary forces) if the aspect ratio is too high. For a given
+setup length these parameters depend on the target energy $E$ according to
+$p \propto 1/\sqrt{E}$ and $h \propto E^3$, and therefore $\textnormal{R}
+\propto E^{7/2}$~\cite{Momose2003a}. If at $E=\SI{25}{\kilo\electronvolt}$
+an aspect ratio for the absorption grating around $\textnormal{R}=30$ is
+necessary for a reasonable length of the experimental arrangement, it would
+have to be at least $128$ for $E=\SI{100}{\kilo\electronvolt}$. Moreover,
+when using a broad spectrum, photons above the design energy should also be
+efficiently blocked by the gratings, which requires even higher aspect
+ratios. The largest aspect ratios achieved by current fabrication
+techniques~\cite{David2007,Kenntner2010} are around 60.
 
 Our design introduces the edge-on
 illuminated,  circularly aligned structures. Edge-on illumination
@@ -220,6 +165,18 @@ lines to form a high aspect ratio of the structures in the direction of the beam
 effective structure height of the grating is then determined by the grating
 dimension along the grating lines, which essentially allows arbitrarily high
 aspect ratios. 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=.7\textwidth]{figures/figure1.eps}
+    \caption{Schematic of a grating
+        interferometer for X-ray energies between 60 and
+        \SI{150}{\kilo\electronvolt} in edge-on illumination mode. The
+        aspect ratio is defined by the ratio of the travelling distance along the
+        grating lines and the period and can be arbitrarily long. In order to maximise
+        the field of view, the grating structures are aligned on an
+    arc.}%
+\label{Fig:schematic}
+\end{figure}
 
 Increasing the aspect ratio of the gratings typically leads to a
 reduction of the field of view due to the change of the grating transmission
@@ -245,7 +202,7 @@ on  patients has been reported to be significantly lower than with other
 instruments based on the illumination of a large area
 detector~\cite{Oduko2010}.
 Similarly, for tomographic images,
-the approach allows single slice CT or full 3D imaging in scanning mode.
+the approach allows single slice \ac{CT} or full 3D imaging in scanning mode.
 
 Grating design and fabrication is nonstandard and involves a complex mask
 design, as shown in Fig.~\ref{Fig:grating_mask}. Multiple gratings can reside on a
@@ -267,6 +224,18 @@ source grating splits the relatively large focal spot ($\sim
 \SI{1}{\milli\metre}$) into an array of individually coherent, but mutually
 incoherent sources~\cite{Pfeiffer2006}. It is also made of gold structures
 with a length of $h_0 = h_2 = \SI{800}{\micro \metre}$.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=.6\textwidth]{figures/grating_mask.eps}
+    \caption{Grating design mask for
+        the edge-on illumination approach and \ac{SEM}
+        image of the grating. The top part of the 4 inch wafer shows
+        five grating chips. The
+        gratings have different curvatures which are specific to the grating
+        interferometer geometry. 
+        The \ac{SEM} image shows the gold structures and the interrupting bridges
+        that prevent the lamellae from collapsing~\cite{Kenntner2010}.}\label{Fig:grating_mask}
+\end{figure}
 
 Due to the high spectral acceptance~\cite{Weitkamp2005,Thuering2013c} of the
 interferometer ($\SI{50}{\kilo\electronvolt}$ to
@@ -283,7 +252,6 @@ camera, interferometer), two optical slits, one in front of the source
 grating, the other in front of the camera, were required for the collimation
 of the beam in the vertical direction. 
 
-\section{Results and discussion}
 Fig.~\ref{Fig:img_chip} shows a radiographic scan of an electronic chip.
 Several resistors and an integrated circuits are located on different layers
 on the chip. The images were acquired in scanning mode, using a step size of
@@ -302,6 +270,13 @@ lower contrast reduction of the soldering points underneath the resistors in the
 phase image of the chip. This result shows the benefit of the phase contrast in
 high-energy X-ray imaging, which may be useful to identify flaws in multilayered
 structures such as electronic chips.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=.5\textwidth]{figures/img_chip_dabs.eps}
+    \caption{Radiographic scan of an electronic chip. The image was acquired
+        with 24 phase steps per line and an exposure time of \SI{15}{\second} per
+    step. The top right image shows the differential absorption image.}\label{Fig:img_chip}
+\end{figure}
 
 Edge-on illuminated grating interferometry finally allows phase contrast
 imaging to be performed at high energies ($>\SI{100}{\kilo\eV}$) on conventional X-ray
@@ -314,317 +289,330 @@ power to the conventional absorption based signal. This will improve
 material discrimination and density sensitivity capabilities in future
 X-rays or even neutron~\cite{Grunzweig2008} investigations.
 
-%% == end of paper:
-
-%% Optional Materials and Methods Section
-%% The Materials and Methods section header will be added automatically.
-
-%% Enter any subheads and the Materials and Methods text below.
-\begin{materials}
+\section*{Methods}
 Edge-on illuminated gratings were manufactured by Microworks GmbH, Germany, using a LIGA process~\cite{Kenntner2010}. Each grating
-resides on a $\scriptscriptstyle 5 \times \SI{60}{\milli\metre^2}$ silicon chip and several
+resides on a $5 \times \SI{60}{\milli\metre^2}$ silicon chip and several
 grating chips are fabricated on a single 4 inch silicon wafer. The
-experimental arrangement for a design energy at $\scriptscriptstyle
-\SI{100}{\kilo\electronvolt}$
-is a symmetric Talbot-Lau interferometer with a grating period of $\scriptscriptstyle p = \SI{2.8}{\micro \metre}$ for all gratings. The distance from the source
-grating to the analyzer grating is $\scriptscriptstyle \SI{32}{\centi\metre}$ and the source
-grating is positioned $\scriptscriptstyle \SI{23}{\centi\metre}$ away from the source.
+experimental arrangement for a design energy at \SI{100}{\kilo\electronvolt}
+is a symmetric Talbot-Lau interferometer with a grating period of $p =
+\SI{2.8}{\micro \metre}$ for all gratings. The distance from the source
+grating to the analyzer grating is $\SI{32}{\centi\metre}$ and the source
+grating is positioned $\SI{23}{\centi\metre}$ away from the source.
 
 The X-ray source is a COMET MXR-160HP/11 X-ray tube with a maximum output
-voltage of $\scriptscriptstyle \SI{160}{\kilo\volt}$. In the experiment, it was set to the
+voltage of $\SI{160}{\kilo\volt}$. In the experiment, it was set to the
 maximum voltage. The focal spot size is approximately
-$\scriptscriptstyle \SI{1}{\milli\metre}$. The detector is a CCD camera from Finger Lakes
-Instruments. A cesium iodide (CsI:Ti) scintillator of $\scriptscriptstyle \SI{600}{\micro
+$\SI{1}{\milli\metre}$. The detector is a CCD camera from Finger Lakes
+Instruments. A cesium iodide (CsI:Ti) scintillator of $\SI{600}{\micro
 \metre}$ thickness converts the X-rays to visible light and is coupled with
-an optical lens projecting the image onto the CCD. The effective pixel size
-is $\scriptscriptstyle \SI{80}{\micro \metre}$. The collimating slit right after the source is 
-$\scriptscriptstyle \SI{25}{\micro \metre}$ large, while the second slit before the detector is
-$\scriptscriptstyle \SI{100}{\micro\metre}$.
+an optical lens projecting the image onto the CCD\@. The effective pixel size
+is $\SI{80}{\micro\metre}$. The collimating slit right after the source is 
+$\SI{25}{\micro\metre}$ large, while the second slit before the detector is
+$\SI{100}{\micro\metre}$.
 
 In Fig.~\ref{Fig:img_chip}, image acquisition involved 24 phase steps per
 line and an exposure time of 15 seconds per step. The long
 exposure times are mostly constrained by the low average visibility of the
-gratings ($\scriptscriptstyle \SI{5}{\percent}$). The exposure time was chosen in order to
-get a low noise in the differential phase image. The SNR is
+gratings (\SI{5}{\percent}). The exposure time was chosen in order to
+get a low noise in the differential phase image. The \ac{SNR} is
 proportional to the visibility and the square root of the exposure
 time~\cite{Raupach2011}.
 This implies that the exposure times can easily drop by an order of
 magnitude as these gratings become comparable in quality to those developed
 in the last ten years. 
 Smaller regions of these gratings actually exhibit a visibility up
-to~$\scriptscriptstyle \SI{14}{\percent}$ already, indicating that this goal is reachable as the
+to~\SI{14}{\percent} already, indicating that this goal is reachable as the
 fabrication becomes more reliable and uniform.
-\end{materials}
 
-
-%% Optional Appendix or Appendices
-%% \appendix Appendix text...
-%% or, for appendix with title, use square brackets:
-%% \appendix[Appendix Title]
-
-\begin{acknowledgments}
+\section*{Acknowledgements}
 We thank Gordan Mikuljan, Peter Modregger and István Mohácsi from the Paul
 Scherrer Institute (PSI), Switzerland, for the
-work on the mechanical design, the scientific advice, and the SEM images
+work on the mechanical design, the scientific advice, and the \ac{SEM} images
 respectively, Joachim Schulz and Marco Walter from
 Microworks GmbH, Germany, for the competent support on grating design
 issues, Christian Kottler and Vincent Revol from Centre Suisse
-d'\'Electronique et de Microtechnique (CSEM), Switzerland for the fruitful
+d'Electronique et de Microtechnique (CSEM), Switzerland for the fruitful
 discussions on the design of the system. This work has been partially
 supported by the Competence Centre for Materials Science and Technology
 (CCMX) of the ETH Board, Project Nr. 61 and by the ERC Grant ERC-2012-StG 310005-PhaseX.
-\end{acknowledgments}
 
-%% PNAS does not support submission of supporting .tex files such as BibTeX.
-%% Instead all references must be included in the article .tex document. 
-%% If you currently use BibTeX, your bibliography is formed because the 
-%% command \verb+\bibliography{}+ brings the <filename>.bbl file into your
-%% .tex document. To conform to PNAS requirements, copy the reference listings
-%% from your .bbl file and add them to the article .tex file, using the
-%% bibliography environment described above.  
+\section*{Competing financial interests}
+The authors declare no competing financial interests.
 
-%%  Contact pnas@nas.edu if you need assistance with your
-%%  bibliography.
-
-% Sample bibliography item in PNAS format:
-%% \bibitem{in-text reference} comma-separated author names up to 5,
-%% for more than 5 authors use first author last name et al. (year published)
-%% article title  {\it Journal Name} volume #: start page-end page.
-%% ie,
-% \bibitem{Neuhaus} Neuhaus J-M, Sitcher L, Meins F, Jr, Boller T (1991) 
-% A short C-terminal sequence is necessary and sufficient for the
-% targeting of chitinases to the plant vacuole. 
-% {\it Proc Natl Acad Sci USA} 88:10362-10366.
-
-%\bibliographystyle{pnas}
+%\bibliographystyle{naturemag-nourl}
 %\bibliography{library}
 \begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
 
 \bibitem{Als-Nielsen2011}
-Als-Nielsen J, McMorrow D (2011) {\em {Elements of modern X-ray physics}}.
+\bibinfo{author}{Als-Nielsen, J.} \& \bibinfo{author}{McMorrow, D.}
+\newblock \emph{\bibinfo{title}{{Elements of modern X-ray physics}}}
+  (\bibinfo{year}{2011}).
 
 \bibitem{Qi2010}
-Qi Z, Zambelli J, Bevins N, Chen GH (2010) {Quantitative imaging of electron
-  density and effective atomic number using phase contrast CT.}
-\newblock {\em Physics in medicine and biology} 55:2669--77.
+\bibinfo{author}{Qi, Z.}, \bibinfo{author}{Zambelli, J.},
+  \bibinfo{author}{Bevins, N.} \& \bibinfo{author}{Chen, G.-H.}
+\newblock \bibinfo{title}{{Quantitative imaging of electron density and
+  effective atomic number using phase contrast CT.}}
+\newblock \emph{\bibinfo{journal}{Physics in medicine and biology}}
+  \textbf{\bibinfo{volume}{55}}, \bibinfo{pages}{2669--77}
+  (\bibinfo{year}{2010}).
 
 \bibitem{Pfeiffer2007a}
-Pfeiffer F et~al. (2007) {High-resolution brain tumor visualization using
-  three-dimensional x-ray phase contrast tomography.}
-\newblock {\em Physics in medicine and biology} 52:6923--6930.
+\bibinfo{author}{Pfeiffer, F.} \emph{et~al.}
+\newblock \bibinfo{title}{{High-resolution brain tumor visualization using
+  three-dimensional x-ray phase contrast tomography.}}
+\newblock \emph{\bibinfo{journal}{Physics in medicine and biology}}
+  \textbf{\bibinfo{volume}{52}}, \bibinfo{pages}{6923--6930}
+  (\bibinfo{year}{2007}).
 
 \bibitem{McDonald2009}
-McDonald SA et~al. (2009) {Advanced phase-contrast imaging using a grating
-  interferometer}.
-\newblock {\em Journal of Synchrotron Radiation} 16:562--572.
+\bibinfo{author}{McDonald, S.~A.} \emph{et~al.}
+\newblock \bibinfo{title}{{Advanced phase-contrast imaging using a grating
+  interferometer}}.
+\newblock \emph{\bibinfo{journal}{Journal of Synchrotron Radiation}}
+  \textbf{\bibinfo{volume}{16}}, \bibinfo{pages}{562--572}
+  (\bibinfo{year}{2009}).
 
 \bibitem{Davis1995}
-Davis T, Gao D, Gureyev T, Stevenson A, Wilkins S (1995) {Phase-contrast
-  imaging of weakly absorbing materials using hard X-rays}.
-\newblock {\em Nature} 373:595--598.
+\bibinfo{author}{Davis, T.}, \bibinfo{author}{Gao, D.},
+  \bibinfo{author}{Gureyev, T.}, \bibinfo{author}{Stevenson, A.} \&
+  \bibinfo{author}{Wilkins, S.}
+\newblock \bibinfo{title}{{Phase-contrast imaging of weakly absorbing materials
+  using hard X-rays}}.
+\newblock \emph{\bibinfo{journal}{Nature}} \textbf{\bibinfo{volume}{373}},
+  \bibinfo{pages}{595--598} (\bibinfo{year}{1995}).
 
 \bibitem{Chapman1997}
-Chapman D et~al. (1997) {Diffraction enhanced x-ray imaging}.
-\newblock {\em Physics in Medicine and Biology} 42:2015--2025.
+\bibinfo{author}{Chapman, D.} \emph{et~al.}
+\newblock \bibinfo{title}{{Diffraction enhanced x-ray imaging}}.
+\newblock \emph{\bibinfo{journal}{Physics in Medicine and Biology}}
+  \textbf{\bibinfo{volume}{42}}, \bibinfo{pages}{2015--2025}
+  (\bibinfo{year}{1997}).
 
 \bibitem{Bonse1965}
-Bonse U, Hart M (1965) {An x-ray interferometer}.
-\newblock {\em Applied Physics Letters} 6:155--156.
+\bibinfo{author}{Bonse, U.} \& \bibinfo{author}{Hart, M.}
+\newblock \bibinfo{title}{{An x-ray interferometer}}.
+\newblock \emph{\bibinfo{journal}{Applied Physics Letters}}
+  \textbf{\bibinfo{volume}{6}}, \bibinfo{pages}{155--156}
+  (\bibinfo{year}{1965}).
 
 \bibitem{Momose1996}
-Momose A, Takeda T, Itai Y, Hirano K (1996) {Phase-contrast X-ray computed
-  tomography for observing biological soft tissues}.
-\newblock {\em Nature Medicine} 2:473--475.
+\bibinfo{author}{Momose, A.}, \bibinfo{author}{Takeda, T.},
+  \bibinfo{author}{Itai, Y.} \& \bibinfo{author}{Hirano, K.}
+\newblock \bibinfo{title}{{Phase-contrast X-ray computed tomography for
+  observing biological soft tissues}}.
+\newblock \emph{\bibinfo{journal}{Nature Medicine}}
+  \textbf{\bibinfo{volume}{2}}, \bibinfo{pages}{473--475}
+  (\bibinfo{year}{1996}).
 
 \bibitem{Snigirev1995}
-Snigirev A, Snigireva I, Kohn V, Kuznetsov S, Schelokov I (1995) {On the
-  possibilities of x-ray phase contrast microimaging by coherent high-energy
-  synchrotron radiation}.
-\newblock {\em Review of Scientific Instruments} 66:5486--5492.
+\bibinfo{author}{Snigirev, A.}, \bibinfo{author}{Snigireva, I.},
+  \bibinfo{author}{Kohn, V.}, \bibinfo{author}{Kuznetsov, S.} \&
+  \bibinfo{author}{Schelokov, I.}
+\newblock \bibinfo{title}{{On the possibilities of x-ray phase contrast
+  microimaging by coherent high-energy synchrotron radiation}}.
+\newblock \emph{\bibinfo{journal}{Review of Scientific Instruments}}
+  \textbf{\bibinfo{volume}{66}}, \bibinfo{pages}{5486--5492}
+  (\bibinfo{year}{1995}).
 
 \bibitem{Wilkins1996}
-Wilkins S, Gureyev T, Gao D, Pogany A, Stevenson A (1996) {Phase-contrast
-  imaging using polychromatic hard X-rays}.
-\newblock {\em Nature} 384:335--338.
+\bibinfo{author}{Wilkins, S.}, \bibinfo{author}{Gureyev, T.},
+  \bibinfo{author}{Gao, D.}, \bibinfo{author}{Pogany, A.} \&
+  \bibinfo{author}{Stevenson, A.}
+\newblock \bibinfo{title}{{Phase-contrast imaging using polychromatic hard
+  X-rays}}.
+\newblock \emph{\bibinfo{journal}{Nature}} \textbf{\bibinfo{volume}{384}},
+  \bibinfo{pages}{335--338} (\bibinfo{year}{1996}).
 
 \bibitem{Cloetens1996}
-Cloetens P, Barrett R, Baruchel J, Guigay J, Schlenker M (1996) {Phase objects
-  in synchrotron radiation hard x-ray imaging}.
-\newblock {\em Journal of Physics D: Applied Physics} 29:133--146.
+\bibinfo{author}{Cloetens, P.}, \bibinfo{author}{Barrett, R.},
+  \bibinfo{author}{Baruchel, J.}, \bibinfo{author}{Guigay, J.} \&
+  \bibinfo{author}{Schlenker, M.}
+\newblock \bibinfo{title}{{Phase objects in synchrotron radiation hard x-ray
+  imaging}}.
+\newblock \emph{\bibinfo{journal}{Journal of Physics D: Applied Physics}}
+  \textbf{\bibinfo{volume}{29}}, \bibinfo{pages}{133--146}
+  (\bibinfo{year}{1996}).
 
 \bibitem{Cloetens1997}
-Cloetens P, Guigay J, {De Martino} C, Baruchel J, Schlenker M (1997)
-  {Fractional Talbot imaging of phase gratings with hard x rays.}
-\newblock {\em Optics letters} 22:1059--61.
+\bibinfo{author}{Cloetens, P.}, \bibinfo{author}{Guigay, J.},
+  \bibinfo{author}{{De Martino}, C.}, \bibinfo{author}{Baruchel, J.} \&
+  \bibinfo{author}{Schlenker, M.}
+\newblock \bibinfo{title}{{Fractional Talbot imaging of phase gratings with
+  hard x rays.}}
+\newblock \emph{\bibinfo{journal}{Optics letters}}
+  \textbf{\bibinfo{volume}{22}}, \bibinfo{pages}{1059--61}
+  (\bibinfo{year}{1997}).
 
 \bibitem{David2002}
-David C, N\"{o}hammer B, Solak H, Ziegler E (2002) {Differential x-ray phase
-  contrast imaging using a shearing interferometer}.
-\newblock {\em Applied Physics Letters} 81:3287--3289.
+\bibinfo{author}{David, C.}, \bibinfo{author}{N\"{o}hammer, B.},
+  \bibinfo{author}{Solak, H.} \& \bibinfo{author}{Ziegler, E.}
+\newblock \bibinfo{title}{{Differential x-ray phase contrast imaging using a
+  shearing interferometer}}.
+\newblock \emph{\bibinfo{journal}{Applied Physics Letters}}
+  \textbf{\bibinfo{volume}{81}}, \bibinfo{pages}{3287--3289}
+  (\bibinfo{year}{2002}).
 
 \bibitem{Momose2003a}
-Momose A et~al. (2003) {Demonstration of X-Ray Talbot Interferometry}.
-\newblock {\em Japanese Journal of Applied Physics} 42:L866--L868.
+\bibinfo{author}{Momose, A.} \emph{et~al.}
+\newblock \bibinfo{title}{{Demonstration of X-Ray Talbot Interferometry}}.
+\newblock \emph{\bibinfo{journal}{Japanese Journal of Applied Physics}}
+  \textbf{\bibinfo{volume}{42}}, \bibinfo{pages}{L866--L868}
+  (\bibinfo{year}{2003}).
 
 \bibitem{Munro2012}
-Munro P, Ignatyev K, Speller R, Olivo A (2012) {Phase and absorption retrieval
-  using incoherent X-ray sources}.
-\newblock {\em Proceedings of the National Academy of Sciences} 2012:2--7.
+\bibinfo{author}{Munro, P.}, \bibinfo{author}{Ignatyev, K.},
+  \bibinfo{author}{Speller, R.} \& \bibinfo{author}{Olivo, A.}
+\newblock \bibinfo{title}{{Phase and absorption retrieval using incoherent
+  X-ray sources}}.
+\newblock \emph{\bibinfo{journal}{Proceedings of the National Academy of
+  Sciences}} \textbf{\bibinfo{volume}{2012}}, \bibinfo{pages}{2--7}
+  (\bibinfo{year}{2012}).
 
 \bibitem{Pfeiffer2006}
-Pfeiffer F, Weitkamp T, Bunk O, David C (2006) {Phase retrieval and
-  differential phase-contrast imaging with low-brilliance X-ray sources}.
-\newblock {\em Nature Physics} 2:258--261.
+\bibinfo{author}{Pfeiffer, F.}, \bibinfo{author}{Weitkamp, T.},
+  \bibinfo{author}{Bunk, O.} \& \bibinfo{author}{David, C.}
+\newblock \bibinfo{title}{{Phase retrieval and differential phase-contrast
+  imaging with low-brilliance X-ray sources}}.
+\newblock \emph{\bibinfo{journal}{Nature Physics}}
+  \textbf{\bibinfo{volume}{2}}, \bibinfo{pages}{258--261}
+  (\bibinfo{year}{2006}).
 
 \bibitem{Nesch2009}
-Nesch I et~al. (2009) {The design and application of an in-laboratory
-  diffraction-enhanced x-ray imaging instrument.}
-\newblock {\em The Review of scientific instruments} 80:093702.
+\bibinfo{author}{Nesch, I.} \emph{et~al.}
+\newblock \bibinfo{title}{{The design and application of an in-laboratory
+  diffraction-enhanced x-ray imaging instrument.}}
+\newblock \emph{\bibinfo{journal}{The Review of scientific instruments}}
+  \textbf{\bibinfo{volume}{80}}, \bibinfo{pages}{093702}
+  (\bibinfo{year}{2009}).
 
 \bibitem{Parham2009}
-Parham C, Zhong Z, Connor DM, Chapman LD, Pisano ED (2009) {Design and
-  Implementation of a Compact Low-Dose Diffraction Enhanced Medical Imaging
-  System}.
+\bibinfo{author}{Parham, C.}, \bibinfo{author}{Zhong, Z.},
+  \bibinfo{author}{Connor, D.~M.}, \bibinfo{author}{Chapman, L.~D.} \&
+  \bibinfo{author}{Pisano, E.~D.}
+\newblock \bibinfo{title}{Design and implementation of a compact low-dose
+  diffraction enhanced medical imaging system}.
+\newblock \emph{\bibinfo{journal}{Academic Radiology}}
+  \textbf{\bibinfo{volume}{16}}, \bibinfo{pages}{911 -- 917}
+  (\bibinfo{year}{2009}).
 
 \bibitem{Pfeiffer2008}
-Pfeiffer F et~al. (2008) {Hard-X-ray dark-field imaging using a grating
-  interferometer}.
-\newblock {\em Nature Materials} 7:134--137.
+\bibinfo{author}{Pfeiffer, F.} \emph{et~al.}
+\newblock \bibinfo{title}{{Hard-X-ray dark-field imaging using a grating
+  interferometer}}.
+\newblock \emph{\bibinfo{journal}{Nature Materials}}
+  \textbf{\bibinfo{volume}{7}}, \bibinfo{pages}{134--137}
+  (\bibinfo{year}{2008}).
 
 \bibitem{Willner2013}
-Willner M et~al. (2013) {Quantitative X-ray phase-contrast computed tomography
-  at 82 keV}.
-\newblock {\em Optics express} 21:4155--4166.
+\bibinfo{author}{Willner, M.} \emph{et~al.}
+\newblock \bibinfo{title}{{Quantitative X-ray phase-contrast computed
+  tomography at 82 keV}}.
+\newblock \emph{\bibinfo{journal}{Optics express}}
+  \textbf{\bibinfo{volume}{21}}, \bibinfo{pages}{4155--4166}
+  (\bibinfo{year}{2013}).
 
 \bibitem{Donath2009}
-Donath T et~al. (2009) {Inverse geometry for grating-based x-ray phase-contrast
-  imaging}.
-\newblock {\em Journal of Applied Physics} 106:054703.
+\bibinfo{author}{Donath, T.} \emph{et~al.}
+\newblock \bibinfo{title}{{Inverse geometry for grating-based x-ray
+  phase-contrast imaging}}.
+\newblock \emph{\bibinfo{journal}{Journal of Applied Physics}}
+  \textbf{\bibinfo{volume}{106}}, \bibinfo{pages}{054703}
+  (\bibinfo{year}{2009}).
 
 \bibitem{Mohr2012}
-Mohr J et~al. (2012) {High aspect ratio gratings for X-ray phase contrast
+\bibinfo{author}{Mohr, J.} \emph{et~al.}
+\newblock \bibinfo{title}{High aspect ratio gratings for x-ray phase contrast
   imaging}.
-\newblock 41:41--50.
+\newblock \emph{\bibinfo{journal}{AIP Conference Proceedings}}
+  \textbf{\bibinfo{volume}{1466}}, \bibinfo{pages}{41--50}
+  (\bibinfo{year}{2012}).
 
 \bibitem{David2007}
-David C et~al. (2007) {Fabrication of diffraction gratings for hard X-ray phase
-  contrast imaging}.
-\newblock {\em Microelectronic Engineering} 84:1172--1177.
+\bibinfo{author}{David, C.} \emph{et~al.}
+\newblock \bibinfo{title}{{Fabrication of diffraction gratings for hard X-ray
+  phase contrast imaging}}.
+\newblock \emph{\bibinfo{journal}{Microelectronic Engineering}}
+  \textbf{\bibinfo{volume}{84}}, \bibinfo{pages}{1172--1177}
+  (\bibinfo{year}{2007}).
 
 \bibitem{Kenntner2010}
-Kenntner J et~al. (2010) {\em {Front- and backside structuring of gratings for
+\bibinfo{author}{Kenntner, J.} \emph{et~al.}
+\newblock \bibinfo{title}{{Front- and backside structuring of gratings for
   phase contrast imaging with x-ray tubes}}.
-\newblock Vol.{} 7804, p. 780408.
+\newblock In \emph{\bibinfo{booktitle}{Proceedings of SPIE}}, vol.
+  \bibinfo{volume}{7804}, \bibinfo{pages}{780408} (\bibinfo{year}{2010}).
 
 \bibitem{Stutman2012a}
-Stutman D, Finkenthal M (2012) {Glancing angle Talbot-Lau grating
-  interferometers for phase contrast imaging at high x-ray energy}.
-\newblock {\em Applied physics letters} 101:91108.
+\bibinfo{author}{Stutman, D.} \& \bibinfo{author}{Finkenthal, M.}
+\newblock \bibinfo{title}{{Glancing angle Talbot-Lau grating interferometers
+  for phase contrast imaging at high x-ray energy}}.
+\newblock \emph{\bibinfo{journal}{Applied physics letters}}
+  \textbf{\bibinfo{volume}{101}}, \bibinfo{pages}{91108}
+  (\bibinfo{year}{2012}).
 
 \bibitem{Aslund2007}
-{\AA slund, M} (2007) Ph.D. thesis.
+\bibinfo{author}{{\AA slund, M}}.
+\newblock \emph{\bibinfo{title}{{Digital Mammography with a Photon Counting
+  Detector in a Scanned Multislit Geometry}}}.
+\newblock Ph.D. thesis (\bibinfo{year}{2007}).
 
 \bibitem{Oduko2010}
-Oduko JM, Young KC, Burch A (2010) in {\em Digital Mammography}, Lecture Notes
-  in Computer Science, eds.{} Martí J, Oliver A, Freixenet J, Martí R.
-\newblock (Springer Berlin Heidelberg) Vol.{} 6136, pp. 365--370.
+\bibinfo{author}{Oduko, J.~M.}, \bibinfo{author}{Young, K.~C.} \&
+  \bibinfo{author}{Burch, A.}
+\newblock \bibinfo{title}{A survey of patient doses from digital mammography
+  systems in the uk in 2007 to 2009}.
+\newblock In \bibinfo{editor}{Martí, J.}, \bibinfo{editor}{Oliver, A.},
+  \bibinfo{editor}{Freixenet, J.} \& \bibinfo{editor}{Martí, R.} (eds.)
+  \emph{\bibinfo{booktitle}{Digital Mammography}}, vol. \bibinfo{volume}{6136}
+  of \emph{\bibinfo{series}{Lecture Notes in Computer Science}},
+  \bibinfo{pages}{365--370} (\bibinfo{publisher}{Springer Berlin Heidelberg},
+  \bibinfo{year}{2010}).
 
 \bibitem{Weitkamp2005}
-Weitkamp T et~al. (2005) {X-ray phase imaging with a grating interferometer}.
-\newblock {\em Optics Express} 13:6296--6304.
+\bibinfo{author}{Weitkamp, T.} \emph{et~al.}
+\newblock \bibinfo{title}{{X-ray phase imaging with a grating interferometer}}.
+\newblock \emph{\bibinfo{journal}{Optics Express}}
+  \textbf{\bibinfo{volume}{13}}, \bibinfo{pages}{6296--6304}
+  (\bibinfo{year}{2005}).
 
 \bibitem{Thuering2013c}
-Thuering T et~al. (2013) {Energy resolved X-ray grating interferometry}.
-\newblock {\em Applied Physics Letters} 102:191113.
+\bibinfo{author}{Thuering, T.} \emph{et~al.}
+\newblock \bibinfo{title}{{Energy resolved X-ray grating interferometry}}.
+\newblock \emph{\bibinfo{journal}{Applied Physics Letters}}
+  \textbf{\bibinfo{volume}{102}}, \bibinfo{pages}{191113}
+  (\bibinfo{year}{2013}).
 
 \bibitem{Chabior2011a}
-Chabior M et~al. (2011) {Beam hardening effects in grating-based x-ray
-  phase-contrast imaging}.
-\newblock {\em Medical Physics} 38:1189.
+\bibinfo{author}{Chabior, M.} \emph{et~al.}
+\newblock \bibinfo{title}{{Beam hardening effects in grating-based x-ray
+  phase-contrast imaging}}.
+\newblock \emph{\bibinfo{journal}{Medical Physics}}
+  \textbf{\bibinfo{volume}{38}}, \bibinfo{pages}{1189} (\bibinfo{year}{2011}).
 
 \bibitem{Grunzweig2008}
-Gr\"{u}nzweig C et~al. (2008) {Design, fabrication, and characterization of
-  diffraction gratings for neutron phase contrast imaging.}
-\newblock {\em The Review of scientific instruments} 79:053703.
+\bibinfo{author}{Gr\"{u}nzweig, C.} \emph{et~al.}
+\newblock \bibinfo{title}{{Design, fabrication, and characterization of
+  diffraction gratings for neutron phase contrast imaging.}}
+\newblock \emph{\bibinfo{journal}{The Review of scientific instruments}}
+  \textbf{\bibinfo{volume}{79}}, \bibinfo{pages}{053703}
+  (\bibinfo{year}{2008}).
 
 \bibitem{Raupach2011}
-Raupach R, Flohr TG (2011) {Analytical evaluation of the signal and noise
-  propagation in x-ray differential phase-contrast computed tomography.}
-\newblock {\em Physics in medicine and biology} 56:2219--2244.
+\bibinfo{author}{Raupach, R.} \& \bibinfo{author}{Flohr, T.~G.}
+\newblock \bibinfo{title}{{Analytical evaluation of the signal and noise
+  propagation in x-ray differential phase-contrast computed tomography.}}
+\newblock \emph{\bibinfo{journal}{Physics in medicine and biology}}
+  \textbf{\bibinfo{volume}{56}}, \bibinfo{pages}{2219--2244}
+  (\bibinfo{year}{2011}).
 
 \end{thebibliography}
-
-\end{article}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%% Adding Figure and Table References
-%% Be sure to add figures and tables after \end{article}
-%% and before \end{document}
-
-%% For figures, put the caption below the illustration.
-%%
-%% \begin{figure}
-%% \caption{Almost Sharp Front}\label{afoto}
-%% \end{figure}
-
-%% For Tables, put caption above table
-%%
-%% Table caption should start with a capital letter, continue with lower case
-%% and not have a period at the end
-%% Using @{\vrule height ?? depth ?? width0pt} in the tabular preamble will
-%% keep that much space between every line in the table.
-
-%% \begin{table}
-%% \caption{Repeat length of longer allele by age of onset class}
-%% \begin{tabular}{@{\vrule height 10.5pt depth4pt  width0pt}lrcccc}
-%% table text
-%% \end{tabular}
-%% \end{table}
-
-%% For two column figures and tables, use the following:
-
-%% \begin{figure*}
-%% \caption{Almost Sharp Front}\label{afoto}
-%% \end{figure*}
-
-%% \begin{table*}
-%% \caption{Repeat length of longer allele by age of onset class}
-%% \begin{tabular}{ccc}
-%% table text
-%% \end{tabular}
-%% \end{table*}
-
-\begin{figure}
-    \includegraphics[width=.5\textwidth]{figures/figure1.eps}
-    \caption{Schematic of a grating
-        interferometer for X-ray energies between 60 and
-        \SI{150}{\kilo\electronvolt} in edge-on illumination mode. The
-        aspect ratio is defined by the ratio of the travelling distance along the
-        grating lines and the period and can be arbitrarily long. In order to maximise
-        the field of view, the grating structures are aligned on an
-    arc.}
-    \label{Fig:schematic}
-\end{figure}
-
-\begin{figure}
-    \includegraphics[width=.5\textwidth]{figures/grating_mask.eps}
-    \caption{Grating design mask for
-        the edge-on illumination approach and SEM
-        image of the grating. The top part of the 4 inch wafer shows
-        five grating chips. The
-        gratings have different curvatures which are specific to the grating
-        interferometer geometry. 
-        The SEM image shows the gold structures and the interrupting bridges
-        that prevent the lamellae from collapsing~\cite{Kenntner2010}.}
-        \label{Fig:grating_mask}
-\end{figure}
-
-\begin{figure}
-    \includegraphics[width=.5\textwidth]{figures/img_chip_dabs.eps}
-    \caption{Radiographic scan of an electronic chip. The image was acquired
-        with 24 phase steps per line and an exposure time of \SI{15}{\second} per
-    step. The top right image shows the differential absorption image.}
-    \label{Fig:img_chip}
-\end{figure}
-
+\section*{Author contributions}
+TT and AM wrote the manuscript text and performed the experiments. All
+authors reviewed the manuscript.
 \end{document}
