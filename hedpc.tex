@@ -133,6 +133,7 @@ abdominal radiography or \ac{CT} require an acceleration voltage between
 homeland security or chip failure analysis, which require high energies for
 the visualization of materials of high density and atomic number.
 
+\section*{Results}
 Here we introduce a method for phase contrast imaging which works on
 conventional X-ray sources, covers the entire diagnostic X-ray energy range
 and is compatible with compact imaging arrangements. The approach is based
@@ -174,7 +175,11 @@ aspect ratios.
         aspect ratio is defined by the ratio of the travelling distance along the
         grating lines and the period and can be arbitrarily long. In order to maximise
         the field of view, the grating structures are aligned on an
-    arc.}%
+        arc. A \SI{100}{\kilo\eV} setup was realised where the distance
+        between the source and the source grating is \SI{23}{\centi\metre}
+    and the distance between the source grating and the phase grating is
+    \SI{16}{\centi\metre}. That is also the distance from the phase grating
+to the analyzer grating.}%
 \label{Fig:schematic}
 \end{figure}
 
@@ -230,7 +235,8 @@ with a length of $h_0 = h_2 = \SI{800}{\micro \metre}$.
     \caption{Grating design mask for
         the edge-on illumination approach and \ac{SEM}
         image of the grating. The top part of the 4 inch wafer shows
-        five grating chips. The
+        five grating chips. From top to bottom, one source grating, two
+        phase gratings and two analyzer gratings. The
         gratings have different curvatures which are specific to the grating
         interferometer geometry. 
         The \ac{SEM} image shows the gold structures and the interrupting bridges
@@ -252,13 +258,15 @@ camera, interferometer), two optical slits, one in front of the source
 grating, the other in front of the camera, were required for the collimation
 of the beam in the vertical direction. 
 
-Fig.~\ref{Fig:img_chip} shows a radiographic scan of an electronic chip.
-Several resistors and an integrated circuits are located on different layers
-on the chip. The images were acquired in scanning mode, using a step size of
+\section*{Discussion}
+Several resistors and an integrated circuit are located on different layers
+on the electronic chip in fig.~\ref{Fig:img_chip}. The radiographs were
+acquired in scanning mode, using a step size of
 $\SI{100}{\micro \metre}$ along the $y$ axis. For a better comparison of the
 magnified phase and attenuation images, the attenuation image has been
 replaced with the differential attenuation image, which was obtained by
-digital differentiation. In the attenuation image, the contrast of the soldering points of
+calculating the derivative along the horizontal axis. In the attenuation
+image, the contrast of the soldering points of
 the integrated circuit is reduced underneath the resistors, while in
 the phase image, they can clearly be identified. The reduced contrast of the 
 soldering points in the absorption image is due to beam hardening. The spectrum
