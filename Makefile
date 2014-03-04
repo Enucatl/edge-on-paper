@@ -4,7 +4,7 @@ VERSION=$(shell git describe --always --abbrev=4)
 
 all: hedpc.pdf
 
-hedpc.pdf: hedpc.tex library.bib
+hedpc.pdf: hedpc.tex library.bib $(wildcard figures/*)
 	make prepare_for_bibtex
 	make bibtex
 	make cleanup_bibtex
