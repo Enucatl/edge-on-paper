@@ -268,41 +268,10 @@ camera, interferometer), two optical slits, one in front of the source
 grating, the other in front of the camera, were required for the collimation
 of the beam in the vertical direction. 
 
-\section*{Discussion}
-This work develops Talbot-Lau interferometry to a regime of
-high photon energies.
-High energies are required for the operation of computed
-tomography and security scanners, in order to
-penetrate materials with large thicknesses or high atomic number.
-
-Additionally, the dose delivered to the patients could be reduced through
-phase sensitivity at high energies: the dose depends mainly on the
-absorption and it decreases with the third power of the photon energy~\cite{Momose2005}. On
-the other hand, the phase interaction is only inversely proportional to the
-energy and is therefore relatively much more relevant than absorption as the
-energy increases, possibly leading to a decreased exposure for an equivalent
-image quality.
-
-We show the first images on a conventional laboratory source in this energy
-range. In fig.~\ref{Fig:img_chip}, several resistors and an integrated
-circuit are located on different layers on an electronic chip. The
-radiographs were acquired in scanning mode, using a step size of
-$\SI{100}{\micro \metre}$ along the $y$ axis. For a better comparison of the
-magnified phase and attenuation images, the attenuation image has been
-replaced with the differential attenuation image, which was obtained by
-calculating the derivative along the horizontal axis. In the attenuation
-image, the contrast of the soldering points of
-the integrated circuit is reduced underneath the resistors, while in
-the phase image, they can clearly be identified. The reduced contrast of the 
-soldering points in the absorption image is due to beam hardening. The spectrum
-impinging on these soldering point is hardened by the resistors in the upper
-layer, resulting in lower absorption contrast. Due to the weaker energy
-dependence of phase shifts ($1/E$ compared to $1/E^3$), phase-contrast images
-are less sensitive to beam hardening~\cite{Chabior2011a}, which explains the
-lower contrast reduction of the soldering points underneath the resistors in the
-phase image of the chip. This result shows the benefit of the phase contrast in
-high-energy X-ray imaging, which may be useful to identify flaws in multilayered
-structures such as electronic chips.
+Fig.~\ref{Fig:img_chip} shows the first X-ray images acquired with our new setup, based on
+edge-on illuminated grating interferometry powered by a conventional X-ray
+source operated at \SI{160}{\kilo\voltpeak} and with a design energy of
+\SI{100}{\kilo\eV}.  
 \begin{figure}[h!]
     \centering
     \includegraphics[width=.5\textwidth]{figures/img_chip_dabs.eps}
@@ -310,18 +279,51 @@ structures such as electronic chips.
         with 24 phase steps per line and an exposure time of \SI{15}{\second} per
     step. The top right image shows the differential absorption image.}\label{Fig:img_chip}
 \end{figure}
+Several resistors and integrated circuits located on different
+layers on an electronic chip can be identified. The radiographs were acquired in scanning
+mode, using a step size of \SI{100}{\micro\metre} along the $y$ axis, covering a total imaging
+area of $2 \times \SI{2}{\centi\metre^2}$. For a better comparison of the magnified phase and
+attenuation images, the latter has been replaced with the differential
+attenuation image, which was obtained by calculating the derivative along
+the horizontal axis. In the attenuation image, the contrast of the soldering
+points of the integrated circuit is reduced underneath the resistors, while
+in the phase image, they can clearly be identified. The reduced contrast of
+the soldering points in the absorption image is due to beam hardening. The
+spectrum impinging on these soldering point is hardened by the resistors in
+the upper layer, resulting in lower absorption contrast. Due to the weaker
+energy dependence of phase shifts ($1/E$ compared to $1/E^3$), phase-contrast
+images are less sensitive to beam hardening~\cite{Chabior2011a}, which explains the lower
+contrast reduction of the soldering points under the resistors in the
+phase image of the chip. This example shows one of the potential benefits of
+phase contrast X-ray imaging at high energies, which may be useful to
+identify flaws in multilayered structures such as electronic chips.
 
-Edge-on illuminated grating interferometry finally allows phase contrast
-imaging to be performed at high energies ($>\SI{100}{\kilo\eV}$) on
-conventional X-ray
-sources. With a circular alignment of the gratings, the diffracting and
-absorbing structures can be matched to the divergent beam, even for very
-compact geometries. Short, high-energy phase-contrast systems enable the
-efficient investigation of high-density materials or thick samples,
-adding information on electron density and integrated small angle scattering
-power to the conventional absorption based signal. This will improve
-material discrimination and density sensitivity capabilities in future
-X-rays or even neutron~\cite{Grunzweig2008} investigations.
+\section*{Discussion}
+
+Possible usages of edge-on grating interferometry encompasse applications
+ranging from medical imaging to non-destructive testing and homeland
+security. All these applications seek for high (greater than
+\SI{100}{\kilo\eV}) nominal energies
+and compact designs. Particularly for medical application, the operation of
+a phase contrast imaging device at high energies is imperative. When imaging
+patients, a crucial issue is the dose, which depends mainly on the
+absorption of the X-rays and decreases with the third power of the photon
+energy~\cite{Momose2005}. On the other hand, the phase interaction is only inversely
+proportional to the energy and is therefore relatively much more relevant
+than absorption as the energy increases, possibly leading to a decreased
+exposure for an equivalent image quality. Clinical operation of such a
+device will imply measuring patients who normally breath, move and shake.
+Fast acquisitions are therefore required, in order to keep the images sharp
+and artefact free. As a consequence, compact, efficient imaging systems need
+to be developed to provide imaging capabilities at sufficient speed. Our
+circular grating alignment matches the structures of the diffracting and
+absorbing elements to the divergent beam, especially for compact geometries.
+In conclusion, short, high-energy phase-contrast systems will enable the
+efficient investigation of high-density materials or thick samples, adding
+information on electron density and integrated small-angle scattering power
+to the conventional absorption-based signal. This will improve material
+discrimination and density sensitivity in future X-ray or even
+neutron~\cite{Grunzweig2008} investigations.
 
 \section*{Methods}
 Edge-on illuminated gratings were manufactured by Microworks GmbH, Germany, using a LIGA process~\cite{Kenntner2010}. Each grating
@@ -622,19 +624,19 @@ The authors declare no competing financial interests.
   \textbf{\bibinfo{volume}{102}}, \bibinfo{pages}{191113}
   (\bibinfo{year}{2013}).
 
-\bibitem{Momose2005}
-\bibinfo{author}{Momose, A.}
-\newblock \bibinfo{title}{{Recent Advances in X-ray Phase Imaging}}.
-\newblock \emph{\bibinfo{journal}{Japanese Journal of Applied Physics}}
-  \textbf{\bibinfo{volume}{44}}, \bibinfo{pages}{6355--6367}
-  (\bibinfo{year}{2005}).
-
 \bibitem{Chabior2011a}
 \bibinfo{author}{Chabior, M.} \emph{et~al.}
 \newblock \bibinfo{title}{{Beam hardening effects in grating-based x-ray
   phase-contrast imaging}}.
 \newblock \emph{\bibinfo{journal}{Medical Physics}}
   \textbf{\bibinfo{volume}{38}}, \bibinfo{pages}{1189} (\bibinfo{year}{2011}).
+
+\bibitem{Momose2005}
+\bibinfo{author}{Momose, A.}
+\newblock \bibinfo{title}{{Recent Advances in X-ray Phase Imaging}}.
+\newblock \emph{\bibinfo{journal}{Japanese Journal of Applied Physics}}
+  \textbf{\bibinfo{volume}{44}}, \bibinfo{pages}{6355--6367}
+  (\bibinfo{year}{2005}).
 
 \bibitem{Grunzweig2008}
 \bibinfo{author}{Gr\"{u}nzweig, C.} \emph{et~al.}
