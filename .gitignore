@@ -4,6 +4,8 @@
 *.blg
 *.pdf
 *.dvi
+*.fdb*
+*.fls
 *.ps
 *.pdf_original
 *log
