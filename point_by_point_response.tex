@@ -1,0 +1,167 @@
+%        File: point_by_point_response.tex
+%     Created: Wed Oct 23 05:00 PM 2013 C
+% Last Change: Wed Oct 23 05:00 PM 2013 C
+%
+\documentclass[a4paper,english]{scrartcl}
+\usepackage[detect-all]{siunitx}
+\usepackage{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\DeclareSIUnit{\voltpeak}{Vp}
+\newcommand{\reviewer}[1]{\emph{#1}}
+\newenvironment{reviewerquote}{\begin{quote}\itshape}{\end{quote}}
+
+\title{Point-by-point response to the reviewers}
+\author{Revised manuscript SREP-13-06290-T}
+\date{}
+\begin{document}
+\maketitle
+
+\noindent
+The manuscript has been revised in order to address the editor's and the reviewers'
+comments.
+The comments from the reviewers are quoted in \emph{italic}, whereas the
+revised article parts are reported in upright font in indented sections.
+\section*{Reviewer \#2}
+\begin{reviewerquote}
+    A single wafer contains multiple gratings that are designed for a specific distance from the source. In figure 1, the designed distance from the source to each grating must be indicated, in order to make things clear for the readers. Please also explain how robust imaging quality is with mis-alignment of the grating with respect to the working distance from the source.
+\end{reviewerquote}
+The figures and captions have been improved in order to address the
+reviewer's concerns. In particular, the distances have been added to the
+caption of fig. 1:
+\begin{quote}
+    A \SI{100}{\kilo\eV} setup was realised where the distance
+        between the source and the source grating is \SI{23}{\centi\metre}
+    and the distance between the source grating and the phase grating is
+    \SI{16}{\centi\metre}. That is also the distance from the phase grating
+to the analyzer grating.
+\end{quote}
+In the text, we also included a measurement of the variation of the
+visibility as the integrating distance is changed:
+\begin{quote}
+    The precise position of the analyzer grating along the beam axis is not
+critical, and a change in visibility of less than \SI{1}{\percent} is
+observed by displacing it by as much as \SI{5}{\milli\metre}.
+\end{quote}
+\begin{reviewerquote}
+    Figure 2 shows five gratings. Based on figure 1, only three gratings are needed. Label the gratings in Figure (source grating, beam splitter grating, analyzer grating). What is the purpose of the other two gratings shown in Figure 2?
+\end{reviewerquote}
+The gratings in the figure have been labelled and the caption makes clear
+that many sets of gratings can be fabricated simultaneously on a
+single wafer:
+\begin{quote}
+    The top part of the 4 inch wafer shows
+        five grating chips. From top to bottom, one source grating, two
+        phase gratings and two analyzer gratings. The
+        gratings have different curvatures which are specific to the grating
+        interferometer geometry. Multiple gratings for more than one setup
+        geometry are fabricated on a single wafer.
+\end{quote}
+\begin{reviewerquote}
+    Figure 3 shows "differential" attenuation image. Please explain what this exactly is. The text is extremely vague.
+\end{reviewerquote}
+The derivative of the attenuation image is now described in more detail:
+\begin{quote}
+    For a better comparison of the magnified phase and
+attenuation images, the latter has been replaced with the differential
+attenuation image, which was obtained by calculating the derivative along
+the horizontal axis.
+\end{quote}
+
+\section*{Reviewer \#3}
+We thank Reviewer 3 for his or her critical reading.
+
+Medical X-ray imaging is intrinsically related to dose issues, and dose
+strongly depends on the attenuation properties of the patient.
+Therefore, it does not sound reasonable to develop X-ray diagnostic
+techniques operating at lower energies than those available now, since this will
+increase the dose imparted to the patient significantly. This is why at
+present, worldwide efforts in
+X-ray imaging --- both in CT and in 2D radiography, including
+mammography ---
+are focused on the reduction of the dose. Most of the players are working on
+the development of reconstruction algorithms dealing with fewer
+projections, different acquisition schemes or improved detectors. The
+contrast mechanism, however, is always the well-known absorption. Our team,
+as well as other groups around the world, works on a more fundamental
+aspect, trying to obtain contrast  from refraction and scattering phenomena
+rather than absorption. Moreover, it is a general established concept that
+phase contrast is expected to provide better contrast for equal or smaller dose
+at the same X-ray energy. This is now explained in more detail in the
+discussion section.
+
+The reviewer argues that
+there is no need to increase the energy up to \SI{100}{\kilo\eV} in order to
+\reviewer{translate
+this technology to clinic} while at the same acknowledging that 
+an increase to \SI{60}{\kilo\eV} would be good for mammography. But
+\SI{60}{\kilo\eV} is almost twice
+the energy that is used today for conventional mammography
+investigations. This comment is in contradiction with his or her first
+statement but clearly supports and justifies our efforts to push phase-contrast
+imaging up to energies around \SI{100}{\kilo\eV} or higher as those are the energies
+relevant for medical applications, without considering the mammography
+\emph{niche}
+
+ The reviewer also states that efforts devoted to reduce the
+ source-to-detector distance would not be supported by industry
+ (\reviewer{discouraged industry applications}). Even though we agree that there
+ might be several applications --- nondestructive testing and homeland
+ security for instance --- where a source-to-detector distance of
+ \SI{2}{\metre} would be
+ desired, we would like to point out the crucial issue of detector
+ efficiency which, combined with the inverse-square law of flux reduction,
+ significantly affects the total time one X-ray investigation takes. Time is
+ an issue, as patients move and affect the final image quality. Last but not
+ least, there is an economic factor to take into account: no hospital will
+ buy a system which is ten times slower than the already available technology.
+
+ On this respect, but considering a different aspect of our new technology,
+ the reviewer is indeed mentioning the potential bottleneck
+ of the edge-on approach, namely the 
+ (slow) scanning geometry. The
+ main reason for a scanning geometry is that for this proof of principle we just fabricated one set of
+ gratings. Obviously, one can consider stacking such gratings and aligning
+ them to a multi-line detector following the  principle of spiral CT when
+ operated with multiline detectors: this would speed up acquisition
+ significantly.
+ 
+ For 2D radiography, the commercially available MicroDose System of
+ Philips with a scanning geometry and a strongly collimated beam 
+ results in a reduced dose to the patient. It follows that having a scanning
+ geometry could result in a lower dose deposition when compared with a 2D
+ area illumination, without an impractical increase in exposure time.
+
+ \begin{reviewerquote}
+     This is perhaps the reason that in spite of large
+     scale effort by industrial leaders in radiology, the phase contrast
+     radiology still remains as academic research.
+ \end{reviewerquote}
+ Since we just mentioned a big player in the medical imaging field, we
+ would like to point out our disagreement with this statement. While it is
+ true that most of the efforts are still carried out at academic sites,
+ industrial activities on phase contrast within companies like Philips,
+ General Electrics, Konica-Minolta, Siemens, Zeiss and Brucker are reported
+ regularly at international conferences.
+
+Finally, the reviewer raises some doubts about the novelty of the edge-on geometry of our
+gratings, by taking examples from
+X-ray optics, namely multilayer Laue mirrors. We acknowledge
+(also in the manuscript) that previous work reported the usage of tilted
+gratings, i.e. Stuntman \emph{et al}.
+, but we also clearly explain
+ how much our edge-on approach is superior with
+respect to previous solutions, mostly because of the unrestricted field of
+view given by the matching of the curved wave front. We do not think that the comparison with the Laue
+mirrors is fair as the length scales are far from those
+related to our experiment. We diffract against micrometer-sized structure
+while multilayers are devices with structures in the nanometer-scale.
+
+For these reasons, we cannot share the statements of the reviewer when arguing
+about the innovation degree of our work. We believe that high-energy phase
+contrast on compact, clinically relevant geometries is achievable with our
+approach and therefore we are convinced about the relevance and the
+breakthrough character of our results: they show, for the first time,
+results at \SI{100}{\kilo\eV} on short distances using a conventional X-ray source.
+\end{document}
