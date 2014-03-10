@@ -1130,6 +1130,14 @@ FUNCTION {format.organization.address}
 { organization "organization" bibinfo.check format.org.or.pub
 }
 
+FUNCTION {format.journal}
+{
+    duplicate$ empty$
+    { pop$ "" }
+    { "\emph{\JournalTitle{" swap$ * "}}" * }
+    if$
+}
+
 FUNCTION {article}
 { output.bibitem
   format.authors "author" output.check
@@ -1140,8 +1148,7 @@ FUNCTION {article}
     {
       journal
       "journal" bibinfo.check
-      emphasize
-      "journal" output.check
+      format.journal "journal" output.check
       add.blank
       format.vol.num.pages output
       format.date "year" output.check

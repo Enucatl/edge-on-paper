@@ -13,6 +13,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc} %Umlaute
 \usepackage{babel}
+\usepackage{jabbrv}
 \usepackage{acronym}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -25,6 +26,12 @@
 \newcommand{\msub}[1]{\ensuremath{\textnormal{\begin{tiny}#1\end{tiny}}}}
 \renewcommand{\d}[1]{\ensuremath{\operatorname{d}\!{#1}}}
 \DeclareSIUnit{\voltpeak}{Vp}
+
+\DefineJournalPartialAbbreviation{Medicine}{Med}
+\DefineJournalPartialAbbreviation{Instrumentation}{Instr}
+\DefineJournalPartialAbbreviation{Instruments}{Instr}
+\DefineJournalPartialAbbreviation{Express}{Expr}
+\DefineJournalPartialAbbreviation{Synchrotron}{Synch}
 
 %acronyms
 \acrodef{CT}{computed tomography}
@@ -39,7 +46,7 @@
 a conventional source}
 
 \author[1,2]{T.~Thüring}
-\author[1,2]{M.~Abis}
+\author[1,2]{M.~Abis\thanks{\texttt{matteo.abis@psi.ch}; Corresponding author.}}
 \author[1]{Z.~Wang}
 \author[1]{C.~David}
 \author[1,2]{M.~Stampanoni}
@@ -82,7 +89,7 @@ or tissue types. The dominant physical effects contributing to attenuation
 are the photoelectric effect and incoherent (Compton) scattering. Besides attenuation, the wave
 nature of X-rays reveals another contrast mechanism, which is the phase
 shift. The interaction contributing to phase shifts is coherent (Rayleigh)
-scattering~\cite{Als-Nielsen2011}.
+scattering~\cite[extras={, p.~280}]{Als-Nielsen2011}.
 
 The attenuation and phase shift properties are described by the complex
 refractive index $n=1 - \delta + i \beta$. The imaginary part $\beta$ is
@@ -97,7 +104,7 @@ intensity modulations.
 
 Phase-sensitive imaging is a desirable modality, since it delivers a
 complementary source of contrast with respect to absorption by providing
-direct access to the electron density~\cite{Als-Nielsen2011}. Moreover, the
+direct access to the electron density~\cite[extras{, p.71}]{Als-Nielsen2011}. Moreover, the
 combination with attenuation enables the determination of the effective
 atomic number~\cite{Qi2010}. An enhanced \ac{CNR} compared to
 attenuation for certain materials or
@@ -390,31 +397,32 @@ The authors declare no competing financial interests.
 \bibitem{Als-Nielsen2011}
 \bibinfo{author}{Als-Nielsen, J.} \& \bibinfo{author}{McMorrow, D.}
 \newblock \emph{\bibinfo{title}{{Elements of modern X-ray physics}}}
-  (\bibinfo{year}{2011}).
+  (\bibinfo{publisher}{Wiley}, \bibinfo{address}{London},
+  \bibinfo{year}{2011}), \bibinfo{edition}{2nd} edn.
 
 \bibitem{Qi2010}
 \bibinfo{author}{Qi, Z.}, \bibinfo{author}{Zambelli, J.},
   \bibinfo{author}{Bevins, N.} \& \bibinfo{author}{Chen, G.-H.}
 \newblock \bibinfo{title}{{Quantitative imaging of electron density and
   effective atomic number using phase contrast CT.}}
-\newblock \emph{\bibinfo{journal}{Physics in Medicine and Biology}}
-  \textbf{\bibinfo{volume}{55}}, \bibinfo{pages}{2669--77}
+\newblock \emph{\JournalTitle{\bibinfo{journal}{Physics in Medicine and
+  Biology}}} \textbf{\bibinfo{volume}{55}}, \bibinfo{pages}{2669--77}
   (\bibinfo{year}{2010}).
 
 \bibitem{Pfeiffer2007a}
 \bibinfo{author}{Pfeiffer, F.} \emph{et~al.}
 \newblock \bibinfo{title}{{High-resolution brain tumor visualization using
   three-dimensional x-ray phase contrast tomography.}}
-\newblock \emph{\bibinfo{journal}{Physics in Medicine and Biology}}
-  \textbf{\bibinfo{volume}{52}}, \bibinfo{pages}{6923--6930}
+\newblock \emph{\JournalTitle{\bibinfo{journal}{Physics in Medicine and
+  Biology}}} \textbf{\bibinfo{volume}{52}}, \bibinfo{pages}{6923--6930}
   (\bibinfo{year}{2007}).
 
 \bibitem{McDonald2009}
 \bibinfo{author}{McDonald, S.~A.} \emph{et~al.}
 \newblock \bibinfo{title}{{Advanced phase-contrast imaging using a grating
   interferometer}}.
-\newblock \emph{\bibinfo{journal}{Journal of Synchrotron Radiation}}
-  \textbf{\bibinfo{volume}{16}}, \bibinfo{pages}{562--572}
+\newblock \emph{\JournalTitle{\bibinfo{journal}{Journal of Synchrotron
+  Radiation}}} \textbf{\bibinfo{volume}{16}}, \bibinfo{pages}{562--572}
   (\bibinfo{year}{2009}).
 
 \bibitem{Davis1995}
@@ -423,20 +431,21 @@ The authors declare no competing financial interests.
   \bibinfo{author}{Wilkins, S.}
 \newblock \bibinfo{title}{{Phase-contrast imaging of weakly absorbing materials
   using hard X-rays}}.
-\newblock \emph{\bibinfo{journal}{Nature}} \textbf{\bibinfo{volume}{373}},
-  \bibinfo{pages}{595--598} (\bibinfo{year}{1995}).
+\newblock \emph{\JournalTitle{\bibinfo{journal}{Nature}}}
+  \textbf{\bibinfo{volume}{373}}, \bibinfo{pages}{595--598}
+  (\bibinfo{year}{1995}).
 
 \bibitem{Chapman1997}
 \bibinfo{author}{Chapman, D.} \emph{et~al.}
 \newblock \bibinfo{title}{{Diffraction enhanced x-ray imaging}}.
-\newblock \emph{\bibinfo{journal}{Physics in Medicine and Biology}}
-  \textbf{\bibinfo{volume}{42}}, \bibinfo{pages}{2015--2025}
+\newblock \emph{\JournalTitle{\bibinfo{journal}{Physics in Medicine and
+  Biology}}} \textbf{\bibinfo{volume}{42}}, \bibinfo{pages}{2015--2025}
   (\bibinfo{year}{1997}).
 
 \bibitem{Bonse1965}
 \bibinfo{author}{Bonse, U.} \& \bibinfo{author}{Hart, M.}
 \newblock \bibinfo{title}{{An x-ray interferometer}}.
-\newblock \emph{\bibinfo{journal}{Applied Physics Letters}}
+\newblock \emph{\JournalTitle{\bibinfo{journal}{Applied Physics Letters}}}
   \textbf{\bibinfo{volume}{6}}, \bibinfo{pages}{155--156}
   (\bibinfo{year}{1965}).
 
@@ -445,7 +454,7 @@ The authors declare no competing financial interests.
   \bibinfo{author}{Itai, Y.} \& \bibinfo{author}{Hirano, K.}
 \newblock \bibinfo{title}{{Phase-contrast X-ray computed tomography for
   observing biological soft tissues}}.
-\newblock \emph{\bibinfo{journal}{Nature Medicine}}
+\newblock \emph{\JournalTitle{\bibinfo{journal}{Nature Medicine}}}
   \textbf{\bibinfo{volume}{2}}, \bibinfo{pages}{473--475}
   (\bibinfo{year}{1996}).
 
@@ -455,8 +464,8 @@ The authors declare no competing financial interests.
   \bibinfo{author}{Schelokov, I.}
 \newblock \bibinfo{title}{{On the possibilities of x-ray phase contrast
   microimaging by coherent high-energy synchrotron radiation}}.
-\newblock \emph{\bibinfo{journal}{Review of Scientific Instruments}}
-  \textbf{\bibinfo{volume}{66}}, \bibinfo{pages}{5486--5492}
+\newblock \emph{\JournalTitle{\bibinfo{journal}{Review of Scientific
+  Instruments}}} \textbf{\bibinfo{volume}{66}}, \bibinfo{pages}{5486--5492}
   (\bibinfo{year}{1995}).
 
 \bibitem{Wilkins1996}
@@ -465,8 +474,9 @@ The authors declare no competing financial interests.
   \bibinfo{author}{Stevenson, A.}
 \newblock \bibinfo{title}{{Phase-contrast imaging using polychromatic hard
   X-rays}}.
-\newblock \emph{\bibinfo{journal}{Nature}} \textbf{\bibinfo{volume}{384}},
-  \bibinfo{pages}{335--338} (\bibinfo{year}{1996}).
+\newblock \emph{\JournalTitle{\bibinfo{journal}{Nature}}}
+  \textbf{\bibinfo{volume}{384}}, \bibinfo{pages}{335--338}
+  (\bibinfo{year}{1996}).
 
 \bibitem{Cloetens1996}
 \bibinfo{author}{Cloetens, P.}, \bibinfo{author}{Barrett, R.},
@@ -474,8 +484,8 @@ The authors declare no competing financial interests.
   \bibinfo{author}{Schlenker, M.}
 \newblock \bibinfo{title}{{Phase objects in synchrotron radiation hard x-ray
   imaging}}.
-\newblock \emph{\bibinfo{journal}{Journal of Physics D: Applied Physics}}
-  \textbf{\bibinfo{volume}{29}}, \bibinfo{pages}{133--146}
+\newblock \emph{\JournalTitle{\bibinfo{journal}{Journal of Physics D: Applied
+  Physics}}} \textbf{\bibinfo{volume}{29}}, \bibinfo{pages}{133--146}
   (\bibinfo{year}{1996}).
 
 \bibitem{Cloetens1997}
@@ -484,7 +494,7 @@ The authors declare no competing financial interests.
   \bibinfo{author}{Schlenker, M.}
 \newblock \bibinfo{title}{{Fractional Talbot imaging of phase gratings with
   hard x rays.}}
-\newblock \emph{\bibinfo{journal}{Optics Letters}}
+\newblock \emph{\JournalTitle{\bibinfo{journal}{Optics Letters}}}
   \textbf{\bibinfo{volume}{22}}, \bibinfo{pages}{1059--61}
   (\bibinfo{year}{1997}).
 
@@ -493,15 +503,15 @@ The authors declare no competing financial interests.
   \bibinfo{author}{Solak, H.} \& \bibinfo{author}{Ziegler, E.}
 \newblock \bibinfo{title}{{Differential x-ray phase contrast imaging using a
   shearing interferometer}}.
-\newblock \emph{\bibinfo{journal}{Applied Physics Letters}}
+\newblock \emph{\JournalTitle{\bibinfo{journal}{Appl. Phys. Lett.}}}
   \textbf{\bibinfo{volume}{81}}, \bibinfo{pages}{3287--3289}
   (\bibinfo{year}{2002}).
 
 \bibitem{Momose2003a}
 \bibinfo{author}{Momose, A.} \emph{et~al.}
 \newblock \bibinfo{title}{{Demonstration of X-Ray Talbot Interferometry}}.
-\newblock \emph{\bibinfo{journal}{Japanese Journal of Applied Physics}}
-  \textbf{\bibinfo{volume}{42}}, \bibinfo{pages}{L866--L868}
+\newblock \emph{\JournalTitle{\bibinfo{journal}{Japanese Journal of Applied
+  Physics}}} \textbf{\bibinfo{volume}{42}}, \bibinfo{pages}{L866--L868}
   (\bibinfo{year}{2003}).
 
 \bibitem{Munro2012}
@@ -509,8 +519,8 @@ The authors declare no competing financial interests.
   \bibinfo{author}{Speller, R.} \& \bibinfo{author}{Olivo, A.}
 \newblock \bibinfo{title}{{Phase and absorption retrieval using incoherent
   X-ray sources}}.
-\newblock \emph{\bibinfo{journal}{Proceedings of the National Academy of
-  Sciences}} \textbf{\bibinfo{volume}{2012}}, \bibinfo{pages}{2--7}
+\newblock \emph{\JournalTitle{\bibinfo{journal}{Proceedings of the National
+  Academy of Sciences}}} \textbf{\bibinfo{volume}{2012}}, \bibinfo{pages}{2--7}
   (\bibinfo{year}{2012}).
 
 \bibitem{Pfeiffer2006}
@@ -518,7 +528,7 @@ The authors declare no competing financial interests.
   \bibinfo{author}{Bunk, O.} \& \bibinfo{author}{David, C.}
 \newblock \bibinfo{title}{{Phase retrieval and differential phase-contrast
   imaging with low-brilliance X-ray sources}}.
-\newblock \emph{\bibinfo{journal}{Nature Physics}}
+\newblock \emph{\JournalTitle{\bibinfo{journal}{Nature Physics}}}
   \textbf{\bibinfo{volume}{2}}, \bibinfo{pages}{258--261}
   (\bibinfo{year}{2006}).
 
@@ -526,8 +536,8 @@ The authors declare no competing financial interests.
 \bibinfo{author}{Nesch, I.} \emph{et~al.}
 \newblock \bibinfo{title}{{The design and application of an in-laboratory
   diffraction-enhanced x-ray imaging instrument.}}
-\newblock \emph{\bibinfo{journal}{The Review of Scientific Instruments}}
-  \textbf{\bibinfo{volume}{80}}, \bibinfo{pages}{093702}
+\newblock \emph{\JournalTitle{\bibinfo{journal}{The Review of Scientific
+  Instruments}}} \textbf{\bibinfo{volume}{80}}, \bibinfo{pages}{093702}
   (\bibinfo{year}{2009}).
 
 \bibitem{Parham2009}
@@ -536,7 +546,7 @@ The authors declare no competing financial interests.
   \bibinfo{author}{Pisano, E.~D.}
 \newblock \bibinfo{title}{Design and implementation of a compact low-dose
   diffraction enhanced medical imaging system}.
-\newblock \emph{\bibinfo{journal}{Academic Radiology}}
+\newblock \emph{\JournalTitle{\bibinfo{journal}{Academic Radiology}}}
   \textbf{\bibinfo{volume}{16}}, \bibinfo{pages}{911 -- 917}
   (\bibinfo{year}{2009}).
 
@@ -544,7 +554,7 @@ The authors declare no competing financial interests.
 \bibinfo{author}{Pfeiffer, F.} \emph{et~al.}
 \newblock \bibinfo{title}{{Hard-X-ray dark-field imaging using a grating
   interferometer}}.
-\newblock \emph{\bibinfo{journal}{Nature Materials}}
+\newblock \emph{\JournalTitle{\bibinfo{journal}{Nature Materials}}}
   \textbf{\bibinfo{volume}{7}}, \bibinfo{pages}{134--137}
   (\bibinfo{year}{2008}).
 
@@ -552,7 +562,7 @@ The authors declare no competing financial interests.
 \bibinfo{author}{Willner, M.} \emph{et~al.}
 \newblock \bibinfo{title}{{Quantitative X-ray phase-contrast computed
   tomography at 82 keV}}.
-\newblock \emph{\bibinfo{journal}{Optics Express}}
+\newblock \emph{\JournalTitle{\bibinfo{journal}{Optics Express}}}
   \textbf{\bibinfo{volume}{21}}, \bibinfo{pages}{4155--4166}
   (\bibinfo{year}{2013}).
 
@@ -560,15 +570,15 @@ The authors declare no competing financial interests.
 \bibinfo{author}{Donath, T.} \emph{et~al.}
 \newblock \bibinfo{title}{{Phase-contrast imaging and tomography at 60 keV
   using a conventional x-ray tube source.}}
-\newblock \emph{\bibinfo{journal}{The Review of Scientific Instruments}}
-  \textbf{\bibinfo{volume}{80}}, \bibinfo{pages}{053701}
+\newblock \emph{\JournalTitle{\bibinfo{journal}{The Review of Scientific
+  Instruments}}} \textbf{\bibinfo{volume}{80}}, \bibinfo{pages}{053701}
   (\bibinfo{year}{2009}).
 
 \bibitem{Mohr2012}
 \bibinfo{author}{Mohr, J.} \emph{et~al.}
 \newblock \bibinfo{title}{High aspect ratio gratings for x-ray phase contrast
   imaging}.
-\newblock \emph{\bibinfo{journal}{AIP Conference Proceedings}}
+\newblock \emph{\JournalTitle{\bibinfo{journal}{AIP Conference Proceedings}}}
   \textbf{\bibinfo{volume}{1466}}, \bibinfo{pages}{41--50}
   (\bibinfo{year}{2012}).
 
@@ -576,7 +586,7 @@ The authors declare no competing financial interests.
 \bibinfo{author}{David, C.} \emph{et~al.}
 \newblock \bibinfo{title}{{Fabrication of diffraction gratings for hard X-ray
   phase contrast imaging}}.
-\newblock \emph{\bibinfo{journal}{Microelectronic Engineering}}
+\newblock \emph{\JournalTitle{\bibinfo{journal}{Microelectronic Engineering}}}
   \textbf{\bibinfo{volume}{84}}, \bibinfo{pages}{1172--1177}
   (\bibinfo{year}{2007}).
 
@@ -591,7 +601,7 @@ The authors declare no competing financial interests.
 \bibinfo{author}{Stutman, D.} \& \bibinfo{author}{Finkenthal, M.}
 \newblock \bibinfo{title}{{Glancing angle Talbot-Lau grating interferometers
   for phase contrast imaging at high x-ray energy}}.
-\newblock \emph{\bibinfo{journal}{Applied Physics Letters}}
+\newblock \emph{\JournalTitle{\bibinfo{journal}{Applied Physics Letters}}}
   \textbf{\bibinfo{volume}{101}}, \bibinfo{pages}{91108}
   (\bibinfo{year}{2012}).
 
@@ -616,14 +626,14 @@ The authors declare no competing financial interests.
 \bibitem{Weitkamp2005}
 \bibinfo{author}{Weitkamp, T.} \emph{et~al.}
 \newblock \bibinfo{title}{{X-ray phase imaging with a grating interferometer}}.
-\newblock \emph{\bibinfo{journal}{Optics Express}}
+\newblock \emph{\JournalTitle{\bibinfo{journal}{Optics Express}}}
   \textbf{\bibinfo{volume}{13}}, \bibinfo{pages}{6296--6304}
   (\bibinfo{year}{2005}).
 
 \bibitem{Thuering2013c}
 \bibinfo{author}{Thuering, T.} \emph{et~al.}
 \newblock \bibinfo{title}{{Energy resolved X-ray grating interferometry}}.
-\newblock \emph{\bibinfo{journal}{Applied Physics Letters}}
+\newblock \emph{\JournalTitle{\bibinfo{journal}{Applied Physics Letters}}}
   \textbf{\bibinfo{volume}{102}}, \bibinfo{pages}{191113}
   (\bibinfo{year}{2013}).
 
@@ -631,30 +641,30 @@ The authors declare no competing financial interests.
 \bibinfo{author}{Chabior, M.} \emph{et~al.}
 \newblock \bibinfo{title}{{Beam hardening effects in grating-based x-ray
   phase-contrast imaging}}.
-\newblock \emph{\bibinfo{journal}{Medical Physics}}
+\newblock \emph{\JournalTitle{\bibinfo{journal}{Medical Physics}}}
   \textbf{\bibinfo{volume}{38}}, \bibinfo{pages}{1189} (\bibinfo{year}{2011}).
 
 \bibitem{Momose2005}
 \bibinfo{author}{Momose, A.}
 \newblock \bibinfo{title}{{Recent Advances in X-ray Phase Imaging}}.
-\newblock \emph{\bibinfo{journal}{Japanese Journal of Applied Physics}}
-  \textbf{\bibinfo{volume}{44}}, \bibinfo{pages}{6355--6367}
+\newblock \emph{\JournalTitle{\bibinfo{journal}{Japanese Journal of Applied
+  Physics}}} \textbf{\bibinfo{volume}{44}}, \bibinfo{pages}{6355--6367}
   (\bibinfo{year}{2005}).
 
 \bibitem{Grunzweig2008}
 \bibinfo{author}{Gr\"{u}nzweig, C.} \emph{et~al.}
 \newblock \bibinfo{title}{{Design, fabrication, and characterization of
   diffraction gratings for neutron phase contrast imaging.}}
-\newblock \emph{\bibinfo{journal}{The Review of Scientific Instruments}}
-  \textbf{\bibinfo{volume}{79}}, \bibinfo{pages}{053703}
+\newblock \emph{\JournalTitle{\bibinfo{journal}{The Review of Scientific
+  Instruments}}} \textbf{\bibinfo{volume}{79}}, \bibinfo{pages}{053703}
   (\bibinfo{year}{2008}).
 
 \bibitem{Raupach2011}
 \bibinfo{author}{Raupach, R.} \& \bibinfo{author}{Flohr, T.~G.}
 \newblock \bibinfo{title}{{Analytical evaluation of the signal and noise
   propagation in x-ray differential phase-contrast computed tomography.}}
-\newblock \emph{\bibinfo{journal}{Physics in Medicine and Biology}}
-  \textbf{\bibinfo{volume}{56}}, \bibinfo{pages}{2219--2244}
+\newblock \emph{\JournalTitle{\bibinfo{journal}{Physics in Medicine and
+  Biology}}} \textbf{\bibinfo{volume}{56}}, \bibinfo{pages}{2219--2244}
   (\bibinfo{year}{2011}).
 
 \end{thebibliography}
