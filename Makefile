@@ -5,7 +5,7 @@ VERSION=$(shell git describe --always --abbrev=4)
 all: hedpc.pdf point_by_point_response.pdf
 
 point_by_point_response.pdf: point_by_point_response.tex
-	latexmk -pdf $<
+	latexmk -bibtex -pdf $<
 	exiftool -overwrite_original -Subject="$(VERSION)" $(addsuffix .pdf, $(basename $<))
 
 hedpc.pdf: hedpc.tex library.bib $(wildcard figures/*)
