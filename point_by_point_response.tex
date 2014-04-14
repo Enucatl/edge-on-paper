@@ -1,32 +1,36 @@
 %        File: point_by_point_response.tex Created: Wed Oct 23 05:00 PM 2013
 %        C Last Change: Wed Oct 23 05:00 PM 2013 C
 %
-\documentclass[a4paper,english]{scrartcl} \usepackage[detect-all]{siunitx}
-\usepackage{babel} \usepackage[T1]{fontenc} \usepackage[utf8]{inputenc}
+\documentclass[a4paper,english]{scrartcl}
+\usepackage[detect-all]{siunitx}
+\usepackage{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 
 \DeclareSIUnit{\voltpeak}{Vp} \newcommand{\reviewer}[1]{\emph{#1}}
 \newenvironment{reviewerquote}{\begin{quote}\itshape}{\end{quote}}
 
-\title{Response to reviewer \#3} \author{Revised manuscript SREP-13-06290}
-\date{} \begin{document} \maketitle
+\title{Response to the reviewer}
+\author{Revised manuscript SREP-13-06290}
+\date{}
+\begin{document}
+\maketitle
 
 \noindent
 
-Reply to Review 3
-=================
-
-We would like to thank reviewer 3 for his/her detailed feedback on our
-latest revision. We actually share most of his/her concerns but we also see
+We would like to thank reviewer \#3 for the detailed feedback on our
+latest revision. We actually share most of his or her concerns but we also see
 that there have been some misunderstanding on our side on the main points
-raised by his/her latest comments. We would like to address them in the
+raised by his or her latest comments. We would like to address them in the
 following. 
 
-Referee 3: "It is disappointing that the authors misinterpreted the
+\begin{reviewerquote}
+It is disappointing that the authors misinterpreted the
 questions and the arguments this referee raised against the major claims of
 this work. This referee did not say: "there is no need to increase the
-energy to 100 keV in order to translate this technology to clinic" but
+energy to \SI{100}{\kilo\eV} in order to translate this technology to clinic" but
 rather question that is not the major factor. This referee did not
-"acknowledge(ing) that an increase to 60 keV would be good for mammography",
+"acknowledge(ing) that an increase to \SI{60}{\kilo\eV} would be good for mammography",
 even though it could be. The main point of the argument is if the
 contribution made by this work important or significant. The conclusion of
 the first review was not enough for a journal cover all different areas of
@@ -35,28 +39,9 @@ the same research area of X-ray imaging. The authors reply did not change
 this concern by quoting an "improvement" of increasing photon energy to 60
 keV for mammography, or to higher photon energy in general for radiology in
 general, a well-established and widely implemented for human health care for
-decades."
+decades.
 
-Our answer: “Apparently, we have mis-interpreted the message of Reviewer 3
-and we thank him/her for his effort to clarify his/her opinion. In his/her
-first part of the argumentations, Reviewer 3 questions whether our
-contribution is "important of significant". This is a remark which in
-principle can be made to any scientific contribution, independently to its
-degree of novelty, difficulty or outreach. It has a strong subjective
-component, as demonstrated by the fact that two others reviewers found our
-work more than worth to be published in SciRep while Reviewer 3 still has
-several concerns. Therefore, we would like to reiterate here that our work
-is a step towards the implementation of phase contrast imaging on clinical
-systems which we believe might contribute to improve image contrast while
-keeping the dose under reasonable control. Those systems are compact and are
-operated at high-energies, or at least at energies much higher than those
-that have been used for any phase-contrast experiment so far (to the best of
-our knowledge). We are not claiming that we found the ultimate solution to
-it, but we present an experimental solution to address two major concerns
-(high-energy and compactness) which are presently limiting the broad
-application of phase contrast imaging outside the synchrotron community.” 
-
-Referee 3: "Specifically, this referee questioned if the photon energy (not
+Specifically, this referee questioned if the photon energy (not
 being high enough) and the distance (not being short enough) between
 detector and specimen, are the key barriers to the translation of grating
 base phase contrast radiology to clinic. The major barrier prevent the phase
@@ -69,11 +54,72 @@ phase contrast using conventional X-ray sources by slotting the large source
 into small ones which could potentially enable the phase retrieval. However,
 the requirement of scanning the gratings, in the case reported here (24
 steps), inevitably increases the dose as well as the image acquisition time
-which put this technique only in the research laboratory at the moment." 
+which put this technique only in the research laboratory at the moment.
+\end{reviewerquote}
 
-Our answer: (*Still need to work on this…any suggestions welcomed*)
+Apparently, we have misinterpreted the message of reviewer \#3
+and we thank him or her for the effort in clarifying the comments. In the
+first part of the argumentations, reviewer \#3 questions whether our
+contribution is ``important of significant''. This is a remark which in
+principle can be made to any scientific contribution, independently to its
+degree of novelty, difficulty or outreach. It has a strong subjective
+component, as demonstrated by the fact that two others reviewers found our
+work more than worth to be published in Scientific Reports while reviewer \#3 still has
+several concerns. Therefore, we would like to reiterate here that our work
+is a step towards the implementation of phase contrast imaging on clinical
+systems which we believe might contribute to improve image contrast while
+keeping the dose under reasonable control. Those systems are compact and are
+operated at high energies, or at least at energies much higher than those
+that have been used for any phase-contrast experiment so far to the best of
+our knowledge. We are not claiming that we found the ultimate solution to
+it, but we present an experimental that addresses to address two major concerns
+(high energy and compactness) which are presently limiting the broad
+application of phase contrast imaging outside the synchrotron community.
 
-Referee 3: “This referee knows and agree that the radiation dose is critical
+While most of the industrial research and product development is obviously
+unknown to the general public, at least two product roadmaps have been presented in
+the last months. An upgrade of the Philips MicroDose mammography system into a
+Talbot-Lau interferometer was shown by the company at the SPIE
+2014 conference\cite{Roessl2014,Roessl06032014}. Moreover, clinical trials are currently
+ongoing on patients and healthy volunteers in the hospital of the Saitama
+Medical University with a Talbot-Lau interferometer
+developed as a collaboration between the University of Tohoku and Konica
+Minolta~\cite{Momose06032014}. This last machine operates with an
+acceleration voltage of~\SI{40}{\kilo\voltpeak} and with an acceptable
+exposure time (\SI{19}{\second}) and dose (under \SI{10}{\milli\gray}).
+
+We think that this is convincing evidence that this technique already belongs to the
+hospitals and not only to the research laboratories, as well as being a hot
+topic of recent industrial and scientific development.
+
+However, the reviewer is right when he points out that the work presented in
+the manuscript is still far from applications. At the same time, I think he
+or she can agree on the fact that sources
+with~\num{100}-\SI{120}{\kilo\voltpeak} are needed in
+hospitals for tomography and even higher voltages are required for security
+inspections or material sciences investigations.
+This is why we think that, besides reduction of dose and exposure times for
+existing setups, the exploration of a new energy range is a fundamental
+research topic. Indeed, up to now, no system in the world was able to
+produce images at energies around~\SI{100}{\kilo\eV}. Even with a high
+dose or long exposure
+this was simply impossible because of the unavailability of the optical
+elements, which we could overcome.
+
+Finally, low-energy grating interferometry is in fact making its appearance
+in hospitals in dedicated areas (cartilage and mammography), and developing
+high-energy systems is key to expanding its applications, as well as
+potentially giving
+additional benefits in terms of phase contrast and dose reduction as shown
+in the manuscript.
+This study is of course a first step toward this goal and,
+while we could claim a successful design and operation of the machine, we
+cannot conclude at this stage that we can have a high imaging quality with
+clinically compatible exposures.
+
+
+\begin{reviewerquote}
+This referee knows and agree that the radiation dose is critical
 for medical application, but that was exactly where the usefulness of this
 work is quested. It is well accepted that no new X-ray imaging technology is
 likely be implemented for clinic with dose penalties. There is even more
@@ -82,9 +128,10 @@ diagnosis even at the same dose. Instead of tackling the main challenges on
 reducing the scanning time or on demonstrating that phase contrast indeed
 give better visibility at the same dose than those without phase contrast on
 critical applications such as for medical imaging, device inspection and
-security inspection..., 
+security inspection.
+\end{reviewerquote}
 
-Our reply: "Clinical relevance of phase contrast is a fundamental question
+Clinical relevance of phase contrast is a fundamental question
 and we addressed this in several works, specifically on mammography,
 published elsewhere (InvRad 1, InvRad 2, NatComm). We are very well aware
 about the importance of assessing the advantages of phase contrast imaging
@@ -92,76 +139,36 @@ with respect to existing diagnostic procedures, in particular when dealing
 with dose issues. However, the main subject of the present manuscript is
 different and addresses a very practical aspect: we will not even be able to
 discuss about clinical relevance of phase contrast if we cannot operate
-phase contrast in a clinical environment at all! With our work we want to
+phase contrast in a clinical environment at all. With our work we want to
 show a possible solution to implement phase contrast imaging in clinics and
 addressing high energies and compact systems seem to us to be two
 fundamental points. 
 
-Referee 3: "…suggested secondary problems, such as photon energy and the
+\begin{reviewerquote}
+suggested secondary problems, such as photon energy and the
 total dimension requirement for the instrument are targeted. The efforts are
 trying to "improve", if it is indeed an improvement, a technology (the
 grating base phase contrast radiology) that is interesting only for its
 promised clinical application which otherwise offers no fundamental
 innovation for the phase retrieval scheme in X-ray imaging (it took
-advantage of a known theory in optics to shorter wavelength).”
+advantage of a known theory in optics to shorter wavelength).
+\end{reviewerquote}
 
-Our reply “We do not believe that photon energy and total dimension
+We do not believe that photon energy and total dimension
 requirements are secondary problems. As mentioned before, the penetration
 power of the probing radiation is rather a primary issue as we need
 sufficient photon statistics to be generated after penetrating a whole human
-body in order to measure a signal and, this, independently from whether we
-do absorption or phase contrast imaging. The comments on whether the phase
+body in order to measure a signal, whether we
+perform absorption or phase-contrast imaging. The comments on whether the phase
 retrieval procedure is innovative or not could actually be extended to the
 whole field of grating interferometry, as the theory in optics is known
 since the 19th century, although at the time it was only applied to longer
 wavelengths. We would like to point out again that the promised clinical
 applications are coming true, and that the realization of this experiment
-had its remarkable challenges, despite being known in theory.”
+had its remarkable challenges, despite being known in theory.
 
-Referee 3: “In the long list of "major players" and with all their effort
-contributing to the international conferences, is there any one ready to
-commit this technology as their product roadmaps? This work therefore
-promises a potential benefit on a potential technique which is certainly
-valuable from the instrumentation point of view and not likely to generate
-much interest of readers of Scientific Reports.”
-
-Our reply: "While most of the industrial research and product development is
-obviously unknown to the general public, at least two products roadmaps have
-been presented in the last months. An upgrade of the Philips MicroDose
-mammography system into a Talbot-Lau interferometer was shown by the company
-at the SPIE 2014 conference [2] (please add here the reference mentioned by
-Zhentian). Moreover, clinical trials are currently ongoing on patients and
-healthy volunteers in Japan (*give here the name of the hospital, from XNPIG
-proceedings*) with a Talbot-Lau interferometer developed as a collaboration
-between the University of Tohoku and Konica Minolta [1]. This last machine
-operates with an acceleration voltage of 40 kVp and with an acceptable
-exposure time (19 s) and dose (under 10 mGy). We think that this is
-convincing evidence that this technique already belongs to the hospitals and
-not only to the research laboratories, as well as being a hot topic of
-recent industrial and scientific development and interest. However, the
-reviewer is right when he points out that the work presented in our
-manuscript is still far from applications. At the same time, we think he or
-she can agree on the fact that sources with 100-120 keV are needed in
-hospitals for tomography and even higher voltages are required for security
-inspections or material sciences investigations. This is why we think that,
-besides reduction of dose and exposure times for existing setups, the
-exploration of a new energy range is a fundamental research topic. Indeed,
-it is worth to mention that to now, no system in the world was able to
-produce images at energies around 100 keV. Even with a high dose or long
-exposure this was simply impossible because of the unavailability of the
-optical elements, which we could overcome in our work. Finally, low-energy
-grating interferometry is in fact making its appearance in hospitals in
-dedicated areas (cartilage and mammography), and developing high-energy
-systems is key to expanding its applications, as well as potentially giving
-additional benefits in terms of phase contrast and dose reduction as shown
-in the manuscript. This study is of course a first step toward this goal
-and, while we could claim a successful design and operation of the machine,
-we cannot conclude at this stage that we can have a high imaging quality
-with clinically compatible exposures. (*Matteo: do you agree with this
-latest sentence? You wrote “we could conclude…” but I think this was
-wrong…”*).
-
-Referee 3: "Although Scientific Reports requests evaluation on the
+\begin{reviewerquote}
+Although Scientific Reports requests evaluation on the
 scientific rigorousness, over claiming the potential on clinical, device and
 homeland security applications is not rigorous. The hastiness of the
 presentation does not make their work rigorous, either. There is no analysis
@@ -173,149 +180,190 @@ cannot be correctly evaluated by the referees and readers without knowing
 the size (along to the beam direction) of the structure of the chip,
 including the solders and resistors, and the absolute gray scale of those
 images. Without giving detailed analysis of the contrast on a set of poor
-quality images, and perhaps compare them with lower, say 80 keV photons, it
+quality images, and perhaps compare them with lower, say \SI{80}{\kilo\eV} photons, it
 is not convincing that the work does indeed improve the imaging quality of
-visibility for their targeted applications.”
+visibility for their targeted applications.
+\end{reviewerquote}
 
-Our reply: (*This is difficult. I do not know how to rebuttal this, beside
-telling that going from 100 to 80 is not simple (new gratings, different
-distances, complicated alignment…) Any suggestion??*)
+It is true that the current data are not sufficient to claim an improvement
+on imaging quality or sensitivity on details in
+general, which is why we do not draw such conclusions in the paper, as the
+reviewer points out. However, we can already point out that the only
+previously published system running on an X-ray tube~\cite{:/content/aip/journal/rsi/80/5/10.1063/1.3127712}, also
+cited in the manuscript, reported a
+visibility of only~\SI{3}{\percent}, hence our system is already performing
+much better than that. We also note once more that comparisons with
+synchrotron sources are completely out of the question since the
+monochromaticity, brilliance and coherence of third generation synchrotrons
+have a great influence on image quality but are impossible to match on a
+laboratory source, and cannot obviously be deployed on a large scale.
 
-Referee 3: “There are also other flaws of this presentation, which were not
+\begin{reviewerquote}
+There are also other flaws of this presentation, which were not
 pointed out in the first round reviewer's report. First of all, there is no
 mention about the exact photon energy or range actually used. Referring to
 manufactures data and provide a few more words than "designed energy of 100
 keV" would be more quantitative. The accelerating energy and photon energy
 are used in a confusion fashion of kV, kVp and keV for non-specialists. If
-the average photon energy is ~100 keV then the author must demonstrate
+the average photon energy is~\SI{100}{\kilo\eV} then the author must demonstrate
 significant difference in terms of the image quality between previous
-reports of 82keV and 60 keV using synchrotron and Talbot-Lau methods. If
+reports of 82keV and~\SI{60}{\kilo\eV} using synchrotron and Talbot-Lau methods. If
 photon energy is one of the major claim of advantage of this paper, the
 authors cannot escape this comparison by just saying they are done with
-synchrotron or by other type of grating arrangements”
+synchrotron or by other type of grating arrangements.
+\end{reviewerquote}
 
-Our reply: "More details on the source, such as the material of the anode
-and the current have been added to the manuscript. The energy range is not
-changed afterwards by any means, so this is indeed the full information
-needed to reproduce the experiment on any similar generator. The design
-energy is a property of the interferometer, and is defined in the manuscript
-as the energy at which “the beam splitter grating periodically shifts the
-phase by zero and Pi”. We suggest that this is already a precise
-statement. Concerning the comparison with synchrotron experiments, we think
-that at this stage of the developments, it should be sufficient to show that
-we can generate phase contrast images at 100 keV on a conventional source
-and to provide the discussion the way and extend we did. The differences in
-flux, coherence and monochromaticity between a synchrotron- and a tube-
-based experiment are so huge that the fact already that we were able to
-obtain phase image should be considered as a success and worth to be
-published. Again, to now, nobody was able to achieve this. And, it is not
-just “an other type of grating arrangement”. We tried to explain that our
-suggestion  allows to perform phase contrast imaging at really high
-energies, i.e., this might be “THE” arrangement.
+More details on the source, such as the material of the anode and the
+current have been added to the manuscript. The energy range is not changed
+afterwards by any means, so this is indeed the full                                                   e
+information needed to reproduce the experiment on any similar generator.
+The design energy is a property of the interferometer, and is defined in the
+manuscript as the energy at which ``the beam splitter grating periodically
+shifts the phase by zero and $\pi$''. We suggest that this is already a
+precise statement.
+Concerning the comparison with synchrotron experiments, we think
+that at this stage of the development, it should be sufficient to show that
+we can generate phase contrast images at~\SI{100}{\kilo\eV} on a conventional source
+and to provide the discussion the way and extent we did. Again, the differences
+between a synchrotron and a tube-based experiment are so big that the fact
+already that we were able to obtain phase image should be considered as a
+success and worth to be
+published. Again, to now, nobody was able to achieve this.
+The authors do not agree that this is ``just another type of grating
+arrangement'': the traditional method used up to now in grating
+interferometers (face-on illumination) simply makes fabricating the aspect
+ratios needed for high energies impossible. Moreover, it seems unlikely that
+the electroplating techniques can improve by one order of magnitude in the
+near future.
+Hence, the suggested arrangement this might be the \emph{only} arrangement
+that allows grating interferometry on this energy range.
 
-Referee 3: “The claim of potential having an order of magnitude decrease in
+\begin{reviewerquote}
+The claim of potential having an order of magnitude decrease in
 the scanning time is not supported by their own argument. If it is indeed
-limited by the visibility of the grating, how can an improvement from 5%
-(device reported here) to 14% (current best technology) reaching one order
+limited by the visibility of the grating, how can an improvement from 5\%
+(device reported here) to 14\% (current best technology) reaching one order
 of magnitude, "easily”? 
+\end{reviewerquote}
 
-Our reply: “This is because, as explained in the methods section, some
-smaller section of our current gratings already have a visibility of 14 %.
+This is because, as explained in the methods section, some
+smaller section of our current gratings already have a visibility
+of~\SI{14}{\percent}. 
 This means it is almost three times as good as the average, and since the
 signal-to-noise ratio drops with the square root of the exposure time, but
 proportionally to the visibility, we claim that improving the visibility by
-a factor of three allows us to shorten the exposure time by a factor of nine
-(*As Zhentian suggested, please add here a reference..."
+a factor of three allows us to shorten the exposure time by a factor of
+nine~\cite{Raupach2011}.
+Note that this is not the current best technology
+available in theory, but what we already have in the first generation of
+gratings.              
 
-Referee 3: "Even with one order of magnitude improvement, could they obtain
+\begin{reviewerquote}
+Even with one order of magnitude improvement, could they obtain
 an image with scanning at a speed fast enough to match the desired
-motion-free imaging? “
+motion-free imaging?
+\end{reviewerquote}
 
-Our reply: "The Reviewer should agree that if we were already able to do
+The reviewer should agree that if we were already able to do
 this, the focus and the cut of our publication would be completely
-different. Namely, we would be already there were we are aiming at: phase
-contrast imaging at high-energy, on compact systems, fast and, ideally, with
+different. Namely, we would be already where we are aiming at:
+phase-contrast imaging at high energy, on compact systems, fast and,
+ideally, with the 
 same or lower dose. We can only hypothesize that, with the suggested grating
 design, there are no indications against reaching the theoretical maximal
-visibility one might expect at 100 keV. This would be physically the best
+visibility one might expect at~\SI{100}{\kilo\eV}. This would be physically the best
 result achievable. If, in that case, the hardware around the gratings will
 be carefully selected, we do not see why we should not be able to acquire
-tomographic slices with speed as present, absorption-based systems." 
+tomographic slices with the same speed as present, absorption-based systems.
 
-Referee 3: "The authors argued (in their reply) that they can increase the
+\begin{reviewerquote}
+The authors argued (in their reply) that they can increase the
 acquisition efficiency by stacking the grating. In this case, there will be
 200 such devices needed to be stacked to cover a 2 cm wide area, which they
 have to consider the curvature in this direction as well. At the same time
 they argued that scanning a small beam (a line illumination in this case) is
 better than full field imaging. They quote a commercial system claiming
 reduction of dose which is likely, as pointed out by the author, due to the
-strongly collimation, therefore, is irrelevant to the comparison.”
+strongly collimation, therefore, is irrelevant to the comparison.
+\end{reviewerquote}
 
-Our reply: The dose argument between scanning, highly collimated systems
-(Philips Microdose) versus others, based on full-area imaging, is not
+The dose argument between scanning, highly collimated systems
+(Philips MicroDose) versus others, based on full-area imaging, is not
 irrelevant, as this is one of the major selling arguments for the low-dose
 Philips systems. Therefore, if we combine a series of collimated, fan beams
 with our gratings geometry and scan them to cover a larger area, we will
 indeed have less dose delivered to the specimen/patient compared to a
 cone-beam approach, requiring a full illumination of the sample. Covering a
-2cm wide area in one direction would indeed be a challenge, we agree. The
-question is whether we would need to really cover a 2cm wide area or if we
+\SI{2}{\centi\meter} wide area in one direction would indeed be a challenge, we agree. The
+question is whether we would need to really cover a \SI{2}{\centi\meter} wide area or if we
 could obtain acceptable results with less (while scanning longer). We also
 have to consider the size of the pixel we are aiming for, which might be
-slightly larger than 100 microns, at least for a human CT system.
+larger than \SI{100}{\micro\meter}, at least for a human CT system.
 
-Referee 3: “The fabrication of the grating is not described specifically,
+\begin{reviewerquote}
+The fabrication of the grating is not described specifically,
 other than saying "Grating design and fabrication is nonstandard and
 involves a complex mask design" with a reference to a fabrication company.
 It is not likely one can follow the actual process with just these
 information. 
+\end{reviewerquote}
 
-Our reply: “The fabrication through lithography and electroplating is not
+The fabrication through lithography and electroplating is not
 the main topic of this manuscript, hence it is only cited in 22, 23, 24. The
-mask design was carried out by MicroWorks GmbH, but it is a very technical
+mask design was indeed carried out by MicroWorks GmbH, but it is a very technical
 detail that we think bears no impact on the reproducibility of the
 experiment: any design that reliably builds the described circularly
-arranged pattern will produce usable gratings"
+arranged pattern will produce usable gratings.
 
-Referee 3: "The SEM image on a selected portion of a grating already shows a
+\begin{reviewerquote}
+The SEM image on a selected portion of a grating already shows a
 rather poor quality placement of um size structures, no mention about how
 the precision of these structure could affect the imaging or the phase
-retrieval."
+retrieval.
+\end{reviewerquote}
 
-Our reply: “We mention in the manuscript that these irregularities are
+We mention in the manuscript that these irregularities are
 responsible for the limited visibility of the interferometer, and the
-connection of this value to the signal-to-noise ratio in the images."
+connection of this value to the signal-to-noise ratio in the
+images~\cite{Raupach2011}.
 
-Referee 3: “In terms of the innovation in the arrangement the grating in the
+\begin{reviewerquote}
+In terms of the innovation in the arrangement the grating in the
 "edge-on" fashion, Ref. 25 indeed reported a similar arrangement to overcome
 the aspect ratio limitation. As to the adoption of a curved structures, it
 was also proposed in the fabrication of multilayer Laue lens to deal with
 the similar problem by tilting, wedging or curving the nanostructures.
 Therefore, the work indeed puts these ingredients together to realize the
 device, but does not reach high innovation level by applying it to a device
-at different, actually easier, length scale"
+at different, actually easier, length scale
+\end{reviewerquote}
 
-Our reply: “We do not claim to have reached a high-innovation level with our
-suggested grating arrangement. But we present  phase contrast images at 100
-keV on a compact system. To the best of our knowledge this is novel and, as
-we tried to explain, could have a huge impact.”
+We do not claim that the
+suggested grating arrangement is completely unheard of, since we even
+provide specific references to previous similar ideas. But we present  phase
+contrast images at~\SI{100}{\kilo\eV}
+on a compact system. To the best of our knowledge this is novel and, as
+we tried to explain, could have a big impact.
 
-Referee 3: “With these observations, this referee argues that this paper
+\begin{reviewerquote}
+With these observations, this referee argues that this paper
 does not meet the high scientific or innovation value of Scientific Reports.
 The presentation of the results is not rigorous which is not likely be
 corrected without much more investigation to build a better publishable
 case. The rebuttal did not address the main concern of the last review,
 therefore, this referee does not consider this work after revision
-publishable for Scientific Reports.”
+publishable for Scientific Reports.
+\end{reviewerquote}
 
-Our reply: “We hope to have addressed in our present reply the major
+We hope to have addressed in our present reply the
 concerns of the reviewer. We tried to clarify where we see our work to be
-novel and where we discuss the potential benefits of our approach. The
-generation of a phase contrast image at 100 keV using a conventional X-ray
+novel and where we discuss the potential benefits of our approach. While
+lower energy phase-contrast systems are now entering hospitals, the
+generation of a phase-contrast image at~\SI{100}{\kilo\eV} using a conventional X-ray
 tube in a compact setup is something which was never done before and that
 intrinsically carries a high potential for medical applications and beyond.
 This is our message and we are convinced of its relevance and impact which
-seems to be well matched to the requests of Scientific Reports a journal
+seems to be well matched to the requests of Scientific Reports: a journal
 which, to the best of our knowledge, has no absolute novelty criterion as a
-pre-requisited for a manuscript to be eligible for publication."
+prerequisite for a manuscript to be eligible for publication.
 \end{document}
